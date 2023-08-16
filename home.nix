@@ -29,9 +29,16 @@
     };
   };
 
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      bbenoist.nix
+      jdinhlife.gruvbox
+    ];
+  };
+
   home.packages = with pkgs; [
     neofetch
-    vscode
     google-chrome
     fish
 
@@ -48,17 +55,6 @@
 
     nix-output-monitor
   ];
-
-  # starship - an customizable prompt for any shell
-  programs.starship = {
-    enable = true;
-    settings = {
-      add_newline = false;
-      aws.disabled = true;
-      gcloud.disabled = true;
-      line_break.disabled = false;
-    };
-  };
 
   programs.bash = {
     enable = true;
