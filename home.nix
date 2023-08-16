@@ -27,6 +27,8 @@
     extraConfig = {
       safe.directory = "/etc/nixos";
       credential.helper = "${pkgs.git.override { withLibsecret = true; }}/bin/git-credential-libsecret";
+      pack.windowMemory = "2g";
+      pack.packSizeLimit = "1g";
     };
   };
 
