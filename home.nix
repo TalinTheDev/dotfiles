@@ -44,11 +44,13 @@
     neofetch
     google-chrome
     fish
+    fishPlugins.tide
 
     zip
     xz
     unzip
     p7zip
+    cinnamon.nemo
 
     exa
 
@@ -57,6 +59,8 @@
     tree
 
     nix-output-monitor
+
+    nerdfonts
   ];
 
   programs.bash = {
