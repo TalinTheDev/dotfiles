@@ -9,7 +9,8 @@
       neofetch
       google-chrome
       fish
-      oh-my-fish
+      fishPlugins.hydro
+      fishPlugins.sponge
 
       zip
       unzip
@@ -50,6 +51,26 @@
     fish = {
       enable = true;
       interactiveShellInit = ''set fish_greeting'';
+      plugins = [
+        {
+          name = "hydro";
+          src = pkgs.fetchFromGitHub {
+            owner = "jorgebucaran";
+            repo = "hydro";
+            rev = "d4875065ceea226f58ead97dd9b2417937344d6e";
+            sha256 = "sha256-nXeDnqqOuZyrqGTPEQtYlFvrFvy1bZVMF4CA37b0lsE=";
+          };
+        }
+        {
+          name = "sponge";
+          src = pkgs.fetchFromGitHub {
+            owner = "meaningful-ooo";
+            repo = "sponge";
+            rev = "1.1.0";
+            sha256 = "sha256-MdcZUDRtNJdiyo2l9o5ma7nAX84xEJbGFhAVhK+Zm1w=";
+          };
+        }
+      ];
     };
 
     kitty = {
