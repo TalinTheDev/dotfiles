@@ -33,6 +33,7 @@
   environment.systemPackages = with pkgs; [
     kitty
     git
+    libsecret
     awesome
     plank
   ];
