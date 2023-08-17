@@ -33,6 +33,12 @@
       source = ./config/kitty;
     };
   };
+  home.file = {
+    ".config/neofetch" = {
+      recursive = true;
+      source = ./config/neofetch;
+    };
+  };
 
 
   xresources.properties = {
