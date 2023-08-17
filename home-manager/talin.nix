@@ -35,10 +35,12 @@
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
-  # home.file.".config/fish" = {
-  #   source = ./config/fish;
-  #   recursive = true;
-  # };
+  home.file = {
+    ".config/kitty" = {
+      recursive = true;
+      source = ./config/kitty;
+    };
+  };
 
 
   xresources.properties = {
@@ -56,6 +58,12 @@
 
     fish = {
       enable = true;
+    };
+
+    kitty = {
+      enable = true;
+      theme = "Afterglow";
+      shellIntegration.enableFishIntegration = true;
     };
 
     vscode = {
