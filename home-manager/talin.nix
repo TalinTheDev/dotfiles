@@ -9,22 +9,13 @@
       neofetch
       google-chrome
       fish
+      oh-my-fish
 
       zip
-      xz
       unzip
-      p7zip
       xfce.thunar
       xfce.thunar-archive-plugin
       xfce.thunar-volman
-
-      exa
-
-      file
-      which
-      tree
-
-      nix-output-monitor
 
       nerdfonts
     ];
@@ -58,6 +49,7 @@
 
     fish = {
       enable = true;
+      interactiveShellInit = ''set fish_greeting'';
     };
 
     kitty = {
