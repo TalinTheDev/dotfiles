@@ -62,5 +62,9 @@
   system = {
     stateVersion = "23.05";
   };
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 013707a (More fish stuff and trying to change folder stuff)

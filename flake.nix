@@ -18,8 +18,12 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+<<<<<<< HEAD
             home-manager.users.talin = import ./home.nix;
 
+=======
+            home-manager.users.talin = import ./home-manager/talin.nix;
+>>>>>>> 013707a (More fish stuff and trying to change folder stuff)
           }
         ];
       };
