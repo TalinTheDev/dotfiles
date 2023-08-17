@@ -35,6 +35,7 @@
     git
     libsecret
     awesome
+    (callPackage ./pkgs/sddm-sugar-dark.nix {})
     plank
   ];
 
