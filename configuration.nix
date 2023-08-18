@@ -47,7 +47,7 @@
 
       displayManager = {
         sddm.enable = true;
-        sddm.theme = "sddm-sugar-dark";
+        sddm.theme = "sugar-dark";
         defaultSession = "none+awesome";
       };
 
