@@ -36,6 +36,7 @@
     libsecret
     awesome
     (callPackage ./pkgs/sddm-sugar-dark.nix {}).sddm-sugar-dark
+    libsForQt5.qt5.qtgraphicaleffects
     plank
   ];
 
