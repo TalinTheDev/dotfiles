@@ -61,6 +61,12 @@
       source = ./config/.vscode;
     };
   };
+    home.file = {
+    ".config/betterlockscreen" = {
+      recursive = true;
+      source = ./config/betterlockscreen;
+    };
+  };
 
   xresources.properties = {
     "Xcursor.size" = 16;
