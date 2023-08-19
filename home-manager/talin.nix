@@ -98,7 +98,7 @@
       userName = "Talin Sharma";
       userEmail = "talinsharma.dev@gmail.com";
       extraConfig = {
-        credential.helper = "git-credential-manager";
+        credential.service = "git-credential-manager";
       };
     };
   };
