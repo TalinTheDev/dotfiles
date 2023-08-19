@@ -8,10 +8,10 @@
       cp -aR $src $out/share/sddm/themes/sugar-dark
     '';
     src = pkgs.fetchFromGitHub {
-      owner = "MarianArlt";
+      owner = "TalinTheDev";
       repo = "sddm-sugar-dark";
-      rev = "v1.2";
-      sha256 = "C3qB9hFUeuT5+Dos2zFj5SyQegnghpoFV9wHvE9VoD8=";
+      rev = "v1.2.1";
+      sha256 = "";
     };
   };
 }

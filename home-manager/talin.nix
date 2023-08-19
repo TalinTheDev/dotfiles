@@ -39,6 +39,12 @@
       source = ./config/neofetch;
     };
   };
+  home.file = {
+    ".config/Code/User" = {
+      recursive = true;
+      source = ./config/Code/User;
+    };
+  };
 
 
   xresources.properties = {
@@ -67,15 +73,6 @@
             sha256 = "sha256-nXeDnqqOuZyrqGTPEQtYlFvrFvy1bZVMF4CA37b0lsE=";
           };
         }
-        {
-          name = "sponge";
-          src = pkgs.fetchFromGitHub {
-            owner = "meaningful-ooo";
-            repo = "sponge";
-            rev = "1.1.0";
-            sha256 = "sha256-MdcZUDRtNJdiyo2l9o5ma7nAX84xEJbGFhAVhK+Zm1w=";
-          };
-        }
       ];
     };
 
@@ -91,6 +88,9 @@
         bbenoist.nix
         jdinhlife.gruvbox
       ];
+      userSettings = {
+        "password-store" = "gnome";
+      };
     };
 
     git = {
