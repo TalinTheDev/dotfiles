@@ -11,6 +11,7 @@
       fish
       fishPlugins.hydro
       fishPlugins.sponge
+      betterlockscreen
 
       zip
       unzip
