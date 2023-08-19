@@ -10,7 +10,7 @@
     src = pkgs.fetchFromGitHub {
       owner = "TalinTheDev";
       repo = "sddm-sugar-dark";
-      rev = "v1.2.1";
+      rev = "v1.2.2";
       sha256 = "Vc24xNTvwHitf00GcHf1YmBaWkz9izxX1x2X5ohPB0U=";
     };
   };

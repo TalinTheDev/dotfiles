@@ -41,6 +41,7 @@
   ];
 
   services = {
+    gnome3.gnome-keyring.enable = true;
     xserver = {
       enable = true;
       layout = "us";
@@ -66,4 +67,5 @@
   system = {
     stateVersion = "23.05";
   };
+  security.pam.services.sddm.enableGnomeKeyring = true;
 }
