@@ -45,6 +45,12 @@
       source = ./config/Code/User;
     };
   };
+  home.file = {
+    ".vscode/" = {
+      recursive = true;
+      source = ./config/.vscode;
+    };
+  };
 
   xresources.properties = {
     "Xcursor.size" = 16;
