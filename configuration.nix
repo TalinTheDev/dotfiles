@@ -34,6 +34,7 @@
     kitty
     gitFull
     gnome.gnome-keyring
+    gnome.seahorse
     awesome
     (callPackage ./pkgs/sddm-sugar-dark/sddm-sugar-dark.nix {}).sddm-sugar-dark
     libsForQt5.qt5.qtgraphicaleffects
