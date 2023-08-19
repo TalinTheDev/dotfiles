@@ -11,6 +11,15 @@
       fish
       fishPlugins.hydro
       fishPlugins.sponge
+
+      i3lock-color
+      imagemagick
+      xorg.xdpyinfo
+      xorg.xrandr
+      xorg.xrdb
+      xorg.xset
+      feh
+      dunst
       betterlockscreen
 
       zip
