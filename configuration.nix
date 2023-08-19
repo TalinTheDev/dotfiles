@@ -32,8 +32,8 @@
 
   environment.systemPackages = with pkgs; [
     kitty
-    git
-    libsecret
+    gitFull
+    git-credential-manager
     awesome
     (callPackage ./pkgs/sddm-sugar-dark.nix {}).sddm-sugar-dark
     libsForQt5.qt5.qtgraphicaleffects

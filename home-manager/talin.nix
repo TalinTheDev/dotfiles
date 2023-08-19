@@ -98,7 +98,7 @@
       userName = "Talin Sharma";
       userEmail = "talinsharma.dev@gmail.com";
       extraConfig = {
-        credential.helper = "${pkgs.git.override { withLibsecret = true; }}/bin/git-credential-libsecret";
+        credential.helper = "git-credential-manager";
       };
     };
   };
