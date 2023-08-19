@@ -11,7 +11,7 @@
       owner = "TalinTheDev";
       repo = "sddm-sugar-dark";
       rev = "v1.2.1";
-      sha256 = "";
+      sha256 = "Vc24xNTvwHitf00GcHf1YmBaWkz9izxX1x2X5ohPB0U=";
     };
   };
 }
