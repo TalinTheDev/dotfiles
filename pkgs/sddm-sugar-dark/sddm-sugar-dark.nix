@@ -1,7 +1,7 @@
 { stdenv, pkgs }:
 {
   sddm-sugar-dark = stdenv.mkDerivation {
-    name = "sddm-sugar-dark-1.2.3";
+    name = "sddm-sugar-dark-1.2.4";
     dontBuild = true;
     installPhase = ''
       mkdir -p $out/share/sddm/themes
@@ -10,8 +10,8 @@
     src = pkgs.fetchFromGitHub {
       owner = "TalinTheDev";
       repo = "sddm-sugar-dark";
-      rev = "v1.2.3";
-      sha256 = "ILqBNp+hy2kEvRZ8rQCUHkrV8fZhJjRI1ooEG1r5DtU=";
+      rev = "v1.2.4";
+      sha256 = "G8jHZYx+8pumC/NizWDIWTdxYlVFxM3JtwTzAi4sJQ0=";
     };
   };
 }
