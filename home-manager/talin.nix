@@ -39,6 +39,12 @@
     };
   };
   home.file = {
+    ".config/awesome" = {
+      recursive = true;
+      source = ./config/awesome;
+    };
+  };
+  home.file = {
     ".config/neofetch" = {
       recursive = true;
       source = ./config/neofetch;
