@@ -12,15 +12,10 @@
       fishPlugins.hydro
       fishPlugins.sponge
 
+      (callPackage ../pkgs/mantablockscreen/mantablockscreen.nix {}).mantablockscreen
       i3lock-color
       imagemagick
-      xorg.xdpyinfo
-      xorg.xrandr
-      xorg.xrdb
-      xorg.xset
-      feh
-      dunst
-      betterlockscreen
+      bash
 
       zip
       unzip
@@ -62,9 +57,9 @@
     };
   };
     home.file = {
-    ".config/betterlockscreen" = {
+    ".config/mantablockscreen" = {
       recursive = true;
-      source = ./config/betterlockscreen;
+      source = ./config/mantablockscreen;
     };
   };
 
