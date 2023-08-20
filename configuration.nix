@@ -33,6 +33,7 @@
   environment.systemPackages = with pkgs; [
     kitty
     gitFull
+    nodePackages.degit
     gnome.gnome-keyring
     libsecret
     awesome
