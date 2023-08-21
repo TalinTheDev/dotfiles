@@ -37,6 +37,10 @@
     gnome.gnome-keyring
     libsecret
     awesome
+    picom
+    numlockx
+    networkmanagerapplet
+    xfce.xfce4-power-manager
     (callPackage ./pkgs/sddm-sugar-dark/sddm-sugar-dark.nix {}).sddm-sugar-dark
 
     libsForQt5.qt5.qtgraphicaleffects
