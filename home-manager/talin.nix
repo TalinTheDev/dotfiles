@@ -17,6 +17,7 @@
       imagemagick
       bash
 
+
       zip
       unzip
       xfce.thunar

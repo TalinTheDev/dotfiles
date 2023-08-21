@@ -45,9 +45,11 @@
 
     libsForQt5.qt5.qtgraphicaleffects
     plank
+    bamf
   ];
 
   services = {
+    bamf.enable = true;
     gnome.gnome-keyring = {
       enable = true;
     };
