@@ -29,14 +29,13 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "video" "networkmanager" ];
   };
-
+  programs.hyprland.enable = true;
   environment.systemPackages = with pkgs; [
     kitty
     gitFull
     nodePackages.degit
     gnome.gnome-keyring
     libsecret
-    awesome
     picom
     numlockx
     networkmanagerapplet
@@ -62,15 +61,6 @@
       displayManager = {
         sddm.enable = true;
         sddm.theme = "sugar-dark";
-        defaultSession = "none+awesome";
-      };
-
-      windowManager.awesome = {
-        enable = true;
-        luaModules = with pkgs.luaPackages; [
-          luarocks
-          luadbi-mysql
-        ];
       };
     };
     printing.enable = true;
