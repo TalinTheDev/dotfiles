@@ -39,12 +39,12 @@
       source = ./config/kitty;
     };
   };
-  # home.file = {
-  #   ".config/awesome" = {
-  #     recursive = true;
-  #     source = ./config/awesome;
-  #   };
-  # };
+  home.file = {
+    ".config/hypr" = {
+      recursive = true;
+      source = ./config/hypr;
+    };
+  };
   home.file = {
     ".config/neofetch" = {
       recursive = true;
