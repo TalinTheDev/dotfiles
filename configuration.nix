@@ -29,22 +29,34 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "video" "networkmanager" ];
   };
-  programs.hyprland.enable = true;
+  programs = {
+    hyprland = {
+      enable = true;
+    };
+    firefox = {
+      enable = true;
+    };
+  };
   environment.systemPackages = with pkgs; [
     kitty
     gitFull
-    nodePackages.degit
     gnome.gnome-keyring
     libsecret
-    picom
     numlockx
-    networkmanagerapplet
-    xfce.xfce4-power-manager
+    rofi-wayland
+    eww-wayland
+    swaybg
+    swaylock-effects
     (callPackage ./pkgs/sddm-sugar-dark/sddm-sugar-dark.nix {}).sddm-sugar-dark
-
+    (callPackage ./pkgs/ags/ags.nix {}).ags
     libsForQt5.qt5.qtgraphicaleffects
-    plank
     bamf
+    
+    # For EWW
+    jq 
+    socat
+    swaynotificationcenter
+    libnotify
   ];
 
   services = {
@@ -70,4 +82,5 @@
     stateVersion = "23.05";
   };
   security.pam.services.sddm.enableGnomeKeyring = true;
+  security.pam.services.swaylock = {};
 }

@@ -10,12 +10,8 @@
       google-chrome
       fish
       fishPlugins.hydro
-      fishPlugins.sponge
-
-      (callPackage ../pkgs/mantablockscreen/mantablockscreen.nix {}).mantablockscreen
-      i3lock-color
-      imagemagick
       bash
+      firefox
 
 
       zip
@@ -39,12 +35,12 @@
       source = ./config/kitty;
     };
   };
-  home.file = {
-    ".config/hypr" = {
-      recursive = true;
-      source = ./config/hypr;
-    };
-  };
+  # home.file = {
+  #   ".config/hypr" = {
+  #     recursive = true;
+  #     source = ./config/hypr;
+  #   };
+  # };
   home.file = {
     ".config/neofetch" = {
       recursive = true;
@@ -113,6 +109,7 @@
       ];
       userSettings = {
         "password-store" = "gnome";
+        "window.menuBarVisibility" = "toggle";
       };
     };
 
