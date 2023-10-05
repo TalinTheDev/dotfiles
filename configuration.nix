@@ -48,7 +48,7 @@
     swaybg
     swaylock-effects
     (callPackage ./pkgs/sddm-sugar-dark/sddm-sugar-dark.nix {}).sddm-sugar-dark
-    (callPackage ./pkgs/ags/ags.nix {}).ags
+    #(callPackage ./pkgs/ags/ags.nix {}).ags
     libsForQt5.qt5.qtgraphicaleffects
     bamf
     

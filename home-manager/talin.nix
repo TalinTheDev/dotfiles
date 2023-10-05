@@ -1,26 +1,27 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   home = {
     username = "talin";
     homeDirectory = "/home/talin";
+    
+    packages = [
+      pkgs.neofetch
+      pkgs.google-chrome
+      pkgs.fish
+      pkgs.fishPlugins.hydro
+      pkgs.bash
+      pkgs.firefox
 
-    packages = with pkgs; [
-      neofetch
-      google-chrome
-      fish
-      fishPlugins.hydro
-      bash
-      firefox
 
+      pkgs.zip
+      pkgs.unzip
+      pkgs.xfce.thunar
+      pkgs.xfce.thunar-archive-plugin
+      pkgs.xfce.thunar-volman
 
-      zip
-      unzip
-      xfce.thunar
-      xfce.thunar-archive-plugin
-      xfce.thunar-volman
-
-      nerdfonts
+      pkgs.nerdfonts
+      inputs.ags.packages.${pkgs.system}.default
     ];
 
     stateVersion = "23.05";

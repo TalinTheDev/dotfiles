@@ -6,6 +6,8 @@
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    ags.url = "github:Aylur/ags";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
@@ -19,6 +21,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.talin = import ./home-manager/talin.nix;
+            home-manager.extraSpecialArgs = { inherit inputs; };
           }
         ];
       };
