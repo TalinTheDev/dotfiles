@@ -12,7 +12,11 @@
       pkgs.fishPlugins.hydro
       pkgs.bash
       pkgs.firefox
-
+      pkgs.swww
+      pkgs.brightnessctl
+      pkgs.sassc
+      pkgs.discord
+      pkgs.betterdiscordctl
 
       pkgs.zip
       pkgs.unzip
@@ -34,6 +38,12 @@
     ".config/kitty" = {
       recursive = true;
       source = ./config/kitty;
+    };
+  };
+  home.file = {
+    ".config/BetterDiscord" = {
+      recursive = true;
+      source = ./config/BetterDiscord;
     };
   };
   # home.file = {
