@@ -40,12 +40,6 @@
       source = ./config/kitty;
     };
   };
-  home.file = {
-    ".config/BetterDiscord" = {
-      recursive = true;
-      source = ./config/BetterDiscord;
-    };
-  };
   # home.file = {
   #   ".config/hypr" = {
   #     recursive = true;
