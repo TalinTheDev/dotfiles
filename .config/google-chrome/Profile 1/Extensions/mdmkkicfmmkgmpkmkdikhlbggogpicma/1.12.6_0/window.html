@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+  <link rel="stylesheet" type="text/css" href="/css/window.css">
+</head>
+  <body data-name="testnav_middle" data-tools="newlib pnacl linux" data-configs="Release" data-path="">
+    <webview src="" id="tn8-webview" partition="persist:testnav8"></webview>
+    <webview src="" id="tn8-startpage" partition="persist:testnav8"></webview>
+    <div class="splash" id="splash">
+      <span id="splashStatus" class="splashStatus"></span>
+    </div>
+    <div id = "popup-container" class="modal">
+      <div id="popup-content" class = "modal-content">
+        <span id='newWindowclose' class="close">&times;</span>
+      </div>
+    </div>
+    <div id="listener"></div>
+    <textarea class="clip" id="clip_clear"> </textarea>
+    <script defer src="/js/environment.js"></script>
+    <script defer src="/js/tn8nacl.js"></script>
+  </body>
+</html>

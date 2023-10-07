@@ -1,0 +1,5 @@
+2023/10/05-12:20:47.999 3 Reusing MANIFEST /home/talin/.config/google-chrome/Profile 1/Local Storage/leveldb/MANIFEST-000001
+2023/10/05-12:20:48.000 3 Recovering log #3
+2023/10/05-12:20:48.001 3 Level-0 table #3: started
+2023/10/05-12:20:48.005 3 Level-0 table #3: 44600 bytes OK
+2023/10/05-12:20:48.011 3 Delete type=0 #3

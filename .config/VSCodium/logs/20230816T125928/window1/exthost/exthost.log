@@ -1,0 +1,11 @@
+2023-08-16 12:59:30.799 [info] Extension host with pid 1992 started
+2023-08-16 12:59:30.799 [info] Skipping acquiring lock for /home/talin/.config/VSCodium/User/workspaceStorage/701578ef404c2c1cd4dfc5e41966debc.
+2023-08-16 12:59:30.909 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-08-16 12:59:30.924 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-08-16 12:59:31.039 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-08-16 12:59:31.115 [info] Eager extensions activated
+2023-08-16 12:59:31.142 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-08-16 12:59:31.147 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-08-16 13:00:03.319 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-08-16 13:16:20.392 [info] Extension host terminating: renderer closed the MessagePort
+2023-08-16 13:16:20.396 [info] Extension host with pid 1992 exiting with code 0

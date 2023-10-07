@@ -1,0 +1,44 @@
+:root {
+	--color-bg-active: #76C5B7;
+	--color-bg-delete: rgba(216, 49, 49, 0.8);
+	--color-bg-list: url(../img/list.jpg);
+	--color-text-focus: #424242;
+	--color-bg-li: rgba(173, 173, 173, 0.17);
+	--color-bg-a_sync: rgba(189, 76, 76, 0.1);
+	--color-bg: #81d2c3;
+	/*--color-bg-hover: rgba(129, 210, 195, 0.5);*/
+	--color-bg-hover: #afd7d0;
+	--color-bg-delete: rgba(218, 73, 73, 0.8);
+	--color-text-grey: #b1b1b1;
+	--color-placeholder: #757575;
+	--color-body: #333;
+	--color-text-not-active: #737373;
+	--color-bg-body: #f1f1f1;
+	--color-text-body: #333;
+	--color-text-focus: #424242;
+
+}
+.p_menu {
+	background-color: rgba(206, 206, 206, 0.58);
+}
+.menu_notepad {
+	color: #b1b1b1;
+}
+.tab .liActive,
+.tab .liActive:hover,
+.tab .liActive:active,
+.tab .liActive:focus {
+	cursor: move !important;
+	background-color: #619a90 !important;
+}
+.tab .liActive > div,
+.tab .liActive:hover > div,
+.tab .liActive:active > div,
+.tab .liActive:focus > div {
+	color: #FFF !important;
+}
+
+.a_sync_red {
+	background-color: var(--color-bg-a_sync, rgba(189, 76, 76, 0.1));
+	border-color: #a91515;
+}

@@ -1,0 +1,49 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "icons/icon_128.png",
+         "19": "icons/icon_19.png",
+         "38": "icons/icon_38.png",
+         "48": "icons/icon_48.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Color Picker"
+   },
+   "commands": {
+      "run-picker": {
+         "description": "Activate pick color from web page.",
+         "suggested_key": {
+            "default": "Alt+R",
+            "mac": "Alt+R"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "content.scss" ],
+      "js": [ "static/js/content.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "differential_fingerprint": "1.501d04cd93a6363b1700df55b078ef1d686d3908b84716a928704d747267f715",
+   "icons": {
+      "128": "icons/icon_128.png",
+      "19": "icons/icon_19.png",
+      "38": "icons/icon_38.png",
+      "48": "icons/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjFiAQYu4a3KXUKPTDeTPOK2mz6wGA+LxLCqOO9JeGl6+ftQGHRu3NGx5KDKvWrncCoTrNM7bdv5XRW+ekczpHKPlamX9ne6DLjAzNbILcxg+5RXIAPrQuj4vzoUafwmhWoXOo7LSFWjQCivd+cbD62KM1V2YZO6YvFNOToZoNLNqvOkT6hXc73sN3CNd67GGcVUMk8rGuwp5QXuQnw/7EkM5AVYMDMBBUldLc6MD62D0btRJVDMrCJ9YEiHyA06EzSftpGi44p3KY9vd8XKix4MFVKaaAzHw7rM/hNGqizGPKrC9JOgfgRhqgaVfFnfoozdnwuDmOkObANPJqrDSZwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extName__",
+   "options_ui": {
+      "page": "options.html"
+   },
+   "permissions": [ "\u003Call_urls>", "activeTab", "notifications", "storage", "webRequest", "webRequestBlocking", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.6"
+}

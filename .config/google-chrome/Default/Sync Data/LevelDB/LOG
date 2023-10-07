@@ -1,0 +1,6 @@
+2023/10/07-14:46:22.452 dce Reusing MANIFEST /home/talin/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2023/10/07-14:46:22.452 dce Recovering log #162
+2023/10/07-14:46:22.453 dce Reusing old log /home/talin/.config/google-chrome/Default/Sync Data/LevelDB/000162.log 
+2023/10/07-15:45:30.613 db5 Level-0 table #166: started
+2023/10/07-15:45:30.621 db5 Level-0 table #166: 97465 bytes OK
+2023/10/07-15:45:30.623 db5 Delete type=0 #162

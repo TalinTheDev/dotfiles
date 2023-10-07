@@ -1,0 +1,6 @@
+2023/08/21-12:00:23.910 78d Creating DB /home/talin/.config/google-chrome/Default/IndexedDB/https_goonlinetools.com_0.indexeddb.leveldb since it was missing.
+2023/08/21-12:00:23.914 78d Reusing MANIFEST /home/talin/.config/google-chrome/Default/IndexedDB/https_goonlinetools.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/21-12:00:23.995 792 Level-0 table #5: started
+2023/08/21-12:00:23.997 792 Level-0 table #5: 1187 bytes OK
+2023/08/21-12:00:23.998 792 Delete type=0 #3
+2023/08/21-12:00:23.998 78d Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

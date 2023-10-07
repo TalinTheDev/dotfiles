@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="styles/options.css" rel="stylesheet">
+	<script src="scripts/jquery.js"></script>
+	<title>Options (Notepad - online)</title>
+</head>
+<body style="zoom: 1; margin: 0px;font-size: 1em;">
+<div class="opt_body">
+	<div>
+		<div class="opt_header">
+			<div class="menu_notepad">NOTEPAD<span style="padding-left:1px; font-size:0.6em; letter-spacing:1px;">online</span></div>
+		</div>
+		<div class="opt_all_div">
+			<div class="opt_all_div_left">
+				<div class="notSync">
+					<button>Error sync? Click!</button>
+				</div>
+				<div class="opt_login_email">
+					<div>Login: <span class="opt_login"></span></div>
+					<div>Email: <span class="opt_email"></span></div>
+				</div>
+				<div class="opt_div_lang">
+					<div class="opt_lang">Language</div>
+					<select name="select_object" id="select_object">
+						<option value="zh_CN">Chinese</option>
+						<option value="de">Deutsch</option>
+						<option value="en">English</option>
+						<option value="fr">French</option>
+						<option value="hi">Indian</option>
+						<option value="it">Italian</option>
+						<!-- <option value="ko">Korean</option> -->
+						<option value="pt_BR">Portuguese</option>
+						<option value="ru">Russian</option>
+						<option value="es">Spanish</option>
+						<!-- <option value="tr">Turkish</option> -->
+					</select>
+				</div>
+				<div class="opt_div_color">
+					<input type="button" class="settings_c_name" value="Color"><div class="opt_c_triangle">&#9660;</div><input type="button" name="settings_c_button" class="settings_c_text" value="Default"><div class="settings_c_list">
+						<div class="opt_c_list">Default</div>
+						<div class="opt_c_list">Dark</div>
+						<div class="opt_c_list">Light</div>
+						<div class="opt_c_list">Red</div>
+						<div class="opt_c_list">Green</div>
+						<div class="opt_c_list">Blue</div>
+						<div class="opt_c_list">Light-red</div>
+						<div class="opt_c_list">Light-green</div>
+						<div class="opt_c_list">Light-blue</div>
+					</div>
+				</div>
+				<div class="settings_radio">
+					<div class="settings_radio_name">Changing window size</div>
+					<div class="settings_radio_div">
+						<div class="settings_radio_label settings_r_s">
+							<input type="radio" name="opt_radio" id="opt_s" value="s"><label class='opt_very_small' for='opt_s'>Very small</label>
+						</div>
+						<div class="settings_radio_label settings_r_0">
+							<input type="radio" name="opt_radio" id="opt_0" value="0"><label class='opt_small' for='opt_0'>Small</label>
+						</div>
+						<div class="settings_radio_label settings_r_1">
+							<input type="radio" name="opt_radio" id="opt_1" value="1"><label class='opt_normal' for='opt_1'>Normal</label>
+						</div>
+						<div class="settings_radio_label settings_r_2">
+							<input type="radio" name="opt_radio" id="opt_2" value="2"><label class='opt_big' for='opt_2'>Big</label>
+						</div>
+					</div>
+				</div>
+				<div class="settings_editor">
+					<div class="settings_e_div">
+						<input type="checkbox" name="opt_e_checkbox" id="opt_e_checkbox" class="opt_e_checkbox"><label class='opt_editor_use' for="opt_e_checkbox">Use the advanced visual editor</label>
+					</div>
+				</div>
+				<div class="settings_checkbox">
+					<div class="settings_checkbox_div">
+						<input type="checkbox" name="opt_checkbox_tab" id="opt_checkbox_tab" class="opt_checkbox_tab"><label class='opt_checkbox_hide' for="opt_checkbox_tab">Hide the panel on the right</label>
+					</div>
+				</div>
+				<div class="settings_size_text">
+					<input type="button" class="settings_s_name" value="Font size:"><div class="opt_s_triangle">&#9660;</div><input type="button" name="settings_s_button" class="settings_s_text" value="13px"><div class="settings_s_list">
+						<div class="opt_s_list" id="opt_s_11">11</div>
+						<div class="opt_s_list" id="opt_s_12">12</div>
+						<div class="opt_s_list" id="opt_s_13">13</div>
+						<div class="opt_s_list" id="opt_s_14">14</div>
+						<div class="opt_s_list" id="opt_s_15">15</div>
+						<div class="opt_s_list" id="opt_s_16">16</div>
+						<div class="opt_s_list" id="opt_s_17">17</div>
+						<div class="opt_s_list" id="opt_s_18">18</div>
+						<div class="opt_s_list" id="opt_s_19">19</div>
+						<div class="opt_s_list" id="opt_s_20">20</div>
+						<div class="opt_s_list" id="opt_s_21">21</div>
+					</div>
+				</div>
+			</div>
+			<div class="opt_all_div_right">
+				<div class="opt_img_2"></div>
+				<div class="opt_prev opt_prev_hide">
+					<div class="opt_p_top">
+						<div>NOTEPAD online</div> <div></div> <div></div>
+					</div>
+					<div class="opt_p_left">
+						<span></span>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="opt_p_right">
+						<div>
+							<div></div>
+							<div></div>
+						</div>
+						<div class="opt_code">
+							<span>code</span><span style='width: 14px;padding: 0px;'><div></div><div></div><div></div></span><span>Font</span><span>X</span><span>S</span><span>U</span><span>I</span><span>B</span>
+						</div>
+						<div><div class="opt_p_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra ornare sem, ac porta tortor sodales eu. Suspendisse a rhoncus urna. Sed sit amet sapien in diam porttitor consectetur. Nam in metus nec eros tincidunt consectetur quis a tellus. Nulla facilisi. Morbi fermentum interdum sapien, sed dictum nisl. Etiam pellentesque justo felis, vel feugiat augue ultricies eget. Sed elit diam, facilisis nec interdum a, auctor vitae ante. Praesent eu massa non risus dictum gravida ut nec nisi. Donec dignissim mauris ac scelerisque placerat. Suspendisse sit amet neque mollis, vulputate leo lobortis, efficitur massa. Suspendisse potenti. Donec a fermentum enim. Fusce varius dui sed leo sodales pulvinar. Nam auctor diam vitae nisi accumsan iaculis. Mauris sed neque ligula. Sed faucibus, elit quis varius vulputate, risus sapien congue diam, sed ullamcorper odio eros eget dui. Maecenas blandit elementum blandit. Cras bibendum pellentesque maximus. Maecenas posuere consequat hendrerit. Aliquam erat volutpat. Sed sit amet eros eget mi tempus feugiat eget quis dui. Nunc convallis, nisi sit amet ultricies efficitur, augue magna accumsan tellus, non laoreet lacus urna id risus. Mauris tellus felis, vehicula et interdum non, auctor in nulla. Integer pulvinar at ligula sit amet condimentum. Nunc tempor sem at eros gravida, eget ornare magna posuere. Proin malesuada, arcu et ornare mattis, tellus felis laoreet ex, at sodales augue purus id purus. Nulla eget metus vel nunc aliquet venenatis id eu velit. Proin venenatis maximus lectus vitae fermentum. Mauris condimentum dui a metus tempor, sed vehicula nulla ultrices. Integer auctor nisl vel libero viverra rhoncus quis et purus. Ut non lorem purus. Aliquam ac magna ipsum. Aenean tempor nulla enim, nec tincidunt dolor malesuada eu. Ut tristique nunc et orci consequat, eu ullamcorper nulla imperdiet. Sed scelerisque sodales varius. Sed elementum enim ex, ac vestibulum massa ultrices non. Vivamus turpis nunc, venenatis sed augue non, vestibulum auctor neque. Maecenas ac nulla sed odio accumsan aliquet. Suspendisse malesuada eros id est vehicula, quis pretium ipsum ultrices. In hac habitasse platea dictumst. Curabitur ut lorem convallis, consequat lectus et, tristique velit. Maecenas vulputate, sem non condimentum iaculis, ante orci sagittis purus, in faucibus nulla orci vitae est. Mauris accumsan ex sit amet odio malesuada, a posuere purus commodo. Praesent luctus feugiat ante in vulputate. Curabitur ultricies pharetra volutpat. In finibus ex sed arcu viverra tempor. Etiam at eros quam. Aliquam non nunc sed enim commodo egestas. Cras condimentum vitae tellus et finibus.</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="opt_footer">
+			<div class="opt_button">Save changes</div>
+			<div class="opt_load">
+				<img src='../img/save_ok_load.png' id='img_save_ok_load'>
+				<img src='../img/save_ok_green.png' id='img_save_ok'>
+			</div>
+		</div>
+	</div>
+</div>
+<script charset="UTF-8" src="scripts/locales.js"></script>
+<script charset="UTF-8" src="scripts/options.js"></script>
+<script src="scripts/analytics.js"></script>
+</body>
+</html>

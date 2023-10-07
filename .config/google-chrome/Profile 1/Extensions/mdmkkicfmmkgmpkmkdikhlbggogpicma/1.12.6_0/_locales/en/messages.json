@@ -1,0 +1,50 @@
+{
+   "appDescription": {
+      "description": "The description of the application, displayed in the web store and in chrome://extensions.",
+      "message": "Online Testing App from Pearson"
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "TestNav"
+   },
+   "appstartpageservertype": {
+      "description": "app start page servertype",
+      "message": "home"
+   },
+   "errorcodelabel": {
+      "description": "Error",
+      "message": "Error"
+   },
+   "errorpagehomebutton": {
+      "description": "Home button label",
+      "message": "Choose a Different Customer"
+   },
+   "errorpageretrybutton": {
+      "description": "Retry button label",
+      "message": "Retry"
+   },
+   "errorpagetitle": {
+      "description": "error page title",
+      "message": "Server Error"
+   },
+   "homeconnectionerror": {
+      "description": "Connection error",
+      "message": "The home server can not be reached. Please verify your Internet connection and then press Retry, or exit the app and try again."
+   },
+   "homeconnectionerrormsgno": {
+      "description": "Connection error message number",
+      "message": "Error 8033"
+   },
+   "testnavconnectionerror": {
+      "description": "Connection error",
+      "message": "The testing server can not be reached. Please verify your Internet connection and then press Retry, or choose a different customer, or exit the app and try again."
+   },
+   "testnavconnectionerrormsgno": {
+      "description": "Connection error message number",
+      "message": "Error 8027"
+   },
+   "testnavservertype": {
+      "description": "testnav server type",
+      "message": "testing"
+   }
+}

@@ -1,0 +1,24 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "description": "Neat hovercards for GitHub.",
+   "externally_connectable": {
+      "matches": [ "*://justineo.github.io/*" ]
+   },
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAksHlZluTlAPo3S/Xqf263CbCyq8NzQwPLrhAqVeoRKM4oXiUkLlT0yly4ekXo2gtywJoBLARGUd6uCHzHRTNZXD+hj58NESj4MY384DJBjxU1ZYDzWoGaGUe06/iwSxHnckwaP7iKqcszz25tZ1ScQhLDRwzbDmu+ZLoGpBNQs6U9Q4ujrjAolzSukVFU3L+0vHBwPW0on412yAjVknJ/sBUe5HR/cdNZ1eYmUiT/cVCbZfIkR3aaqHDqPDCLJ9lGJ41rGMeSGCVYJ5w7zu0ShTTEGl1GbnAxwalQXc8FIlwYeR2UwztFwvJ3Lb7gMAe8EF5kS39fy4oQJ9kE7ClxQIDAQAB",
+   "manifest_version": 2,
+   "name": "GitHub Hovercard",
+   "optional_permissions": [ "\u003Call_urls>" ],
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "webNavigation", "storage", "https://github.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.9.4"
+}

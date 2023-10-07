@@ -1,0 +1,121 @@
+:root {
+	--color-bg: #ccc;
+	--color-bg-hover: #f1f1f1;
+	--color-bg-active: #ccc;
+	--color-bg-delete: rgba(216, 49, 49, 0.8);
+	--color-text-grey: #9a9a9a;
+	--color-placeholder: #585858;
+	--color-body: #000;
+	--color-text-not-active: #000;
+	--color-bg-body: #fff;
+	--color-text-body: #000;
+	--color-bg-list: none;
+	--color-text-focus: #424242;
+	--color-bg-li: #eee;
+	--color-bg-a_sync: rgba(189, 76, 76, 0.4);
+	--color-text-tab_full: #000;
+}
+.p_menu {
+	background-color: #fff;
+}
+.p_menu_menu:hover {
+	background-color: #ddd;
+}
+.menu_notepad {
+	color: #9a9a9a;
+}
+.p_menu_menu_list_string {
+	background-color: #fff;
+}
+.export_choose {
+	background-color: #fff;
+}
+.export_btn {
+	color: #000;
+}
+/*.p_list_string_span, .p_list_string_span_d {
+	padding-right: 4px;
+	padding-left: 4px;
+	background-color: white;
+	border-radius: 50%;
+}*/
+.load {
+	/*background-color: #424242;*/
+}
+.p_list_string_div:hover {
+	background-color: #ddd !important;
+	color: #000 !important;
+}
+#p_list_string_donate {
+	color: #000;
+}
+.maximize {
+	background-color: #fff;
+}
+.seria {
+	background-color: #fff !important;
+}
+.tab .liActive,
+.tab .liActive:hover,
+.tab .liActive:active,
+.tab .liActive:focus {
+	cursor: move !important;
+	background-color: #505050 !important;
+}
+.tab .liActive > div,
+.tab .liActive:hover > div,
+.tab .liActive:active > div,
+.tab .liActive:focus > div {
+	color: #FFF !important;
+}
+.upload_file_div_in,
+.delete_div_in,
+.exit_div_in,
+.session_div_in {
+	background-color: #fff;
+}
+.upload_div_ok,
+.upload_div_no,
+.delete_div_ok,
+.delete_div_no,
+.exit_div_ok,
+.exit_div_no,
+.dsession_div_ok,
+.session_div_no,
+.session_kill_select,
+.session_kill_all {
+	background-color: #fff;
+}
+.upload_div_ok:hover,
+.upload_div_no:hover,
+.delete_div_ok:hover,
+.delete_div_no:hover,
+.exit_div_ok:hover,
+.exit_div_no:hover,
+.session_div_ok:hover,
+.session_div_no:hover,
+.session_kill_select:hover,
+.session_kill_all:hover {
+	background-color: #c1c1c1;
+}
+.upload_file_div,
+.delete_div,
+.exit_div,
+.session_div {
+	color: #000;
+}
+.message, .about_prog {
+	background-color: #FFF;
+	color: #000;
+}
+.session_div_table {
+	background-color: #fff;
+}
+.session_div_title,
+.session_div_line:nth-child(odd) {
+	background-color: #f1f1f1;
+}
+.a_sync_red {
+	background-color: var(--color-bg-a_sync, rgba(189, 76, 76, 0.4));
+	border-color: #a91515;
+}

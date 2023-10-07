@@ -1,0 +1,5 @@
+{
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "window.menuBarVisibility": "toggle"
+}

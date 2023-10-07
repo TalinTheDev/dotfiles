@@ -1,0 +1,4 @@
+2023/10/07-14:44:44.368 b01 Reusing MANIFEST /home/talin/.config/google-chrome/Default/Site Characteristics Database/MANIFEST-000001
+2023/10/07-14:44:44.368 b01 Recovering log #3
+2023/10/07-14:44:44.376 b01 (ignoring error) /home/talin/.config/google-chrome/Default/Site Characteristics Database/000003.log: dropping 60 bytes; Corruption: missing start of fragmented record(2)
+2023/10/07-14:44:44.376 b01 Reusing old log /home/talin/.config/google-chrome/Default/Site Characteristics Database/000003.log 

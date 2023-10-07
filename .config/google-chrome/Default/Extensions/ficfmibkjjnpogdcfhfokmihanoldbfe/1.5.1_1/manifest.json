@@ -1,0 +1,33 @@
+{
+   "author": "homerchen19",
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.bundle.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/icon-64.png"
+   },
+   "content_scripts": [ {
+      "css": [ "content.css" ],
+      "js": [ "content.bundle.js" ],
+      "matches": [ "https://github.com/*", "https://gitlab.com/*", "https://*.gogs.io/*", "https://*.gitea.io/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "description": "A simple browser tool changes file's icon on GitHub, GitLab, gitea and gogs.",
+   "differential_fingerprint": "1.475ad53cefe35092a631522557b7bc82eff18f73bb6c58fef24ddba067ec5ede",
+   "homepage_url": "https://github.com/homerchen19/github-file-icons",
+   "icons": {
+      "128": "img/icon-128.png",
+      "16": "img/icon-16.png",
+      "64": "img/icon-64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAypicgJ0aixJ3kMngnAsilZO7mga8phaG8kWJfiE0hOapAYFcF0/a88rO0Atf7OMWcPxBxcdsylBG/6JCH8RL7GO5BYj9ur/bp/GmhHc0Fp/gmYACw+fdGVavgTRmexuyBI3+0+vaG+dXkjmqodompxPEW15/K/i3zDnrNyNvMyiyU06l1oopPACSbyUIndwRj5VaWMhh145+hb0MUkHDV7cZitUuv5ROYOUlpr906/83uR/z1NBqq8yMigSEKJpmKPIQyWNccvuXQjCfyJe3i+3M8mYKgM4yjAdeMTbc6Y8K9IwbUSc5QWhDR1iS/90ZHKYQ+jg7K89DD7sdOVpOkQIDAQAB",
+   "manifest_version": 2,
+   "name": "File Icons for GitHub and GitLab",
+   "optional_permissions": [ "http://*/*", "https://*/*" ],
+   "permissions": [ "contextMenus", "storage", "activeTab", "https://github.com/*", "https://gitlab.com/*", "https://*.gogs.io/*", "https://*.gitea.io/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.1",
+   "web_accessible_resources": [ "*.woff2" ]
+}

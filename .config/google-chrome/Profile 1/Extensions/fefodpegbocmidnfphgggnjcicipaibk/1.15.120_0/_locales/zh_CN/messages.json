@@ -1,0 +1,327 @@
+{
+   "about": {
+      "description": "О программе v",
+      "message": "关于 "
+   },
+   "add_list": {
+      "description": "Добавить лист",
+      "message": "添加片"
+   },
+   "bg_address": {
+      "description": "URL страницы",
+      "message": "URL"
+   },
+   "bg_copy": {
+      "description": "Скопировать",
+      "message": "复制"
+   },
+   "bg_link": {
+      "description": "ссылка",
+      "message": "链接"
+   },
+   "bg_text": {
+      "description": "текст",
+      "message": "文本"
+   },
+   "chioce_with_authorization": {
+      "description": "С регистрацией",
+      "message": "有了授权"
+   },
+   "chioce_with_text": {
+      "description": "В этой версии блокнота требуется регистрация личного аккаунта с помощью электронной почты. Это позволит Вам заходить в свой аккаунт с нескольких устройств и синхронизировать всю информацию в едином приложении. Ваши данные будут защищены паролем и храниться на серверном облаке. Для работы в этой версии необходимо обязательное подключение к интернету.",
+      "message": "在这个版本的笔记本电脑登记所需的个人帐户通过电子邮件。 这将允许你进入你的帐户从多个设备和同步的所有信息进入一个单一的应用程序。 你的数据将受密码保护和保存在服务器上的云。 工作在这个版本需要的强制性互联网连接。"
+   },
+   "chioce_without_authorization": {
+      "description": "Без регистрации",
+      "message": "没有注册"
+   },
+   "chioce_without_text": {
+      "description": "Эта версия блокнота не требует регистрации личного аккаунта, так как предназначена для использования только на одном устройстве. Вся информация хранится прямо в Вашем браузере и не удаляется при его закрытии. Работа в приложении может осуществляться без подключения к интернету.",
+      "message": "这个版本的记事本不需要注册的一个账户，作为适用于只有一个装置。 所有信息都存储的直接浏览器和不移的时关闭。 工作中的应用程序，可以访问没有互联网连接。"
+   },
+   "choce_prev": {
+      "description": "Выбрать другую версию",
+      "message": "选择不同的版本"
+   },
+   "choice_name": {
+      "description": "Выберите удобную версию",
+      "message": "选择一种方便的版本"
+   },
+   "delete_mes": {
+      "description": "Удалить лист?",
+      "message": "你想删除这一页？"
+   },
+   "donate": {
+      "description": "Вклад в развитие",
+      "message": "祭献"
+   },
+   "download": {
+      "description": "Скачать",
+      "message": "下载"
+   },
+   "e_email_use": {
+      "description": "Почта уже занята.",
+      "message": "邮件是已经采取。"
+   },
+   "e_error": {
+      "description": "Непредвиденная ошибка.",
+      "message": "和意想不到的错误。"
+   },
+   "e_file_big": {
+      "description": "Файл больше 100кБ.\u003Cbr/>Пожалуйста, выберите другой.",
+      "message": "该文件是较大的比100KB的。 请选择另一个。"
+   },
+   "e_file_choose": {
+      "description": "Невозможно импортировать файл.\u003Cbr/>Пожалуйста, выберите другой.",
+      "message": "不可能进口的文件。 请选择另一个。"
+   },
+   "e_file_little_big": {
+      "description": "Файл большой.\u003Cbr/>Могут возникнуть проблемы с синхронизацией.",
+      "message": "该文件是很大的。 问题可能会出现同步。"
+   },
+   "e_file_no": {
+      "description": "Невозможно импортировать файл.\u003Cbr/>Проверьте подключение к интернету.",
+      "message": "不可能进口的文件。\u003Cbr/>检查的连接到互联网。"
+   },
+   "e_file_not": {
+      "description": "ОС не поддерживает загрузку файлов.",
+      "message": "操作系统不会支持文件上传。"
+   },
+   "e_incorrect": {
+      "description": "Некорректный $msg$",
+      "message": "错误的 $msg$",
+      "placeholders": {
+         "msg": {
+            "content": "$1"
+         }
+      }
+   },
+   "e_invalid": {
+      "description": "Сессия неверная. Пожалуйста, войдите.",
+      "message": "流是不正确的。请登录。"
+   },
+   "e_invalid_session": {
+      "description": "Сессия неверная. Пожалуйста, войдите.",
+      "message": "流是不正确的。请登录。"
+   },
+   "e_load_content": {
+      "description": "Ошибка загрузки данных.",
+      "message": "数据载入错误。"
+   },
+   "e_no_data": {
+      "description": "Нет данных.",
+      "message": "没有数据。"
+   },
+   "e_not_active": {
+      "description": "Пожалуйста, выберите лист.",
+      "message": "请选择片。"
+   },
+   "e_not_email_or_pass": {
+      "description": "Некорректный пароль/почта.",
+      "message": "密码错误/电子邮件。"
+   },
+   "e_please_valid": {
+      "description": "Пожалуйста, введите верно: ",
+      "message": "请输入正确的: "
+   },
+   "e_server_not": {
+      "description": "Сервер не отвечает.\u003Cbr/>Мы уже знаем о проблеме и работаем над ее решением.\u003Cbr/>Приносим извинения.",
+      "message": "服务器没有反应。我们修复。我很抱歉。"
+   },
+   "email": {
+      "description": "Почта",
+      "message": "郵件"
+   },
+   "enter": {
+      "description": "Войти",
+      "message": "登入"
+   },
+   "exit_mes": {
+      "description": "Все записи будут удалены. Вы действительно хотите продолжить?",
+      "message": "所有数据将被删除。 你想继续吗？"
+   },
+   "export": {
+      "description": "Экспорт",
+      "message": "出口"
+   },
+   "ext_description": {
+      "description": "Блокнот-онлайн. Расширение для Хрома с функцией синхронизации. Откройте и редактируйте сохраненные данные на любом компьютере.",
+      "message": "记事本-在线上。 扩展用于镀铬与同步的特征。 打开编辑和保存的数据在任何一台计算机。"
+   },
+   "ext_name": {
+      "description": "Блокнот - онлайн",
+      "message": "记事本-在线上"
+   },
+   "ext_short_name": {
+      "description": "Блокнот - онлайн",
+      "message": "记事本-在线上"
+   },
+   "forget_pass": {
+      "description": "Забыл пароль?",
+      "message": "忘记密码？"
+   },
+   "hello": {
+      "description": "Привет",
+      "message": "嗨"
+   },
+   "history": {
+      "description": "Восстановить лист",
+      "message": "恢复表"
+   },
+   "import": {
+      "description": "Импорт",
+      "message": "进口"
+   },
+   "load": {
+      "description": "Загрузка, подождите...",
+      "message": "Loading, please wait..."
+   },
+   "login": {
+      "description": "Вход",
+      "message": "登录"
+   },
+   "logout": {
+      "description": "Выйти",
+      "message": "注销"
+   },
+   "lord": {
+      "description": "Господин",
+      "message": "Unregistered"
+   },
+   "menu": {
+      "description": "Меню",
+      "message": "菜单"
+   },
+   "name_list": {
+      "description": "Новый лист",
+      "message": "新叶"
+   },
+   "opt_big": {
+      "description": "Большой",
+      "message": "大"
+   },
+   "opt_button": {
+      "description": "Сохранить изменения",
+      "message": "保存变化"
+   },
+   "opt_checkbox_hide": {
+      "description": "Скрывать панель слева",
+      "message": "隐藏在面板上离开"
+   },
+   "opt_editor_use": {
+      "description": "Включить продвинутый визуальный редактор",
+      "message": "新的文本编辑器"
+   },
+   "opt_lang": {
+      "description": "Язык",
+      "message": "语言"
+   },
+   "opt_normal": {
+      "description": "Нормальный",
+      "message": "正常的"
+   },
+   "opt_small": {
+      "description": "Маленький",
+      "message": "小"
+   },
+   "opt_very_small": {
+      "description": "Очень маленький",
+      "message": "非常小"
+   },
+   "pass": {
+      "description": "Пароль",
+      "message": "密码"
+   },
+   "recovery_pass": {
+      "description": "Сменить пароль",
+      "message": "密碼重設"
+   },
+   "registration": {
+      "description": "Регистрация",
+      "message": "注册"
+   },
+   "save": {
+      "description": "Сохранить",
+      "message": "数据同步"
+   },
+   "select_all": {
+      "description": "Выделить всё",
+      "message": "全选"
+   },
+   "session": {
+      "description": "Другие открытые сессии",
+      "message": "其他会议"
+   },
+   "session_create": {
+      "description": "Время создания",
+      "message": "创建时间"
+   },
+   "session_delete": {
+      "description": "Удалить",
+      "message": "删除"
+   },
+   "session_kill_all": {
+      "description": "Закрыть все сессии, кроме текущей",
+      "message": "删除所有记录（本次会话除外）"
+   },
+   "session_kill_select": {
+      "description": "Закрыть отмеченные сессии",
+      "message": "删除选中的会话"
+   },
+   "session_last": {
+      "description": "Время последнего входа",
+      "message": "最近"
+   },
+   "session_not_defined": {
+      "description": "не определено",
+      "message": "没有"
+   },
+   "settings": {
+      "description": "Настройки",
+      "message": "設定"
+   },
+   "settings_radio_name": {
+      "description": "Изменить размер окна",
+      "message": "改变窗口的尺寸"
+   },
+   "settings_s_name": {
+      "description": "Размер шрифта:",
+      "message": "字体大小："
+   },
+   "star": {
+      "description": "Оценить расширение",
+      "message": "评估应用程序"
+   },
+   "symbols": {
+      "description": "и более символов",
+      "message": "字或更多"
+   },
+   "textarea": {
+      "description": "Новый полезный лист для Ваших заметок ツ",
+      "message": "(^_^)"
+   },
+   "upload_cancel": {
+      "description": "Отменить",
+      "message": "取消"
+   },
+   "upload_go": {
+      "description": "Импорт файла...",
+      "message": "进口文件..."
+   },
+   "upload_mes": {
+      "description": "Файл слишком большой. Могут возникнуть проблемы с сохранением и синхронизацией.\u003Cbr/>\u003Cspan>Все равно продолжить?\u003C/span>",
+      "message": "文件太大。 可能出现的问题与保护和同步。\u003Cbr/>\u003Cspan>继续啊？\u003C/span>"
+   },
+   "upload_ok": {
+      "description": "Импорт выполнен успешно.",
+      "message": "进口成功。"
+   },
+   "upload_yes": {
+      "description": "Да",
+      "message": "是的"
+   },
+   "username": {
+      "description": "Имя пользователя",
+      "message": "使用者名稱"
+   }
+}

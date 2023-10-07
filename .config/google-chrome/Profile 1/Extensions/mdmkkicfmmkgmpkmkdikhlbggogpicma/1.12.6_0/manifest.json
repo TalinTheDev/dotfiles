@@ -1,0 +1,36 @@
+{
+   "app": {
+      "background": {
+         "persistent": true,
+         "scripts": [ "js/background.js" ]
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "icons": {
+      "128": "img/testnav-icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyaiyVDNFZMbSFjihmm1Hy1IEzydYCx/oX4cdUyR6PsCgs3nrLfsANAHjGRoMNDYz0fWIcGBqT6GCwWu7chVSvefu0Cn+ZRyi5LBIJ4WDEy3i1V06VJMCrXQIJftgW1lkv4QkoipEM/tBd6Lr4fSGbWy6kWNQqhC2SRacNANY7B+g0dXYPNNXH6AYfP76uxE4Z60fvwcnZ5lbBFBY3u7MixyGQUCNSFX6yJQh1nX4Vy3Sc6pSpBLkdtbL9iYXriKP5mEMqxbqoKYaxVEPqBP+QbaP4Ss8C9nyjevfeSq31K4bK3n5gLxVYr5F9CcjULAWbpzVCofkyQHwxNGiw7ljPQIDAQAB",
+   "kiosk_enabled": true,
+   "manifest_version": 2,
+   "minimum_chrome_version": "66",
+   "name": "__MSG_appName__",
+   "offline_enabled": false,
+   "permissions": [ {
+      "socket": [ "resolve-host", "resolve-proxy", "tcp-connect", "tcp-listen:*:*" ]
+   }, {
+      "fileSystem": [ "write" ]
+   }, "*://*/", "webview", "unlimitedStorage", "clipboardWrite", "audioCapture", "videoCapture", "desktopCapture", "virtualKeyboard", "power", "accessibilityFeatures.read", "accessibilityFeatures.modify", "audio", "enterprise.deviceAttributes", "enterprise.platformKeys", "webRequest", "webRequestBlocking" ],
+   "platforms": [ {
+      "nacl_arch": "x86-64",
+      "sub_package_path": "_platform_specific/x86-64"
+   }, {
+      "nacl_arch": "x86-32",
+      "sub_package_path": "_platform_specific/x86-32"
+   }, {
+      "nacl_arch": "arm",
+      "sub_package_path": "_platform_specific/arm"
+   } ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.12.6"
+}

@@ -1,0 +1,6 @@
+2023/08/19-17:12:11.805 d116 Reusing MANIFEST /home/talin/.config/google-chrome/Default/IndexedDB/https_www.codecademy.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/19-17:12:11.805 d116 Recovering log #3
+2023/08/19-17:12:11.832 d116 Reusing old log /home/talin/.config/google-chrome/Default/IndexedDB/https_www.codecademy.com_0.indexeddb.leveldb/000003.log 
+2023/08/19-17:13:04.525 d117 Level-0 table #5: started
+2023/08/19-17:13:04.544 d117 Level-0 table #5: 1299237 bytes OK
+2023/08/19-17:13:04.545 d117 Delete type=0 #3

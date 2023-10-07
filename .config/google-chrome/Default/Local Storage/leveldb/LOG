@@ -1,0 +1,20 @@
+2023/10/07-14:46:22.441 3 Reusing MANIFEST /home/talin/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2023/10/07-14:46:22.443 3 Recovering log #248
+2023/10/07-14:46:22.444 3 Reusing old log /home/talin/.config/google-chrome/Default/Local Storage/leveldb/000248.log 
+2023/10/07-14:51:03.492 4 Level-0 table #252: started
+2023/10/07-14:51:03.496 4 Level-0 table #252: 17398 bytes OK
+2023/10/07-14:51:03.501 4 Delete type=0 #248
+2023/10/07-15:48:56.629 4 Level-0 table #254: started
+2023/10/07-15:48:56.633 4 Level-0 table #254: 18633 bytes OK
+2023/10/07-15:48:56.638 4 Delete type=0 #251
+2023/10/07-15:48:56.639 4 Compacting 4@0 + 2@1 files
+2023/10/07-15:48:56.660 4 Generated table #255@0: 466 keys, 2103462 bytes
+2023/10/07-15:48:56.669 4 Generated table #256@0: 1527 keys, 450997 bytes
+2023/10/07-15:48:56.669 4 Compacted 4@0 + 2@1 files => 2554459 bytes
+2023/10/07-15:48:56.671 4 compacted to: files[ 0 2 1 0 0 0 0 ]
+2023/10/07-15:48:56.672 4 Delete type=2 #244
+2023/10/07-15:48:56.672 4 Delete type=2 #252
+2023/10/07-15:48:56.672 4 Delete type=2 #249
+2023/10/07-15:48:56.672 4 Delete type=2 #254
+2023/10/07-15:48:56.672 4 Delete type=2 #247
+2023/10/07-15:48:56.672 4 Delete type=2 #245

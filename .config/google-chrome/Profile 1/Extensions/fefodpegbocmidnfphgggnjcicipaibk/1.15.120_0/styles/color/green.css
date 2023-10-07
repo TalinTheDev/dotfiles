@@ -1,0 +1,47 @@
+:root {
+	--color-bg: #f37b7b;
+	--color-bg-hover: #ffa9a9;
+	--color-bg-active: #c15858;
+	--color-bg-delete: rgba(216, 49, 49, 0.8);
+	--color-text-grey: #ffffff;
+	--color-placeholder: #353535;
+	--color-body: #333;
+	--color-text-not-active: #000000;
+	--color-bg-body: #7adca5;
+	--color-text-body: #333;
+	--color-bg-list: none;
+	--color-text-focus: #424242;
+	--color-bg-li: #71c797;
+	--color-bg-a_sync: rgba(189, 76, 76, 0.4);
+
+}
+.p_menu {
+	background-color: rgba(206, 206, 206, 0.58);
+}
+.menu_notepad {
+	color: #6d6d6d;
+}
+.p_menu_menu_list_string {
+	background-color: #B8E2B5;
+}
+.export_choose {
+	background-color: #9ACC98;
+}
+.tab .liActive,
+.tab .liActive:hover,
+.tab .liActive:active,
+.tab .liActive:focus {
+	cursor: move !important;
+	background-color: #dc9638 !important;
+}
+.tab .liActive > div,
+.tab .liActive:hover > div,
+.tab .liActive:active > div,
+.tab .liActive:focus > div {
+	color: #FFF !important;
+}
+
+.a_sync_red {
+	background-color: var(--color-bg-a_sync, rgba(189, 76, 76, 0.4));
+	border-color: #a91515;
+}

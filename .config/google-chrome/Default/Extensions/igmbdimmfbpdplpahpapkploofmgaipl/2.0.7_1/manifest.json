@@ -1,0 +1,34 @@
+{
+   "chrome_url_overrides": {
+      "newtab": "newtab.html"
+   },
+   "content_scripts": [ {
+      "css": [ "content.styles.css" ],
+      "js": [ "contentScript.bundle.js" ],
+      "matches": [ "https://www.google.com/*" ]
+   } ],
+   "description": "The New Tab Extension for Developers",
+   "differential_fingerprint": "1.fd9363572eab9773e8de87039e46d6ac0bd4137bbdb0f7dfa8470242f9fa7256",
+   "homepage_url": "https://initab.com",
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "34": "icon-34.png",
+      "48": "icon-48.png"
+   },
+   "incognito": "not_allowed",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmxMizc3cHO6xl2mX3bt/sqE36CnOhFOoO+mRT2qkj2l/70+xiwbVSClIIauZPWscxYnltteZxoEFYRu5z109z+Foa6x+pwtJ9CMNKQXorbIIn5+GbYItB5wqdEAEy8aczKfE78pzNGRVILkvb1UCqWh5OQY/ph9rq4aV06wANaWdipwCx0u2C2iCepTIGYoYRBoeVUdwTcaxEpC/l6gkiPoWeGu58TJSszmAHBOhkeVK4oSD53vIB2nlQVotuENVfJGliNCUQv/9CQvHVfZG1bWY7A1TF+o+RhK7Pka3haitqp3cPhxbhIwG4VytV4lu3LafL22F4hcVYkjN7fGNlwIDAQAB",
+   "manifest_version": 3,
+   "name": "Initab",
+   "oauth2": {
+      "client_id": "896093283283-bn5bijqboojkaa562urovds6fdoc2u1l.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/photoslibrary.readonly" ]
+   },
+   "permissions": [ "history", "identity" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.7",
+   "web_accessible_resources": [ {
+      "matches": [  ],
+      "resources": [ "default-pro-bg.jpg", "logo.svg", "btn_google_signin_dark_pressed_web@2x.png", "themes_screens/ts_1_1.png", "themes_screens/ts_1_2.png", "themes_screens/ts_1_3.png", "themes_screens/ts_1_4.png", "themes_screens/ts_1_5.png", "themes_screens/ts_1_6.png", "themes_screens/ts_1_7.png", "themes_screens/ts_1_8.png", "themes_screens/ts_1_9.png", "themes_screens/ts_1_10.png", "themes_screens/ts_1_11.png", "themes_screens/ts_1_12.png", "themes_screens/ts_1_13.png", "themes_screens/ts_1_14.png", "themes_screens/ts_1_15.png", "themes_screens/ts_1_16.png", "themes_screens/ts_2_1.png", "themes_screens/ts_2_2.png", "themes_screens/ts_2_3.png", "themes_screens/ts_2_4.png", "themes_screens/ts_2_5.png", "themes_screens/ts_2_6.png", "themes_screens/ts_3_1.png", "themes_screens/ts_3_2.png", "themes_screens/ts_3_3.png", "themes_screens/ts_3_4.png" ]
+   } ]
+}

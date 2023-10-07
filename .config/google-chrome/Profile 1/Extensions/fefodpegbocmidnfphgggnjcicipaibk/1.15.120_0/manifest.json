@@ -1,0 +1,31 @@
+{
+   "author": "nevzilya",
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "img/notepad_128.png",
+         "24": "img/a_6.png",
+         "48": "img/notepad_48.png"
+      },
+      "default_popup": "index.html",
+      "default_title": "__MSG_ext_short_name__"
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_ext_description__",
+   "icons": {
+      "128": "img/notepad_128.png",
+      "48": "img/notepad_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv+TIX6VJSepAiLmbQnFvxJMjfqbXT6HmQZ97MfWzbtDdrBoNql3VACUVEItXOZpNjGWTDcLB3eEa7XDmDiSOp2S1HqtlXibYcYCNoDvm868yUO+UPr2nvhz85dFgMXnH+C1V2+h+VY38Fj/55zMMlUC2A+VnBjxGEYU+hChmd5cRP9Cus6vVL48BmDTOPXFkqdmdiA5Fp/XQYUixbPP0tnPRjFCs19Yns4t15uHRwOQj0lrgKg9mmxefNxXIpayy9ZgN2e9of+X7RzNPXjErxe2NbC3N8ZAA0lK2oAL+tiLg00AXzCqquMkQq16LhNNOLYtkf4/5yc8jrH2ptrFDtwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_ext_name__",
+   "offline_enabled": true,
+   "options_page": "options.html",
+   "permissions": [ "https://notepad-online.ru/*", "http://notepad-online.ru/*", "unlimitedStorage", "contextMenus" ],
+   "short_name": "__MSG_ext_short_name__",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.15.120"
+}

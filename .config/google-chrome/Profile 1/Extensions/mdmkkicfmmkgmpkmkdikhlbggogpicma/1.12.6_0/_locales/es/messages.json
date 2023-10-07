@@ -1,0 +1,50 @@
+{
+   "appDescription": {
+      "description": "The description of the application, displayed in the web store and in chrome://extensions.",
+      "message": "Aplicación para tomar examenes en linea de Pearson"
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "TestNav"
+   },
+   "appstartpageservertype": {
+      "description": "app start page servertype",
+      "message": "Inicio"
+   },
+   "errorcodelabel": {
+      "description": "Error",
+      "message": "Error"
+   },
+   "errorpagehomebutton": {
+      "description": "Home button label",
+      "message": "Escoger Otro Cliente"
+   },
+   "errorpageretrybutton": {
+      "description": "Retry button label",
+      "message": "Reintentar"
+   },
+   "errorpagetitle": {
+      "description": "error page title",
+      "message": "Error de servidor"
+   },
+   "homeconnectionerror": {
+      "description": "Connection error",
+      "message": "El servidor de Inicio no puede ser localizado. Por favor verifique su conexion de Internet y luego oprima Reintentar, o salga de la aplicacion y trate nuevamente."
+   },
+   "homeconnectionerrormsgno": {
+      "description": "Connection error message number",
+      "message": "Error 8033"
+   },
+   "testnavconnectionerror": {
+      "description": "Connection error",
+      "message": "Hay falta de comunicación con el servidor de la prueba. Por favor verifica tu conexión a internet y luego haz clic en Reintentar, o escoge otro cliente o cierra la aplicación e intenta de nuevo."
+   },
+   "testnavconnectionerrormsgno": {
+      "description": "Connection error message number",
+      "message": "Error 8027"
+   },
+   "testnavservertype": {
+      "description": "testnav server type",
+      "message": "pruebas"
+   }
+}

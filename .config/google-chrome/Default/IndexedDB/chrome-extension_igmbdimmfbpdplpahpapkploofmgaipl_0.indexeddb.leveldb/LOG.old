@@ -1,0 +1,15 @@
+2023/10/07-15:41:00.610 db4 Reusing MANIFEST /home/talin/.config/google-chrome/Default/IndexedDB/chrome-extension_igmbdimmfbpdplpahpapkploofmgaipl_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/07-15:41:00.611 db4 Recovering log #1197
+2023/10/07-15:41:00.611 db4 Reusing old log /home/talin/.config/google-chrome/Default/IndexedDB/chrome-extension_igmbdimmfbpdplpahpapkploofmgaipl_0.indexeddb.leveldb/001197.log 
+2023/10/07-15:41:05.103 db5 Level-0 table #1203: started
+2023/10/07-15:41:05.106 db5 Level-0 table #1203: 7049 bytes OK
+2023/10/07-15:41:05.108 db5 Delete type=0 #1197
+2023/10/07-15:41:05.108 db5 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2023/10/07-15:41:05.109 db5 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x03\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x008\x001\x009\x002\x002\x006\x002\x009\x008\x004\x003\x000\x00:\x00w\x00e\x00b\x00:\x009\x00d\x00f\x00e\x004\x006\x00d\x000\x00e\x00e\x004\x002\x00c\x00d\x005\x006\x003\x00e\x006\x009\x006\x00f' @ 10670 : 1
+2023/10/07-15:41:05.109 db5 Compacting 1@1 + 1@2 files
+2023/10/07-15:41:05.111 db5 Generated table #1204@1: 37 keys, 1344 bytes
+2023/10/07-15:41:05.111 db5 Compacted 1@1 + 1@2 files => 1344 bytes
+2023/10/07-15:41:05.113 db5 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/10/07-15:41:05.113 db5 Delete type=2 #1203
+2023/10/07-15:41:05.113 db5 Delete type=2 #1200
+2023/10/07-15:41:05.114 db5 Manual compaction at level-1 from '\x00\x03\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x008\x001\x009\x002\x002\x006\x002\x009\x008\x004\x003\x000\x00:\x00w\x00e\x00b\x00:\x009\x00d\x00f\x00e\x004\x006\x00d\x000\x00e\x00e\x004\x002\x00c\x00d\x005\x006\x003\x00e\x006\x009\x006\x00f' @ 10670 : 1 .. (end); will stop at (end)

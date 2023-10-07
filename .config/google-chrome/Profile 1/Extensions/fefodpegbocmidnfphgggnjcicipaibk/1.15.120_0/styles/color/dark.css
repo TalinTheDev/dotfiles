@@ -1,0 +1,88 @@
+:root {
+	--color-bg: #000;
+	--color-bg-hover: #252525;
+	--color-bg-active: #444;
+	--color-bg-delete: rgba(216, 49, 49, 0.8);
+	--color-text-grey: #ffffff;
+	--color-placeholder: #353535;
+	--color-body: #fff;
+	--color-text-not-active: #fff;
+	--color-bg-body: #585858;
+	--color-text-body: #fff;
+	--color-bg-list: none;
+	--color-text-focus: #424242;
+	--color-bg-li: #444;
+	--color-bg-a_sync: rgba(189, 76, 76, 0.4);
+	--color-text-tab_full: #fff;
+}
+.p_menu {
+	background-color: #333;
+}
+.p_menu_menu:hover {
+	background-color: #000;
+}
+.menu_notepad {
+	color: #9a9a9a;
+}
+.p_menu_menu_list_string {
+	background-color: #585858;
+}
+.export_choose {
+	background-color: #3e3e3e;
+}
+.export_btn {
+	color: #000;
+}
+.export_btn:hover {
+	color: #fff;
+	background-color: #999;
+}
+.export_btn:avtive {
+	color: #fff;
+	background-color: #777;
+}
+.p_list_string_span, .p_list_string_span_d {
+	padding-right: 4px;
+	padding-left: 4px;
+	background-color: white;
+	border-radius: 50%;
+}
+.seria {
+	color: #000;
+}
+.load {
+	background-color: #424242;
+}
+.p_list_string_div:hover {
+	background-color: var(--color-bg-hover, rgba(129, 210, 195, 0.5)) !important;
+	color: #fff !important;
+}
+#p_list_string_donate {
+	color: #000;
+}
+.maximize {
+	background-color: #fff;
+}
+.tab .liActive,
+.tab .liActive:hover,
+.tab .liActive:active,
+.tab .liActive:focus {
+	cursor: move !important;
+	background-color: #505050 !important;
+}
+.tab .liActive > div,
+.tab .liActive:hover > div,
+.tab .liActive:active > div,
+.tab .liActive:focus > div {
+	color: #FFF !important;
+}
+
+.a_sync_red {
+	background-color: var(--color-bg-a_sync, rgba(189, 76, 76, 0.4));
+	border-color: #a91515;
+}
+
+.menu_login_reg > a { color: #FFF; }
+.submit_login_div {
+	color: #FFF;
+}

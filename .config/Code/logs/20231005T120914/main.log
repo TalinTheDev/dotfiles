@@ -1,0 +1,4 @@
+2023-10-05 12:09:14.593 [info] update#setState idle
+2023-10-05 12:09:15.835 [error] vscode-file: Refused to load resource /nix/store/ryhrr4flx8bkdv2ah5x626zpb8c93l8m-vscode-1.81.1/lib/vscode/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/nix/store/ryhrr4flx8bkdv2ah5x626zpb8c93l8m-vscode-1.81.1/lib/vscode/resources/app/extensions/theme-seti/icons/seti.woff)
+2023-10-05 12:09:44.598 [info] update#setState checking for updates
+2023-10-05 12:09:44.607 [info] update#setState available for download

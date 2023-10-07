@@ -1,0 +1,81 @@
+:root {
+	--color-bg: #e45050;
+	--color-bg-hover: #e45050;
+	--color-bg-active: #b10000;
+	--color-bg-delete: #d40000;
+	--color-text-grey: #d00000;
+	--color-placeholder: #353535;
+	--color-body: #000;
+	--color-text-not-active: #000000;
+	--color-bg-body: #eee;
+	--color-text-body: #333;
+	--color-bg-list: none;
+	--color-text-focus: #424242;
+	--color-bg-li: #e4acac;
+	--color-bg-a_sync: rgba(189, 76, 76, 0.4);
+
+}
+.p_menu {
+	background-color: #d23a3a;
+	color: #F1F1F1;
+}
+.menu_notepad {
+	color: #f1f1f1;
+}
+.p_menu_menu_list_string {
+	background-color: #eee;
+	color: #333;
+	box-shadow: -1px 5px 19px -1px #a23c3c;
+}
+.p_menu_menu_list_string:hover {
+	box-shadow: -1px 5px 19px -1px #6f0a0a;
+}
+.p_list_string_div:hover {
+	background-color: #b10000 !important;
+	color: #fff;
+} 
+.p_list_string_div:hover #loc_import {
+	color: #fff;
+}
+.p_menu_menu:active {
+	background-color: #ef6565;
+}
+.p_menu_menu:hover {
+	background-color: #e45050;
+}
+.export_choose {
+	background-color: #eee;
+	color: #333;
+	box-shadow: 0px 5px 63px 4px #9a7777;
+}
+.export_btn:hover {
+	color: #FFF;
+}
+.upload_file_div_in,
+.delete_div_in,
+.exit_div_in,
+.session_div_in {
+	box-shadow: -3px 14px 35px 0px #a23c3c;
+}
+.maximize:hover {
+	background-color: #c1c1c1;
+}
+.tab .liActive,
+.tab .liActive:hover,
+.tab .liActive:active,
+.tab .liActive:focus {
+	cursor: move !important;
+	background-color: #e45050 !important;
+}
+.tab .liActive > div,
+.tab .liActive:hover > div,
+.tab .liActive:active > div,
+.tab .liActive:focus > div {
+	color: #FFF !important;
+}
+
+.a_sync_red {
+	background-color: var(--color-bg-a_sync, rgba(189, 76, 76, 0.4));
+	border-color: #a91515;
+}
+.menu_login_reg > a { color: #FFF; }

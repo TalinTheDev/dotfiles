@@ -1,0 +1,14 @@
+{
+  "files": {},
+  "program": {
+    "x86-64": {
+      "url": "_platform_specific/x86-64/testnav_middle_x86_64.nexe"
+    },
+    "arm": {
+      "url": "_platform_specific/arm/testnav_middle_arm.nexe"
+    },
+    "x86-32": {
+      "url": "_platform_specific/x86-32/testnav_middle_x86_32.nexe"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+	"enable-crash-reporter": true,
+	"crash-reporter-id": "cc01a36e-5a2f-43ee-97d6-a7d97d49e3ae",
+    "password-store":"gnome"
+}

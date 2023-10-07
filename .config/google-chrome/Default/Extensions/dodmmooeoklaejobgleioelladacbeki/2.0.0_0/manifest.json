@@ -1,0 +1,46 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon128.plasmo.74615566.png",
+         "16": "icon16.plasmo.72e8bd43.png",
+         "32": "icon32.plasmo.328efb7e.png",
+         "48": "icon48.plasmo.1b6c20e9.png",
+         "64": "icon64.plasmo.6c816b7b.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "author": "Gitpod \u003Cinfo@gitpod.io>",
+   "background": {
+      "service_worker": "static/background/index.js"
+   },
+   "content_scripts": [ {
+      "css": [  ],
+      "js": [ "gitpod-dashboard.24c15cff.js" ],
+      "matches": [ "https://*/*" ]
+   }, {
+      "css": [  ],
+      "js": [ "button.c44b096a.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "The developer platform for on-demand cloud development environments. Create software faster and more securely.",
+   "differential_fingerprint": "1.9006658f59ca08b18bd9189b1471aba1848963554829056074e85fdf677b6325",
+   "homepage_url": "https://www.gitpod.io",
+   "host_permissions": [ "https://*/*" ],
+   "icons": {
+      "128": "icon128.plasmo.74615566.png",
+      "16": "icon16.plasmo.72e8bd43.png",
+      "32": "icon32.plasmo.328efb7e.png",
+      "48": "icon48.plasmo.1b6c20e9.png",
+      "64": "icon64.plasmo.6c816b7b.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqYCdzSb1NERka7Pza7Wj4883oo8NO00R6iHjjvaID5NdNIMQtG1cMAuTEiv4jFQb4D15T9uHUwEo3xjfRR7ZXbKE0zKonFlHupkRXAG+eD+HglpeANiCVFHzz8g/I16qvaYZYensCj7PcGTIVGxuUv5lrN/uWd8xDYvRCeNtUSKkRzR5s0XZ0Lg5c8XlzRuxtnxXB6/9fa8OAi+y1+9N0GrYii6EU/JAstzJtpqxR177STufTbxJccc3fhrWES0Y9efLSSCH89WkSBlXQJjpNBWJEFxpUKtW2TYYCuXfpu/eXw33Gb96pYvB3qZSRqk9U3a2Q7ORoO8HDeEi+RopLwIDAQAB",
+   "manifest_version": 3,
+   "name": "Gitpod",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.0",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "button.a204bf80.css" ]
+   } ]
+}

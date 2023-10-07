@@ -1,0 +1,59 @@
+$lock_bin = swaylock
+$image = "~/Pictures/lockscreen.jpg"
+
+
+$lock_bin \
+        --image "$image" \
+        --ind-pos="x+310:y+h-80" \
+        --radius=25 \
+        --ring-width=5 \
+        --inside-color="$insidecolor" \
+        --ring-color="$ringcolor" \
+        --separator-color=$separatorcolor \
+        --insidever-color="$insidevercolor" \
+        --insidewrong-color="$insidewrongcolor" \
+        --ringver-color="$ringvercolor" \
+        --ringwrong-color="$ringwrongcolor" \
+        --line-uses-inside \
+        --keyhl-color="$keyhlcolor" \
+        --bshl-color="$bshlcolor" \
+        --clock --force-clock \
+        --time-pos="ix-265:iy-10" \
+        --time-align 1 \
+        --time-str "$time_format" \
+        --time-color="$timecolor" \
+        --time-font="$font" \
+        --time-size="$fontlg" \
+        --date-str "" \
+        --greeter-pos="ix-265:iy+12" \
+        --greeter-align 1 \
+        --greeter-text "$locktext" \
+        --greeter-color="$greetercolor" \
+        --greeter-font="$font" \
+        --greeter-size="$fontmd" \
+        --layout-pos="ix-265:iy+32" \
+        --layout-align 1 \
+        --layout-color="$layoutcolor" \
+        --layout-font="$font" \
+        --layout-size="$fontsm" \
+        --verif-pos="ix+35:iy-34" \
+        --verif-align 2 \
+        --verif-text="$veriftext" \
+        --verif-color="$verifcolor" \
+        --verif-font="$font" \
+        --verif-size="$fontsm" \
+        --wrong-pos="ix+24:iy-34" \
+        --wrong-align 2 \
+        --wrong-text="$wrongtext" \
+        --wrong-color="$wrongcolor" \
+        --wrong-font="$font" \
+        --wrong-size="$fontsm" \
+        --modif-pos="ix+45:iy+43" \
+        --modif-align 2 \
+        --modif-size="$fontsm" \
+        --modif-color="$modifcolor" \
+        --noinput-text="" \
+        --pass-media-keys \
+        --pass-screen-keys \
+        --pass-volume-keys \
+        --pass-power-keys \

@@ -1,0 +1,1 @@
+(()=>{var e={};window.container=document.getElementById("container");let n=false;window.injectStyles=e=>{if(!n){n=true;const t=e();for(const e of t){document.head.appendChild(e)}}}})();

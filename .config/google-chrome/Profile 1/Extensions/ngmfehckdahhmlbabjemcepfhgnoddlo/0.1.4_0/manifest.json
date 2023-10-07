@@ -1,0 +1,38 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "data/icons/16.png",
+         "32": "data/icons/32.png",
+         "48": "data/icons/48.png",
+         "64": "data/icons/64.png"
+      },
+      "default_title": "Draw on Page"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "commands": {
+      "_execute_action": {
+      }
+   },
+   "description": "Easily draw on any website with simple drawing tools, then print the result.",
+   "homepage_url": "https://mybrowseraddon.com/draw-on-page.html",
+   "icons": {
+      "128": "data/icons/128.png",
+      "16": "data/icons/16.png",
+      "32": "data/icons/32.png",
+      "48": "data/icons/48.png",
+      "64": "data/icons/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuRarPFdaajTuy1J9tdmyQ465nWlRGzjy9J6hAI24LXWBJXcYlpC2x3WtfSFTWXyukuQinoE8EPJuVn/qF/AAVMsIpxn/OxKgJtgh1qbXXmsMmphCxjZT1NSxpRUnh3sj6EYj3+IBsdpK7e6kQ8Q5F5vrAMYpC7KIUpruqGiSkkX9skAl6MYHNf9VWmhVfgB0Mbbz9tkGLz+/DFmnyaFv5sLSfwWd4p/FIFdb/IqxNJT95MvkGuN3GrWoKDlWinTKLenuvBf5/jMydK8HfPS2qLKmGap7KkrMbwVqLkqfqpFEswqoMVmkRImGAV8qRXcrPbVXHLkHObSIsvJJEbp9bQIDAQAB",
+   "manifest_version": 3,
+   "name": "Draw on Page",
+   "offline_enabled": true,
+   "permissions": [ "storage", "scripting", "activeTab", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.4",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "data/interface/index.html" ]
+   } ]
+}

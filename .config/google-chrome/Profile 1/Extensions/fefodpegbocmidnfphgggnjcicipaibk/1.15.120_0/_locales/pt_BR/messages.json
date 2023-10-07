@@ -1,0 +1,327 @@
+{
+   "about": {
+      "description": "О программе v",
+      "message": "Sobre o programa v"
+   },
+   "add_list": {
+      "description": "Добавить лист",
+      "message": "Adicionar página"
+   },
+   "bg_address": {
+      "description": "URL страницы",
+      "message": "URL"
+   },
+   "bg_copy": {
+      "description": "Скопировать",
+      "message": "Copiar"
+   },
+   "bg_link": {
+      "description": "ссылка",
+      "message": "link"
+   },
+   "bg_text": {
+      "description": "текст",
+      "message": "texto"
+   },
+   "chioce_with_authorization": {
+      "description": "С регистрацией",
+      "message": "Com autorização"
+   },
+   "chioce_with_text": {
+      "description": "В этой версии блокнота требуется регистрация личного аккаунта с помощью электронной почты. Это позволит Вам заходить в свой аккаунт с нескольких устройств и синхронизировать всю информацию в едином приложении. Ваши данные будут защищены паролем и храниться на серверном облаке. Для работы в этой версии необходимо обязательное подключение к интернету.",
+      "message": "Nesta versão do bloco de notas é necessário o registo de uma conta pessoal através de e-mail. Isso permitirá que Você entrar na sua conta a partir de múltiplos dispositivos e sincronizar todas as informações em um único aplicativo. Os seus dados são protegidos por senha e armazenados em um servidor na nuvem. Para trabalhar nesta versão, você deve obrigatoriedade de ligação à internet."
+   },
+   "chioce_without_authorization": {
+      "description": "Без регистрации",
+      "message": "Sem autorização"
+   },
+   "chioce_without_text": {
+      "description": "Эта версия блокнота не требует регистрации личного аккаунта, так как предназначена для использования только на одном устройстве. Вся информация хранится прямо в Вашем браузере и не удаляется при его закрытии. Работа в приложении может осуществляться без подключения к интернету.",
+      "message": "Esta versão do bloco de notas não requer registro de conta pessoal, assim como é para uso apenas em um único dispositivo. Todas as informações são armazenadas diretamente no Seu navegador, e não é removido quando você fechá-lo. O trabalho no aplicativo pode ser acessado sem ligação à internet."
+   },
+   "choce_prev": {
+      "description": "Выбрать другую версию",
+      "message": "Escolher uma versão diferente"
+   },
+   "choice_name": {
+      "description": "Выберите удобную версию",
+      "message": "Escolha confortáveis versão"
+   },
+   "delete_mes": {
+      "description": "Удалить лист?",
+      "message": "Eliminar a página?"
+   },
+   "donate": {
+      "description": "Вклад в развитие",
+      "message": "Аgradecer"
+   },
+   "download": {
+      "description": "Скачать",
+      "message": "Download"
+   },
+   "e_email_use": {
+      "description": "Почта уже занята.",
+      "message": "O email já está ocupada."
+   },
+   "e_error": {
+      "description": "Непредвиденная ошибка.",
+      "message": "Ocorreu um erro inesperado."
+   },
+   "e_file_big": {
+      "description": "Файл больше 100кБ.\u003Cbr/>Пожалуйста, выберите другой.",
+      "message": "O arquivo de mais de 100kb.\u003Cbr/>por Favor, escolha outro."
+   },
+   "e_file_choose": {
+      "description": "Невозможно импортировать файл.\u003Cbr/>Пожалуйста, выберите другой.",
+      "message": "Não é possível importar o ficheiro.\u003Cbr/>por Favor, escolha outro."
+   },
+   "e_file_little_big": {
+      "description": "Файл большой.\u003Cbr/>Могут возникнуть проблемы с синхронизацией.",
+      "message": "O arquivo é grande.\u003Cbr/>Podem ocorrer problemas de sincronização."
+   },
+   "e_file_no": {
+      "description": "Невозможно импортировать файл.\u003Cbr/>Проверьте подключение к интернету.",
+      "message": "Não é possível importar o ficheiro.\u003Cbr/>Verifique sua conexão com a internet."
+   },
+   "e_file_not": {
+      "description": "ОС не поддерживает загрузку файлов.",
+      "message": "O sistema operacional não suporta o carregamento de ficheiros."
+   },
+   "e_incorrect": {
+      "description": "Некорректный $msg$",
+      "message": "Incorrecto $msg$",
+      "placeholders": {
+         "msg": {
+            "content": "$1"
+         }
+      }
+   },
+   "e_invalid": {
+      "description": "Сессия неверная. Пожалуйста, войдите.",
+      "message": "Sessão errada. Por favor, faça o login."
+   },
+   "e_invalid_session": {
+      "description": "Сессия неверная. Пожалуйста, войдите.",
+      "message": "Sessão errada. Por favor, faça o login."
+   },
+   "e_load_content": {
+      "description": "Ошибка загрузки данных.",
+      "message": "Erro ao carregar dados."
+   },
+   "e_no_data": {
+      "description": "Нет данных.",
+      "message": "Não há dados disponíveis."
+   },
+   "e_not_active": {
+      "description": "Пожалуйста, выберите лист.",
+      "message": "Por favor, selecione a página."
+   },
+   "e_not_email_or_pass": {
+      "description": "Некорректный пароль/почта.",
+      "message": "Incorretos senha/e-mail."
+   },
+   "e_please_valid": {
+      "description": "Пожалуйста, введите верно: ",
+      "message": "Por favor, digite o verdadeiro: "
+   },
+   "e_server_not": {
+      "description": "Сервер не отвечает.\u003Cbr/>Мы уже знаем о проблеме и работаем над ее решением.\u003Cbr/>Приносим извинения.",
+      "message": "O servidor não está respondendo.\u003Cbr/>Nós já sabemos sobre o problema e estamos trabalhando para resolvê-lo.\u003Cbr/>Pedimos desculpas."
+   },
+   "email": {
+      "description": "Почта",
+      "message": "Correio eletrónico"
+   },
+   "enter": {
+      "description": "Войти",
+      "message": "Iniciar sessão"
+   },
+   "exit_mes": {
+      "description": "Все записи будут удалены. Вы действительно хотите продолжить?",
+      "message": "Todos os dados serão apagados. Você deseja continuar?"
+   },
+   "export": {
+      "description": "Экспорт",
+      "message": "Exportação"
+   },
+   "ext_description": {
+      "description": "Блокнот-онлайн. Расширение для Хрома с функцией синхронизации. Откройте и редактируйте сохраненные данные на любом компьютере.",
+      "message": "O bloco de notas on-line. Extensão do Chrome, com funções de sincronização. Abra e edite dados armazenados em qualquer computador."
+   },
+   "ext_name": {
+      "description": "Блокнот - онлайн",
+      "message": "Bloco de notas - on-line"
+   },
+   "ext_short_name": {
+      "description": "Блокнот - онлайн",
+      "message": "Bloco de notas - on-line"
+   },
+   "forget_pass": {
+      "description": "Забыл пароль?",
+      "message": "Esqueceu a sua senha?"
+   },
+   "hello": {
+      "description": "Привет",
+      "message": "Olá"
+   },
+   "history": {
+      "description": "Восстановить лист",
+      "message": "Recuperando de página "
+   },
+   "import": {
+      "description": "Импорт",
+      "message": "Importação"
+   },
+   "load": {
+      "description": "Загрузка, подождите...",
+      "message": "Loading, please wait..."
+   },
+   "login": {
+      "description": "Вход",
+      "message": "Entrada"
+   },
+   "logout": {
+      "description": "Выйти",
+      "message": "Sair"
+   },
+   "lord": {
+      "description": "Господин",
+      "message": "Unregistered"
+   },
+   "menu": {
+      "description": "Меню",
+      "message": "Menu"
+   },
+   "name_list": {
+      "description": "Новый лист",
+      "message": "Nova página"
+   },
+   "opt_big": {
+      "description": "Большой",
+      "message": "Grande"
+   },
+   "opt_button": {
+      "description": "Сохранить изменения",
+      "message": "Salvar as alterações"
+   },
+   "opt_checkbox_hide": {
+      "description": "Скрывать панель слева",
+      "message": "Ocultar a barra da esquerda"
+   },
+   "opt_editor_use": {
+      "description": "Включить продвинутый визуальный редактор",
+      "message": "Ativar o editor avançado"
+   },
+   "opt_lang": {
+      "description": "Язык",
+      "message": "linguagem"
+   },
+   "opt_normal": {
+      "description": "Нормальный",
+      "message": "Normal"
+   },
+   "opt_small": {
+      "description": "Маленький",
+      "message": "Pequeno"
+   },
+   "opt_very_small": {
+      "description": "Очень маленький",
+      "message": "Pequenininho"
+   },
+   "pass": {
+      "description": "Пароль",
+      "message": "Palavra-passe"
+   },
+   "recovery_pass": {
+      "description": "Сменить пароль",
+      "message": "Alterar senha"
+   },
+   "registration": {
+      "description": "Регистрация",
+      "message": "Registar"
+   },
+   "save": {
+      "description": "Сохранить",
+      "message": "Salvar"
+   },
+   "select_all": {
+      "description": "Выделить всё",
+      "message": "Selecionar todos"
+   },
+   "session": {
+      "description": "Другие открытые сессии",
+      "message": "Outros estão abertos a sessão"
+   },
+   "session_create": {
+      "description": "Время создания",
+      "message": "O tempo de criação"
+   },
+   "session_delete": {
+      "description": "Удалить",
+      "message": "Remover"
+   },
+   "session_kill_all": {
+      "description": "Закрыть все сессии, кроме текущей",
+      "message": "Fechar todas as sessões, além de atual"
+   },
+   "session_kill_select": {
+      "description": "Закрыть отмеченные сессии",
+      "message": "Fechar marcado sessão"
+   },
+   "session_last": {
+      "description": "Время последнего входа",
+      "message": "A última hora de logon"
+   },
+   "session_not_defined": {
+      "description": "не определено",
+      "message": "não definido"
+   },
+   "settings": {
+      "description": "Настройки",
+      "message": "Configuração"
+   },
+   "settings_radio_name": {
+      "description": "Изменить размер окна",
+      "message": "Alterar o tamanho da janela"
+   },
+   "settings_s_name": {
+      "description": "Размер шрифта:",
+      "message": "Tamanho da fonte:"
+   },
+   "star": {
+      "description": "Оценить расширение",
+      "message": "Avalie o aplicativo"
+   },
+   "symbols": {
+      "description": "и более символов",
+      "message": "ou mais caracteres"
+   },
+   "textarea": {
+      "description": "Новый полезный лист для Ваших заметок ツ",
+      "message": "De novo uma página útil para Suas anotações ツ"
+   },
+   "upload_cancel": {
+      "description": "Отменить",
+      "message": "Cancelar"
+   },
+   "upload_go": {
+      "description": "Импорт файла...",
+      "message": "O ficheiro é importado..."
+   },
+   "upload_mes": {
+      "description": "Файл слишком большой. Могут возникнуть проблемы с сохранением и синхронизацией.\u003Cbr/>\u003Cspan>Все равно продолжить?\u003C/span>",
+      "message": "O arquivo é muito grande. Podem ocorrer problemas com a preservação e a sincronização.\u003Cbr/>\u003Cspan>Continuar?\u003C/span>"
+   },
+   "upload_ok": {
+      "description": "Импорт выполнен успешно.",
+      "message": "A importação foi bem-sucedida."
+   },
+   "upload_yes": {
+      "description": "Да",
+      "message": "Sim"
+   },
+   "username": {
+      "description": "Имя пользователя",
+      "message": "Nome de usuário"
+   }
+}

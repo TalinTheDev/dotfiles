@@ -1,0 +1,9 @@
+2023-08-16 13:16:25.419 [info] Extension host with pid 3207 started
+2023-08-16 13:16:25.419 [info] Skipping acquiring lock for /home/talin/.config/VSCodium/User/workspaceStorage/701578ef404c2c1cd4dfc5e41966debc.
+2023-08-16 13:16:25.506 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-08-16 13:16:25.542 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-08-16 13:16:25.548 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-08-16 13:16:25.580 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-08-16 13:16:25.622 [info] Eager extensions activated
+2023-08-16 13:16:25.675 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-08-16 13:16:25.679 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'

@@ -1,0 +1,20 @@
+2023-08-16 12:35:08.068 [info] Extension host with pid 52634 started
+2023-08-16 12:35:08.113 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-08-16 12:35:08.123 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-08-16 12:35:08.196 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-08-16 12:35:08.258 [info] Eager extensions activated
+2023-08-16 12:35:08.269 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-08-16 12:35:08.271 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-08-16 12:35:13.646 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-08-16 12:35:13.717 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-08-16 12:35:13.763 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-08-16 12:35:23.909 [info] Extension host terminating: renderer closed the MessagePort
+2023-08-16 12:35:23.917 [info] Extension host with pid 52634 exiting with code 0
+2023-08-16 12:35:24.795 [info] Extension host with pid 52759 started
+2023-08-16 12:35:24.795 [info] Skipping acquiring lock for /home/talin/.config/VSCodium/User/workspaceStorage/b3dceacbd57580b1741b33b5031cdcf5.
+2023-08-16 12:35:24.847 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2023-08-16 12:35:24.875 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-08-16 12:35:24.883 [info] Eager extensions activated
+2023-08-16 12:35:24.891 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-08-16 12:35:24.895 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-08-16 12:35:29.879 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github

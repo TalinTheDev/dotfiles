@@ -1,0 +1,327 @@
+{
+   "about": {
+      "description": "О программе v",
+      "message": "About v"
+   },
+   "add_list": {
+      "description": "Добавить лист",
+      "message": "Add sheet"
+   },
+   "bg_address": {
+      "description": "URL страницы",
+      "message": "URL"
+   },
+   "bg_copy": {
+      "description": "Скопировать",
+      "message": "Copy"
+   },
+   "bg_link": {
+      "description": "ссылка",
+      "message": "link"
+   },
+   "bg_text": {
+      "description": "текст",
+      "message": "text"
+   },
+   "chioce_with_authorization": {
+      "description": "С регистрацией",
+      "message": "With registration"
+   },
+   "chioce_with_text": {
+      "description": "В этой версии блокнота требуется регистрация личного аккаунта с помощью электронной почты. Это позволит Вам заходить в свой аккаунт с нескольких устройств и синхронизировать всю информацию в едином приложении. Ваши данные будут защищены паролем и храниться на серверном облаке. Для работы в этой версии необходимо обязательное подключение к интернету.",
+      "message": "In this version of Notepad you need to register a personal account using e-mail. This will allow you to log into your account from multiple devices and synchronize all the information in a single application. Your data will be password protected and stored on the server cloud. To work in this version, you must have a mandatory connection to the Internet."
+   },
+   "chioce_without_authorization": {
+      "description": "Без регистрации",
+      "message": "Without registration"
+   },
+   "chioce_without_text": {
+      "description": "Эта версия блокнота не требует регистрации личного аккаунта, так как предназначена для использования только на одном устройстве. Вся информация хранится прямо в Вашем браузере и не удаляется при его закрытии. Работа в приложении может осуществляться без подключения к интернету.",
+      "message": "This version of Notepad does not require registration of a personal account, since it is intended for use on only one device. All information is stored right in your browser and is not deleted when it is closed. Work in the application can be done without connecting to the Internet."
+   },
+   "choce_prev": {
+      "description": "Выбрать другую версию",
+      "message": "Select a different version"
+   },
+   "choice_name": {
+      "description": "Выберите удобную версию",
+      "message": "Select a convenient version"
+   },
+   "delete_mes": {
+      "description": "Удалить лист?",
+      "message": "Are you sure you want to delete this sheet?"
+   },
+   "donate": {
+      "description": "Вклад в развитие",
+      "message": "Donate"
+   },
+   "download": {
+      "description": "Скачать",
+      "message": "Download"
+   },
+   "e_email_use": {
+      "description": "Почта уже занята.",
+      "message": "Email is already taken."
+   },
+   "e_error": {
+      "description": "Непредвиденная ошибка.",
+      "message": "Unexpected error."
+   },
+   "e_file_big": {
+      "description": "Файл больше 100кБ.\u003Cbr/>Пожалуйста, выберите другой.",
+      "message": "The file size exceeds 100KB.\u003Cbr/>Please choose another."
+   },
+   "e_file_choose": {
+      "description": "Невозможно импортировать файл.\u003Cbr/>Пожалуйста, выберите другой.",
+      "message": "Could not import the file.\u003Cbr/>Please choose another."
+   },
+   "e_file_little_big": {
+      "description": "Файл большой.\u003Cbr/>Могут возникнуть проблемы с синхронизацией.",
+      "message": "The file is large.\u003Cbr/>Problems can occur with synchronization."
+   },
+   "e_file_no": {
+      "description": "Невозможно импортировать файл.\u003Cbr/>Проверьте подключение к интернету.",
+      "message": "Could not import the file.\u003Cbr/>Check the connection to the Internet."
+   },
+   "e_file_not": {
+      "description": "ОС не поддерживает загрузку файлов.",
+      "message": "The OS doesn’t support file upload."
+   },
+   "e_incorrect": {
+      "description": "Некорректный $msg$",
+      "message": "Incorrect $msg$",
+      "placeholders": {
+         "msg": {
+            "content": "$1"
+         }
+      }
+   },
+   "e_invalid": {
+      "description": "Сессия неверная. Пожалуйста, войдите.",
+      "message": "Session is invalid.\u003Cbr/>Please login."
+   },
+   "e_invalid_session": {
+      "description": "Сессия неверная. Пожалуйста, войдите.",
+      "message": "Session is invalid.\u003Cbr/>Please login."
+   },
+   "e_load_content": {
+      "description": "Ошибка загрузки данных.",
+      "message": "Error load contents."
+   },
+   "e_no_data": {
+      "description": "Нет данных.",
+      "message": "No data."
+   },
+   "e_not_active": {
+      "description": "Пожалуйста, выберите лист.",
+      "message": "Please select the sheet."
+   },
+   "e_not_email_or_pass": {
+      "description": "Некорректный пароль/почта.",
+      "message": "Incorrect email or password."
+   },
+   "e_please_valid": {
+      "description": "Пожалуйста, введите верно: ",
+      "message": "Please enter valid: "
+   },
+   "e_server_not": {
+      "description": "Сервер не отвечает.\u003Cbr/>Мы уже знаем о проблеме и работаем над ее решением.\u003Cbr/>Приносим извинения.",
+      "message": "Server is not responding.\u003Cbr/>We are aware of the problem and working on its solution. We apologize"
+   },
+   "email": {
+      "description": "Почта",
+      "message": "Email"
+   },
+   "enter": {
+      "description": "Войти",
+      "message": "Log in"
+   },
+   "exit_mes": {
+      "description": "Все записи будут удалены. Вы действительно хотите продолжить?",
+      "message": "All data will be deleted. Really get out?"
+   },
+   "export": {
+      "description": "Экспорт",
+      "message": "Export"
+   },
+   "ext_description": {
+      "description": "Блокнот-онлайн. Расширение для Хрома с функцией синхронизации. Откройте и редактируйте сохраненные данные на любом компьютере.",
+      "message": "Notepad-online for Chrome with sync functionality. Open and edit data on any computer."
+   },
+   "ext_name": {
+      "description": "Блокнот - онлайн",
+      "message": "Notepad - online"
+   },
+   "ext_short_name": {
+      "description": "Блокнот - онлайн",
+      "message": "Notepad - online"
+   },
+   "forget_pass": {
+      "description": "Забыл пароль?",
+      "message": "Forgot password?"
+   },
+   "hello": {
+      "description": "Привет",
+      "message": "Hello"
+   },
+   "history": {
+      "description": "Восстановить лист",
+      "message": "Recovery of sheet"
+   },
+   "import": {
+      "description": "Импорт",
+      "message": "Import"
+   },
+   "load": {
+      "description": "Загрузка, подождите...",
+      "message": "Loading, please wait..."
+   },
+   "login": {
+      "description": "Вход",
+      "message": "Login"
+   },
+   "logout": {
+      "description": "Выйти",
+      "message": "Logout"
+   },
+   "lord": {
+      "description": "Господин",
+      "message": "Unregistered"
+   },
+   "menu": {
+      "description": "Меню",
+      "message": "Menu"
+   },
+   "name_list": {
+      "description": "Новый лист",
+      "message": "New sheet"
+   },
+   "opt_big": {
+      "description": "Большой",
+      "message": "Big"
+   },
+   "opt_button": {
+      "description": "Сохранить изменения",
+      "message": "Save changes"
+   },
+   "opt_checkbox_hide": {
+      "description": "Скрывать панель слева",
+      "message": "Hide the panel on the left"
+   },
+   "opt_editor_use": {
+      "description": "Включить продвинутый визуальный редактор",
+      "message": "To include an advanced visual editor"
+   },
+   "opt_lang": {
+      "description": "Язык",
+      "message": "Language"
+   },
+   "opt_normal": {
+      "description": "Нормальный",
+      "message": "Normal"
+   },
+   "opt_small": {
+      "description": "Маленький",
+      "message": "Small"
+   },
+   "opt_very_small": {
+      "description": "Очень маленький",
+      "message": "Very small"
+   },
+   "pass": {
+      "description": "Пароль",
+      "message": "Password"
+   },
+   "recovery_pass": {
+      "description": "Сменить пароль",
+      "message": "Change password"
+   },
+   "registration": {
+      "description": "Регистрация",
+      "message": "Registration"
+   },
+   "save": {
+      "description": "Сохранить",
+      "message": "Save"
+   },
+   "select_all": {
+      "description": "Выделить всё",
+      "message": "Select all"
+   },
+   "session": {
+      "description": "Другие открытые сессии",
+      "message": "Other open sessions"
+   },
+   "session_create": {
+      "description": "Время создания",
+      "message": "Creation time"
+   },
+   "session_delete": {
+      "description": "Удалить",
+      "message": "Delete"
+   },
+   "session_kill_all": {
+      "description": "Закрыть все сессии, кроме текущей",
+      "message": "Kill all but current session"
+   },
+   "session_kill_select": {
+      "description": "Закрыть отмеченные сессии",
+      "message": "Kill checked sessions"
+   },
+   "session_last": {
+      "description": "Время последнего входа",
+      "message": "Last login time"
+   },
+   "session_not_defined": {
+      "description": "не определено",
+      "message": "not defined"
+   },
+   "settings": {
+      "description": "Настройки",
+      "message": "Settings"
+   },
+   "settings_radio_name": {
+      "description": "Изменить размер окна",
+      "message": "Changing window size"
+   },
+   "settings_s_name": {
+      "description": "Размер шрифта:",
+      "message": "Font size:"
+   },
+   "star": {
+      "description": "Оценить расширение",
+      "message": "Rate the app"
+   },
+   "symbols": {
+      "description": "и более символов",
+      "message": "symbols or longer"
+   },
+   "textarea": {
+      "description": "Новый полезный лист для Ваших заметок ツ",
+      "message": "New useful sheet for your notes ツ"
+   },
+   "upload_cancel": {
+      "description": "Отменить",
+      "message": "Cancel"
+   },
+   "upload_go": {
+      "description": "Импорт файла...",
+      "message": "Import file..."
+   },
+   "upload_mes": {
+      "description": "Файл слишком большой. Могут возникнуть проблемы с сохранением и синхронизацией.\u003Cbr/>\u003Cspan>Все равно продолжить?\u003C/span>",
+      "message": "The file is too large. Can arise problems with preservation and synchronization.\u003Cbr/>\u003Cspan>Continue anyway?\u003C/span>"
+   },
+   "upload_ok": {
+      "description": "Импорт выполнен успешно.",
+      "message": "The import was successful."
+   },
+   "upload_yes": {
+      "description": "Да",
+      "message": "Yes"
+   },
+   "username": {
+      "description": "Имя пользователя",
+      "message": "Username"
+   }
+}

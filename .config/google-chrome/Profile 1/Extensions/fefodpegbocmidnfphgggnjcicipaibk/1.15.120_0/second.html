@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="styles/popup.css" rel="stylesheet" type="text/css">
+	<link href="styles/nanoscroller.css" rel="stylesheet" type="text/css">
+	<link href="styles/jquery-editor.css" id="edit_style" rel="stylesheet">
+	<link href="#" id="st_style" rel="stylesheet">
+	<link href="#" id="st_style_color" rel="stylesheet">
+	<script src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/jquery-editor.js" charset="utf-8"></script>
+	<script src="scripts/style.js"></script>
+	<script src="scripts/nanoscroller.min.js"></script>
+	<title>Notepad - online</title>
+	<meta property="og:title" id="og_title" content="Notepad - online">
+	<meta property="og:description" id="og_description" content="Notepad-online for Chrome with sync functionality. Open and edit data on any computer.">
+</head>
+<body style="height: 100vh">
+<!-- Menu top -->
+<div class='p_menu'>
+	<div class='menu_notepad'>NOTEPAD<span class="menu_notepad_online">online</span></div>
+	<div class='menu_login_reg'>
+		<a href="#" tabindex="-1" id='a_login'>login</a>
+		<a href="#" tabindex="-1" id='a_registration'>registration</a>
+	</div>
+	<div class='menu_hello' tabindex="-1">
+		<div style="position: relative;"><span id='loc_hello'>Hello</span><span>, </span><span id='a_hello'>User</span><span class="menu_email"><div></div></span></div>
+	</div>
+	<div class="p_menu_menu_list_bg"></div>
+	<div class="p_menu_menu"><span id='loc_menu'>Menu</span><span style='font-size:.6em'>&nbsp;&nbsp;&#9660;</span>
+		<div class="p_menu_menu_list">
+			<div class='p_menu_menu_list_string' tabindex="-1">
+				<a id='p_list_string_export_a'>
+					<div class='p_list_string_div' id='p_list_string_export'>
+						<span class='p_list_string_span'><img class='p_list_img' src="img/export.png" /></span>
+						<span id='loc_export'>Export</span>
+					</div>
+				</a>
+				<div class='p_list_string_div' id='p_list_string_import'>
+					<span class='p_list_string_span'><img class='p_list_img' src="img/import.png" /></span>
+					<span class='file_upload'><label for="import_input" id='loc_import'>Import</label><input class="import_input" id="import_input" name="import_input" type="file" accept="text/plain,text/html,text/css,application/javascript"></span>
+				</div>
+				<div class='p_list_string_div' id='p_list_string_history'>
+					<span class='p_list_string_span'><img class='p_list_img' src="img/history.png" /></span>
+					<span id='loc_history'>History</span>
+				</div>
+				<div class='p_list_string_div' id='p_list_string_session'>
+					<span class='p_list_string_span'><img class='p_list_img' src="img/session.png" /></span>
+					<span id='loc_session'>Other open session</span>
+				</div>
+				<div class='p_list_string_div' id='p_list_string_pass'>
+					<span class='p_list_string_span'><img class='p_list_img' src="img/pass.png" /></span>
+					<span id='loc_recovery_pass'>Change password</span>
+				</div>
+				<div class='p_list_string_div' id='p_list_string_logout'>
+					<span class='p_list_string_span'><img class='p_list_img' src="img/logout.png" /></span>
+					<span id='loc_logout'>Logout</span>
+				</div>
+				<div class='p_list_string_line'></div>
+				<div class='p_list_string_div' id='p_list_string_donate' style='background-color: #ebffef;'>
+					<span class='p_list_string_span'><img class='p_list_img' src="img/donate.png" /></span>
+					<span id='loc_donate'>Donate</span>
+				</div>
+				<div class='p_list_string_div' id='p_list_string_star'>
+					<span class='p_list_string_span'><img class='p_list_img' src="img/star.png" /></span>
+					<span id='loc_star'>Rate app</span>
+				</div>
+				<div class='p_list_string_div' id='p_list_string_settings'>
+					<span class='p_list_string_span'><img class='p_list_img' src="img/settings.png" /></span>
+					<span id='loc_settings'>Settings</span>
+				</div>
+				<div class='p_list_string_div' id='p_list_string_about'>
+					<span class='p_list_string_span' style="display: table-cell;"><img class='p_list_img' src="img/about.png" /></span>
+					<span class="about_version" style="display: table-cell; padding-left:3px;"><span class="about_version_text">About v</span><span class="about_version_num">2.0.0</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='export_choose_bg'></div>
+	<div class='export_choose'>
+		<a id="export_btn_a">
+			<div class='export_btn'>Download</div>
+		</a>
+		<div class='p_list_string_line'></div>
+		<div class='check_all'>
+			<input type="checkbox" class='check_all_input chb' id="check_all_input"/><label for="check_all_input" class="check_all_label">Select all</label>
+		</div>
+		<div class='p_list_string_line'></div>
+		<div class='export_list'>
+			<div class=''>
+				<div class='export_list_div'></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Choice online/offline -->
+<div class="choice">
+	<div class="choice_name">Select a convenient version</div>
+	<div class="choice_on">
+		<p class="chioce_with_authorization">With registration</p>
+		<p class="chioce_with_text">In this version of Notepad you need to register a personal account using e-mail. This will allow you to log into your account from multiple devices and synchronize all the information in a single application. Your data will be password protected and stored on the server cloud. To work in this version, you must have a mandatory connection to the Internet.</p>
+	</div>
+	<div class="choice_off">
+		<p class="chioce_without_authorization">Without registration</p>
+		<p class="chioce_without_text">This version of Notepad does not require registration of a personal account, since it is intended for use on only one device. All information is stored right in your browser and is not deleted when it is closed. Work in the application can be done without connecting to the Internet.</p>
+	</div>
+</div>
+
+<!-- General conteiner -->
+<div class='p_conteiner' id='p_conteiner'>
+	<div class="new_left_block">
+		<div class="left_block_slip_div">
+			<div class="left_block_slip"></div>
+		</div>
+		<div class="submit_search p_conteiner_button">
+			<div id="submit_search"></div><div class="search_text" contenteditable></div>
+		</div>
+		<div class='submit_create p_conteiner_button' id='submit_create'>
+			<img src='img/add.png' style="margin-bottom: -2px; width: 15px; padding-right: 6px;">
+			<span id='loc_add_list'>Add list</span>
+		</div>
+		<div class='tab_conteiner'>
+			<div class='nano tab_nano'>
+				<div class='nano-content'>
+					<div class='tab' id='tab' tabindex="-1">
+						<ul></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab_full"></div>
+	</div>
+	<div class="new_right_block">
+		<div class="new_right_block_div">
+			<input type="text" class="p_conteiner_button seria" id="seria" tabindex="1" placeholder="New list" name="seria" maxlength='30' value=''>
+			<a href="#" class='p_conteiner_button' id='a_sync' tabindex="3">
+				<img src='img/save_ok_load.png' id='img_save_ok_load' style="position: absolute; opacity: 0;">
+				<img src='img/save_ok_green.png' id='img_save_ok' style="position: absolute; opacity: 0;">
+				<img src='img/save_er.png' id='img_save_er' style="position: absolute; opacity: 0;">
+				<img src='img/save.png' id='img_save'>
+				<span id='loc_save'>Save</span>
+			</a>
+		</div>
+		<div class="panel_div">
+			<textarea class='textarea jqte-test' id='textarea' tabindex="2" placeholder='  ツ'></textarea>
+			<div class='textarea_size'></div>
+			<div class='textarea_resize'><div></div><div></div></div>
+		</div>
+	</div>
+	<div class='msg_div'>
+		<div class='msg_view'></div>
+		<div class="msg_close">&times;</div>
+	</div>
+</div>
+
+<!-- Login -->
+<div class='p_login' id='p_login'>
+	<form id='form' name='form' style='height: 155px;'>
+		<div class='login_pass'>
+			<label id='loc_l_email'>Email</label>
+			<input type="email" id='email' name='email' required autocomplete="off" autofocus>
+		</div>
+		<div class='login_pass'>
+			<label id='loc_l_pass'>Password</label>
+			<input type="password" id='pass' name='pass' required autocomplete="off">
+		</div>
+		<button id="submit_login" type="submit" value="Enter"><div class='submit_login_div'><img src='img/enter.png'><span id='loc_l_enter'>Enter</span></div></button>
+		<div class="forget_pass">Forgot password?</div>
+	</form>
+	<div class="choce_prev">Select a different version</div>
+</div>
+
+<!-- Registration -->
+<div class='p_registration' id='p_registration'>
+	<form id='form_reg' name='form_reg' style='height: 155px;'>
+		<div class='login_pass'>
+			<label id='loc_r_email'>Email</label>
+			<input type="text" id='r_email' name='r_email' required autocomplete="off" autofocus>
+		</div>
+		<div class='login_pass'>
+			<label id='loc_r_user'>Username</label>
+			<input type="text" id='r_login' name='r_login' required autocomplete="off">
+		</div>
+		<div class='login_pass'>
+			<label id='loc_r_pass'>Password</label>
+			<input type="password" id='r_pass' name='r_pass' required autocomplete="off">
+		</div>
+		<button id="submit_reg" type="submit" value="registration"><div class='submit_login_div'><img src='img/reg.png'><span id='loc_r_reg'>Registration</span></div></button>
+	</form>
+	<div class="choce_prev">Select a different version</div>
+</div>
+<div class='load'>Loading, please wait...</div>
+<div class='message' id='message'>
+	<div class='message_div'></div>
+	<div class='message_close'></div>
+</div>
+<div class='about_prog_bg'></div>
+<div class='about_prog' id='about_prog'>
+	<div class='message_close'></div>
+	<div class='about_div'>
+		<div class='nano nano_about'>
+			<div class='about_div_div nano-content'></div>
+		</div>
+	</div>
+</div>
+<div class='upload_file_div'>
+	<div class="upload_file_div_in">
+		<div class='upload_text_div'>The file is too large. Can arise problems with preservation and synchronization.<br/><span>Continue anyway?</span></div>
+		<div class="upload_div_q">
+			<div class='upload_div_ok'>Yes</div><div class='upload_div_or'></div><div class='upload_div_no'>Cancel</div>
+		</div>
+	</div>
+</div>
+<div class='delete_div'>
+	<div class="delete_div_in">
+		<div class='delete_text_div'><span class="delete_text_div_span">Deleted sheet?</span></div>
+		<div class="delete_div_q">
+			<div class='delete_div_ok'>Yes</div><div class='delete_div_or'></div><div class='delete_div_no'>Cancel</div>
+		</div>
+	</div>
+</div>
+<div class='exit_div'>
+	<div class="exit_div_in">
+		<div class='exit_text_div'><span class="exit_text_div_span">All data will be deleted. Really get out?</span></div>
+		<div class="exit_div_q">
+			<div class='exit_div_ok'>Yes</div><div class='exit_div_or'></div><div class='exit_div_no'>Cancel</div>
+		</div>
+	</div>
+</div>
+<div class='session_div'>
+	<div class='message_close'></div>
+	<div class="session_div_in">
+		<div class='nano session_text_div'>
+			<div class="nano-content session_text_div_div">
+				<div class="session_div_table">
+					<img src="img/save_ok_load.png" style="width:48px; height:48px; display:block; animation: ok_load 1s infinite linear;">
+				</div>
+			</div>
+		</div>
+		<div class="session_button">
+			<div class='ses_but session_kill_select' id='session_kill_select'>Kill checked sessions</div>
+			<div class='delete_div_or'></div>
+			<div class='ses_but session_kill_all' id='session_kill_all'>Kill all but current session</div>
+		</div>
+	</div>
+</div>
+
+
+<script charset="UTF-8" src="scripts/locales.js"></script>
+<script charset="UTF-8" src="scripts/offline.js"></script>
+<script charset="UTF-8" src="scripts/popup.js"></script>
+<script src="scripts/analytics.js"></script>
+
+</body>
+</html>

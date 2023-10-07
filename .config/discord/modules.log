@@ -1,0 +1,619 @@
+2023-10-05T19:18:39.800Z [Modules] Modules initializing
+2023-10-05T19:18:39.801Z [Modules] Distribution: remote
+2023-10-05T19:18:39.802Z [Modules] Host updates: disabled
+2023-10-05T19:18:39.802Z [Modules] Module updates: enabled
+2023-10-05T19:18:39.804Z [Modules] Module install path: /home/talin/.config/discord/0.0.30/modules
+2023-10-05T19:18:39.805Z [Modules] Module installed file path: /home/talin/.config/discord/0.0.30/modules/installed.json
+2023-10-05T19:18:39.806Z [Modules] Module download path: /home/talin/.config/discord/0.0.30/modules/pending
+2023-10-05T19:18:40.063Z [Modules] Bootstrapping...
+2023-10-05T19:18:40.069Z [Modules] Installing discord_desktop_core@0 from /nix/store/p2jcpzkdfgwlpgrikwk1iazf5zp1jrp9-discord-0.0.30/opt/Discord/resources/bootstrap/discord_desktop_core.zip
+2023-10-05T19:18:40.077Z [Modules] Failed installing discord_desktop_core@0: Error: ENOENT: no such file or directory, open '/nix/store/p2jcpzkdfgwlpgrikwk1iazf5zp1jrp9-discord-0.0.30/opt/Discord/resources/bootstrap/discord_desktop_core.zip'
+2023-10-05T19:18:40.079Z [Modules] Installing discord_erlpack@0 from /nix/store/p2jcpzkdfgwlpgrikwk1iazf5zp1jrp9-discord-0.0.30/opt/Discord/resources/bootstrap/discord_erlpack.zip
+2023-10-05T19:18:40.081Z [Modules] Failed installing discord_erlpack@0: Error: ENOENT: no such file or directory, open '/nix/store/p2jcpzkdfgwlpgrikwk1iazf5zp1jrp9-discord-0.0.30/opt/Discord/resources/bootstrap/discord_erlpack.zip'
+2023-10-05T19:18:40.082Z [Modules] Installing discord_spellcheck@0 from /nix/store/p2jcpzkdfgwlpgrikwk1iazf5zp1jrp9-discord-0.0.30/opt/Discord/resources/bootstrap/discord_spellcheck.zip
+2023-10-05T19:18:40.083Z [Modules] Failed installing discord_spellcheck@0: Error: ENOENT: no such file or directory, open '/nix/store/p2jcpzkdfgwlpgrikwk1iazf5zp1jrp9-discord-0.0.30/opt/Discord/resources/bootstrap/discord_spellcheck.zip'
+2023-10-05T19:18:40.087Z [Modules] Installing discord_utils@0 from /nix/store/p2jcpzkdfgwlpgrikwk1iazf5zp1jrp9-discord-0.0.30/opt/Discord/resources/bootstrap/discord_utils.zip
+2023-10-05T19:18:40.088Z [Modules] Failed installing discord_utils@0: Error: ENOENT: no such file or directory, open '/nix/store/p2jcpzkdfgwlpgrikwk1iazf5zp1jrp9-discord-0.0.30/opt/Discord/resources/bootstrap/discord_utils.zip'
+2023-10-05T19:18:40.089Z [Modules] Installing discord_voice@0 from /nix/store/p2jcpzkdfgwlpgrikwk1iazf5zp1jrp9-discord-0.0.30/opt/Discord/resources/bootstrap/discord_voice.zip
+2023-10-05T19:18:40.097Z [Modules] Failed installing discord_voice@0: Error: ENOENT: no such file or directory, open '/nix/store/p2jcpzkdfgwlpgrikwk1iazf5zp1jrp9-discord-0.0.30/opt/Discord/resources/bootstrap/discord_voice.zip'
+2023-10-05T19:18:40.099Z [Modules] Finished module installations. [success: 0] [failure: 5]
+2023-10-05T19:18:40.100Z [Modules] Host is up to date.
+2023-10-05T19:18:40.100Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-05T19:18:40.730Z [Modules] Module update available: discord_desktop_core@1 [installed: 0]
+2023-10-05T19:18:40.731Z [Modules] Module update available: discord_erlpack@1 [installed: 0]
+2023-10-05T19:18:40.732Z [Modules] Module update available: discord_spellcheck@1 [installed: 0]
+2023-10-05T19:18:40.732Z [Modules] Module update available: discord_utils@1 [installed: 0]
+2023-10-05T19:18:40.732Z [Modules] Module update available: discord_voice@4 [installed: 0]
+2023-10-05T19:18:40.733Z [Modules] Fetching discord_desktop_core@1 from https://discord.com/api/modules/stable/discord_desktop_core/1
+2023-10-05T19:18:40.734Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip
+2023-10-05T19:18:41.010Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 1%
+2023-10-05T19:18:41.019Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 2%
+2023-10-05T19:18:41.032Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 3%
+2023-10-05T19:18:41.046Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 4%
+2023-10-05T19:18:41.051Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 6%
+2023-10-05T19:18:41.065Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 7%
+2023-10-05T19:18:41.067Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 8%
+2023-10-05T19:18:41.072Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 9%
+2023-10-05T19:18:41.076Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 10%
+2023-10-05T19:18:41.082Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 11%
+2023-10-05T19:18:41.085Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 13%
+2023-10-05T19:18:41.093Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 15%
+2023-10-05T19:18:41.099Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 17%
+2023-10-05T19:18:41.109Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 19%
+2023-10-05T19:18:41.119Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 21%
+2023-10-05T19:18:41.121Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 22%
+2023-10-05T19:18:41.123Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 24%
+2023-10-05T19:18:41.133Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 25%
+2023-10-05T19:18:41.137Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 28%
+2023-10-05T19:18:41.143Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 30%
+2023-10-05T19:18:41.152Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 33%
+2023-10-05T19:18:41.153Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 34%
+2023-10-05T19:18:41.167Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 38%
+2023-10-05T19:18:41.172Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 40%
+2023-10-05T19:18:41.180Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 43%
+2023-10-05T19:18:41.184Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 44%
+2023-10-05T19:18:41.186Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 45%
+2023-10-05T19:18:41.189Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 47%
+2023-10-05T19:18:41.195Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 48%
+2023-10-05T19:18:41.202Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 50%
+2023-10-05T19:18:41.205Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 51%
+2023-10-05T19:18:41.209Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 52%
+2023-10-05T19:18:41.215Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 54%
+2023-10-05T19:18:41.218Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 55%
+2023-10-05T19:18:41.221Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 56%
+2023-10-05T19:18:41.225Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 57%
+2023-10-05T19:18:41.232Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 59%
+2023-10-05T19:18:41.234Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 60%
+2023-10-05T19:18:41.237Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 61%
+2023-10-05T19:18:41.240Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 62%
+2023-10-05T19:18:41.245Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 63%
+2023-10-05T19:18:41.251Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 65%
+2023-10-05T19:18:41.254Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 66%
+2023-10-05T19:18:41.256Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 68%
+2023-10-05T19:18:41.260Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 69%
+2023-10-05T19:18:41.265Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 70%
+2023-10-05T19:18:41.271Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 72%
+2023-10-05T19:18:41.276Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 73%
+2023-10-05T19:18:41.281Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 74%
+2023-10-05T19:18:41.290Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 76%
+2023-10-05T19:18:41.294Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 79%
+2023-10-05T19:18:41.302Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 80%
+2023-10-05T19:18:41.305Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 82%
+2023-10-05T19:18:41.313Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 83%
+2023-10-05T19:18:41.320Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 85%
+2023-10-05T19:18:41.324Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 86%
+2023-10-05T19:18:41.569Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 90%
+2023-10-05T19:18:41.572Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 97%
+2023-10-05T19:18:41.576Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 99%
+2023-10-05T19:18:41.580Z [Modules] Streaming discord_desktop_core@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip: 100%
+2023-10-05T19:18:41.588Z [Modules] Fetching discord_erlpack@1 from https://discord.com/api/modules/stable/discord_erlpack/1
+2023-10-05T19:18:41.588Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip
+2023-10-05T19:18:45.557Z [Modules] Modules initializing
+2023-10-05T19:18:45.559Z [Modules] Distribution: remote
+2023-10-05T19:18:45.559Z [Modules] Host updates: disabled
+2023-10-05T19:18:45.560Z [Modules] Module updates: enabled
+2023-10-05T19:18:45.561Z [Modules] Module install path: /home/talin/.config/discord/0.0.30/modules
+2023-10-05T19:18:45.561Z [Modules] Module installed file path: /home/talin/.config/discord/0.0.30/modules/installed.json
+2023-10-05T19:18:45.561Z [Modules] Module download path: /home/talin/.config/discord/0.0.30/modules/pending
+2023-10-05T19:18:45.736Z [Modules] Installing updates...
+2023-10-05T19:18:45.737Z [Modules] Installing discord_desktop_core@1 from /home/talin/.config/discord/0.0.30/modules/pending/discord_desktop_core-1.zip
+2023-10-05T19:18:45.937Z [Modules] Finished module installations. [success: 1] [failure: 0]
+2023-10-05T19:18:45.937Z [Modules] Host is up to date.
+2023-10-05T19:18:45.937Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-05T19:18:45.952Z [Modules] Module update available: discord_erlpack@1 [installed: 0]
+2023-10-05T19:18:45.952Z [Modules] Module update available: discord_spellcheck@1 [installed: 0]
+2023-10-05T19:18:45.953Z [Modules] Module update available: discord_utils@1 [installed: 0]
+2023-10-05T19:18:45.953Z [Modules] Module update available: discord_voice@4 [installed: 0]
+2023-10-05T19:18:45.953Z [Modules] Fetching discord_erlpack@1 from https://discord.com/api/modules/stable/discord_erlpack/1
+2023-10-05T19:18:45.954Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip
+2023-10-05T19:18:46.789Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 2%
+2023-10-05T19:18:46.812Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 3%
+2023-10-05T19:18:46.821Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 4%
+2023-10-05T19:18:46.886Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 7%
+2023-10-05T19:18:46.904Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 8%
+2023-10-05T19:18:46.911Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 9%
+2023-10-05T19:18:46.914Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 10%
+2023-10-05T19:18:46.917Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 11%
+2023-10-05T19:18:46.927Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 12%
+2023-10-05T19:18:46.931Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 13%
+2023-10-05T19:18:46.934Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 14%
+2023-10-05T19:18:46.996Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 17%
+2023-10-05T19:18:46.999Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 23%
+2023-10-05T19:18:47.015Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 24%
+2023-10-05T19:18:47.018Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 25%
+2023-10-05T19:18:47.021Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 26%
+2023-10-05T19:18:47.025Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 28%
+2023-10-05T19:18:47.031Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 30%
+2023-10-05T19:18:47.034Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 31%
+2023-10-05T19:18:47.038Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 32%
+2023-10-05T19:18:47.041Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 34%
+2023-10-05T19:18:47.047Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 35%
+2023-10-05T19:18:47.051Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 36%
+2023-10-05T19:18:47.054Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 38%
+2023-10-05T19:18:47.057Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 39%
+2023-10-05T19:18:47.060Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 40%
+2023-10-05T19:18:47.067Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 41%
+2023-10-05T19:18:47.070Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 42%
+2023-10-05T19:18:47.074Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 44%
+2023-10-05T19:18:47.077Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 46%
+2023-10-05T19:18:47.083Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 48%
+2023-10-05T19:18:47.087Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 50%
+2023-10-05T19:18:47.090Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 51%
+2023-10-05T19:18:47.093Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 52%
+2023-10-05T19:18:47.096Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 53%
+2023-10-05T19:18:47.100Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 55%
+2023-10-05T19:18:47.103Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 56%
+2023-10-05T19:18:47.106Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 58%
+2023-10-05T19:18:47.113Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 60%
+2023-10-05T19:18:47.116Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 61%
+2023-10-05T19:18:47.388Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 64%
+2023-10-05T19:18:47.392Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 79%
+2023-10-05T19:18:47.408Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 81%
+2023-10-05T19:18:47.411Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 82%
+2023-10-05T19:18:47.415Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 83%
+2023-10-05T19:18:47.418Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 85%
+2023-10-05T19:18:47.421Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 87%
+2023-10-05T19:18:47.425Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 88%
+2023-10-05T19:18:47.427Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 89%
+2023-10-05T19:18:47.430Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 91%
+2023-10-05T19:18:47.434Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 93%
+2023-10-05T19:18:47.437Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 94%
+2023-10-05T19:18:47.444Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 97%
+2023-10-05T19:18:47.447Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 98%
+2023-10-05T19:18:47.449Z [Modules] Streaming discord_erlpack@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip: 100%
+2023-10-05T19:18:47.452Z [Modules] Fetching discord_spellcheck@1 from https://discord.com/api/modules/stable/discord_spellcheck/1
+2023-10-05T19:18:47.453Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip
+2023-10-05T19:18:47.816Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 1%
+2023-10-05T19:18:47.817Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 3%
+2023-10-05T19:18:48.095Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 4%
+2023-10-05T19:18:48.098Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 7%
+2023-10-05T19:18:48.103Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 8%
+2023-10-05T19:18:48.114Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 9%
+2023-10-05T19:18:48.120Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 10%
+2023-10-05T19:18:48.124Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 11%
+2023-10-05T19:18:48.129Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 12%
+2023-10-05T19:18:48.137Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 13%
+2023-10-05T19:18:48.139Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 14%
+2023-10-05T19:18:48.141Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 15%
+2023-10-05T19:18:48.142Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 16%
+2023-10-05T19:18:48.152Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 17%
+2023-10-05T19:18:48.155Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 18%
+2023-10-05T19:18:48.158Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 19%
+2023-10-05T19:18:48.159Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 20%
+2023-10-05T19:18:48.162Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 21%
+2023-10-05T19:18:48.165Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 22%
+2023-10-05T19:18:48.168Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 23%
+2023-10-05T19:18:48.172Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 24%
+2023-10-05T19:18:48.173Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 25%
+2023-10-05T19:18:48.174Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 26%
+2023-10-05T19:18:48.177Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 27%
+2023-10-05T19:18:48.180Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 28%
+2023-10-05T19:18:48.183Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 29%
+2023-10-05T19:18:48.187Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 30%
+2023-10-05T19:18:48.190Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 31%
+2023-10-05T19:18:48.191Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 32%
+2023-10-05T19:18:48.192Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 33%
+2023-10-05T19:18:48.197Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 34%
+2023-10-05T19:18:48.197Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 35%
+2023-10-05T19:18:48.203Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 36%
+2023-10-05T19:18:48.204Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 37%
+2023-10-05T19:18:48.209Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 38%
+2023-10-05T19:18:48.210Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 39%
+2023-10-05T19:18:48.211Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 40%
+2023-10-05T19:18:48.215Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 41%
+2023-10-05T19:18:48.218Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 42%
+2023-10-05T19:18:48.221Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 43%
+2023-10-05T19:18:48.222Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 44%
+2023-10-05T19:18:48.224Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 45%
+2023-10-05T19:18:48.226Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 46%
+2023-10-05T19:18:48.229Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 47%
+2023-10-05T19:18:48.233Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 48%
+2023-10-05T19:18:48.236Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 49%
+2023-10-05T19:18:48.239Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 50%
+2023-10-05T19:18:48.241Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 51%
+2023-10-05T19:18:48.241Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 52%
+2023-10-05T19:18:48.244Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 53%
+2023-10-05T19:18:48.251Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 54%
+2023-10-05T19:18:48.251Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 55%
+2023-10-05T19:18:48.253Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 56%
+2023-10-05T19:18:48.256Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 57%
+2023-10-05T19:18:48.260Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 58%
+2023-10-05T19:18:48.262Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 59%
+2023-10-05T19:18:48.264Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 60%
+2023-10-05T19:18:48.265Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 61%
+2023-10-05T19:18:48.267Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 62%
+2023-10-05T19:18:48.273Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 63%
+2023-10-05T19:18:48.274Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 64%
+2023-10-05T19:18:48.275Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 65%
+2023-10-05T19:18:48.277Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 66%
+2023-10-05T19:18:48.281Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 67%
+2023-10-05T19:18:48.283Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 68%
+2023-10-05T19:18:48.286Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 69%
+2023-10-05T19:18:48.290Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 70%
+2023-10-05T19:18:48.293Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 71%
+2023-10-05T19:18:48.296Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 72%
+2023-10-05T19:18:48.296Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 73%
+2023-10-05T19:18:48.299Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 74%
+2023-10-05T19:18:48.306Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 75%
+2023-10-05T19:18:48.307Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 76%
+2023-10-05T19:18:48.309Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 77%
+2023-10-05T19:18:48.311Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 78%
+2023-10-05T19:18:48.314Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 79%
+2023-10-05T19:18:48.314Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 80%
+2023-10-05T19:18:48.317Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 81%
+2023-10-05T19:18:48.319Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 82%
+2023-10-05T19:18:48.323Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 83%
+2023-10-05T19:18:48.325Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 84%
+2023-10-05T19:18:48.330Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 85%
+2023-10-05T19:18:48.331Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 86%
+2023-10-05T19:18:48.333Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 87%
+2023-10-05T19:18:48.335Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 88%
+2023-10-05T19:18:48.339Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 89%
+2023-10-05T19:18:48.342Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 90%
+2023-10-05T19:18:48.345Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 91%
+2023-10-05T19:18:48.348Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 92%
+2023-10-05T19:18:48.349Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 93%
+2023-10-05T19:18:48.351Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 94%
+2023-10-05T19:18:48.354Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 95%
+2023-10-05T19:18:48.359Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 96%
+2023-10-05T19:18:48.362Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 97%
+2023-10-05T19:18:48.363Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 98%
+2023-10-05T19:18:48.365Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 99%
+2023-10-05T19:18:48.368Z [Modules] Streaming discord_spellcheck@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip: 100%
+2023-10-05T19:18:48.369Z [Modules] Fetching discord_utils@1 from https://discord.com/api/modules/stable/discord_utils/1
+2023-10-05T19:18:48.369Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip
+2023-10-05T19:18:48.515Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 2%
+2023-10-05T19:18:48.517Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 3%
+2023-10-05T19:18:48.520Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 6%
+2023-10-05T19:18:48.524Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 10%
+2023-10-05T19:18:48.529Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 16%
+2023-10-05T19:18:48.533Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 21%
+2023-10-05T19:18:48.536Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 24%
+2023-10-05T19:18:48.538Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 27%
+2023-10-05T19:18:48.541Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 29%
+2023-10-05T19:18:48.543Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 32%
+2023-10-05T19:18:48.544Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 35%
+2023-10-05T19:18:48.546Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 37%
+2023-10-05T19:18:48.548Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 39%
+2023-10-05T19:18:48.549Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 41%
+2023-10-05T19:18:48.550Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 42%
+2023-10-05T19:18:48.553Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 44%
+2023-10-05T19:18:48.555Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 46%
+2023-10-05T19:18:48.557Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 47%
+2023-10-05T19:18:48.559Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 49%
+2023-10-05T19:18:48.560Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 50%
+2023-10-05T19:18:48.562Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 52%
+2023-10-05T19:18:48.562Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 53%
+2023-10-05T19:18:48.564Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 55%
+2023-10-05T19:18:48.565Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 57%
+2023-10-05T19:18:48.567Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 60%
+2023-10-05T19:18:48.568Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 61%
+2023-10-05T19:18:48.570Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 63%
+2023-10-05T19:18:48.574Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 65%
+2023-10-05T19:18:48.574Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 66%
+2023-10-05T19:18:48.576Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 68%
+2023-10-05T19:18:48.576Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 69%
+2023-10-05T19:18:48.579Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 71%
+2023-10-05T19:18:48.580Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 72%
+2023-10-05T19:18:48.583Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 74%
+2023-10-05T19:18:48.583Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 76%
+2023-10-05T19:18:48.584Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 77%
+2023-10-05T19:18:48.585Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 78%
+2023-10-05T19:18:48.588Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 80%
+2023-10-05T19:18:48.589Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 82%
+2023-10-05T19:18:48.591Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 84%
+2023-10-05T19:18:48.591Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 85%
+2023-10-05T19:18:48.594Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 86%
+2023-10-05T19:18:48.594Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 87%
+2023-10-05T19:18:48.597Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 89%
+2023-10-05T19:18:48.598Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 91%
+2023-10-05T19:18:48.599Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 93%
+2023-10-05T19:18:48.600Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 95%
+2023-10-05T19:18:48.606Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 97%
+2023-10-05T19:18:48.608Z [Modules] Streaming discord_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip: 100%
+2023-10-05T19:18:48.609Z [Modules] Fetching discord_voice@4 from https://discord.com/api/modules/stable/discord_voice/4
+2023-10-05T19:18:48.609Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip
+2023-10-05T19:18:48.764Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 1%
+2023-10-05T19:18:48.767Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 2%
+2023-10-05T19:18:48.772Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 3%
+2023-10-05T19:18:48.778Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 4%
+2023-10-05T19:18:48.781Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 5%
+2023-10-05T19:18:48.785Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 6%
+2023-10-05T19:18:48.790Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 7%
+2023-10-05T19:18:48.801Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 8%
+2023-10-05T19:18:48.806Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 9%
+2023-10-05T19:18:48.810Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 10%
+2023-10-05T19:18:48.815Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 11%
+2023-10-05T19:18:48.820Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 12%
+2023-10-05T19:18:48.826Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 13%
+2023-10-05T19:18:48.831Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 14%
+2023-10-05T19:18:48.836Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 15%
+2023-10-05T19:18:48.841Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 16%
+2023-10-05T19:18:48.848Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 17%
+2023-10-05T19:18:48.852Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 18%
+2023-10-05T19:18:48.859Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 19%
+2023-10-05T19:18:48.862Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 20%
+2023-10-05T19:18:48.868Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 21%
+2023-10-05T19:18:48.875Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 22%
+2023-10-05T19:18:48.879Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 23%
+2023-10-05T19:18:48.882Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 24%
+2023-10-05T19:18:48.890Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 25%
+2023-10-05T19:18:48.894Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 26%
+2023-10-05T19:18:48.898Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 27%
+2023-10-05T19:18:48.904Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 28%
+2023-10-05T19:18:48.912Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 29%
+2023-10-05T19:18:48.917Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 30%
+2023-10-05T19:18:48.924Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 31%
+2023-10-05T19:18:48.927Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 32%
+2023-10-05T19:18:48.931Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 33%
+2023-10-05T19:18:48.935Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 34%
+2023-10-05T19:18:48.951Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 35%
+2023-10-05T19:18:48.959Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 37%
+2023-10-05T19:18:48.963Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 38%
+2023-10-05T19:18:48.966Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 39%
+2023-10-05T19:18:48.969Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 40%
+2023-10-05T19:18:48.976Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 41%
+2023-10-05T19:18:48.980Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 42%
+2023-10-05T19:18:48.985Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 43%
+2023-10-05T19:18:48.990Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 44%
+2023-10-05T19:18:48.994Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 45%
+2023-10-05T19:18:49.000Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 46%
+2023-10-05T19:18:49.004Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 47%
+2023-10-05T19:18:49.011Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 48%
+2023-10-05T19:18:49.015Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 49%
+2023-10-05T19:18:49.020Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 50%
+2023-10-05T19:18:49.023Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 51%
+2023-10-05T19:18:49.032Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 52%
+2023-10-05T19:18:49.037Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 53%
+2023-10-05T19:18:49.041Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 54%
+2023-10-05T19:18:49.045Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 55%
+2023-10-05T19:18:49.051Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 56%
+2023-10-05T19:18:49.057Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 57%
+2023-10-05T19:18:49.063Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 58%
+2023-10-05T19:18:49.066Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 59%
+2023-10-05T19:18:49.072Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 60%
+2023-10-05T19:18:49.078Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 61%
+2023-10-05T19:18:49.083Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 62%
+2023-10-05T19:18:49.087Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 63%
+2023-10-05T19:18:49.095Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 64%
+2023-10-05T19:18:49.101Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 65%
+2023-10-05T19:18:49.111Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 66%
+2023-10-05T19:18:49.112Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 67%
+2023-10-05T19:18:49.115Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 68%
+2023-10-05T19:18:49.122Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 69%
+2023-10-05T19:18:49.124Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 70%
+2023-10-05T19:18:49.130Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 71%
+2023-10-05T19:18:49.138Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 72%
+2023-10-05T19:18:49.140Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 73%
+2023-10-05T19:18:49.146Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 74%
+2023-10-05T19:18:49.151Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 75%
+2023-10-05T19:18:49.157Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 76%
+2023-10-05T19:18:49.162Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 77%
+2023-10-05T19:18:49.166Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 78%
+2023-10-05T19:18:49.173Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 79%
+2023-10-05T19:18:49.177Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 80%
+2023-10-05T19:18:49.184Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 81%
+2023-10-05T19:18:49.186Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 82%
+2023-10-05T19:18:49.193Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 83%
+2023-10-05T19:18:49.198Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 84%
+2023-10-05T19:18:49.205Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 85%
+2023-10-05T19:18:49.207Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 86%
+2023-10-05T19:18:49.213Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 87%
+2023-10-05T19:18:49.219Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 88%
+2023-10-05T19:18:49.223Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 89%
+2023-10-05T19:18:49.228Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 90%
+2023-10-05T19:18:49.234Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 91%
+2023-10-05T19:18:49.240Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 92%
+2023-10-05T19:18:49.244Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 93%
+2023-10-05T19:18:49.249Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 94%
+2023-10-05T19:18:49.256Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 95%
+2023-10-05T19:18:49.261Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 96%
+2023-10-05T19:18:49.264Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 97%
+2023-10-05T19:18:49.273Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 98%
+2023-10-05T19:18:49.278Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 99%
+2023-10-05T19:18:49.282Z [Modules] Streaming discord_voice@4 to /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip: 100%
+2023-10-05T19:18:49.283Z [Modules] Finished module downloads. [success: 4] [failure: 0]
+2023-10-05T19:18:49.283Z [Modules] Installing updates...
+2023-10-05T19:18:49.283Z [Modules] Installing discord_erlpack@1 from /home/talin/.config/discord/0.0.30/modules/pending/discord_erlpack-1.zip
+2023-10-05T19:18:49.335Z [Modules] Installing discord_spellcheck@1 from /home/talin/.config/discord/0.0.30/modules/pending/discord_spellcheck-1.zip
+2023-10-05T19:18:50.078Z [Modules] Installing discord_utils@1 from /home/talin/.config/discord/0.0.30/modules/pending/discord_utils-1.zip
+2023-10-05T19:18:50.517Z [Modules] Installing discord_voice@4 from /home/talin/.config/discord/0.0.30/modules/pending/discord_voice-4.zip
+2023-10-05T19:18:51.211Z [Modules] Finished module installations. [success: 4] [failure: 0]
+2023-10-05T19:18:51.211Z [Modules] Host is up to date.
+2023-10-05T19:18:51.211Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-05T19:18:51.217Z [Modules] No module updates available.
+2023-10-05T19:18:53.425Z [Modules] Starting to install discord_krisp...
+2023-10-05T19:18:53.425Z [Modules] Fetching discord_krisp@1 from https://discord.com/api/modules/stable/discord_krisp/1
+2023-10-05T19:18:53.425Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip
+2023-10-05T19:18:53.444Z [Modules] Starting to install discord_game_utils...
+2023-10-05T19:18:53.570Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 1%
+2023-10-05T19:18:53.574Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 2%
+2023-10-05T19:18:53.580Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 3%
+2023-10-05T19:18:53.585Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 4%
+2023-10-05T19:18:53.591Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 5%
+2023-10-05T19:18:53.600Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 6%
+2023-10-05T19:18:53.604Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 7%
+2023-10-05T19:18:53.611Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 8%
+2023-10-05T19:18:53.618Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 9%
+2023-10-05T19:18:53.625Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 10%
+2023-10-05T19:18:53.627Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 11%
+2023-10-05T19:18:53.641Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 12%
+2023-10-05T19:18:53.643Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 13%
+2023-10-05T19:18:53.647Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 14%
+2023-10-05T19:18:53.653Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 15%
+2023-10-05T19:18:53.659Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 16%
+2023-10-05T19:18:53.663Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 17%
+2023-10-05T19:18:53.670Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 18%
+2023-10-05T19:18:53.675Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 19%
+2023-10-05T19:18:53.683Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 20%
+2023-10-05T19:18:53.726Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 21%
+2023-10-05T19:18:53.767Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 22%
+2023-10-05T19:18:53.821Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 23%
+2023-10-05T19:18:53.842Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 24%
+2023-10-05T19:18:53.850Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 25%
+2023-10-05T19:18:53.858Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 26%
+2023-10-05T19:18:53.861Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 27%
+2023-10-05T19:18:53.884Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 28%
+2023-10-05T19:18:53.894Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 30%
+2023-10-05T19:18:53.904Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 32%
+2023-10-05T19:18:53.905Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 33%
+2023-10-05T19:18:53.910Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 34%
+2023-10-05T19:18:53.912Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 35%
+2023-10-05T19:18:53.914Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 36%
+2023-10-05T19:18:53.916Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 37%
+2023-10-05T19:18:53.916Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 38%
+2023-10-05T19:18:53.917Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 39%
+2023-10-05T19:18:53.918Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 40%
+2023-10-05T19:18:53.918Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 41%
+2023-10-05T19:18:53.920Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 42%
+2023-10-05T19:18:53.921Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 43%
+2023-10-05T19:18:53.925Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 44%
+2023-10-05T19:18:53.931Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 45%
+2023-10-05T19:18:53.937Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 46%
+2023-10-05T19:18:53.943Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 47%
+2023-10-05T19:18:53.949Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 48%
+2023-10-05T19:18:53.956Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 49%
+2023-10-05T19:18:53.960Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 50%
+2023-10-05T19:18:53.967Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 51%
+2023-10-05T19:18:53.974Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 52%
+2023-10-05T19:18:53.978Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 53%
+2023-10-05T19:18:53.985Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 54%
+2023-10-05T19:18:53.991Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 55%
+2023-10-05T19:18:53.997Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 56%
+2023-10-05T19:18:54.003Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 57%
+2023-10-05T19:18:54.008Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 58%
+2023-10-05T19:18:54.011Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 59%
+2023-10-05T19:18:54.017Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 60%
+2023-10-05T19:18:54.026Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 61%
+2023-10-05T19:18:54.029Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 62%
+2023-10-05T19:18:54.037Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 63%
+2023-10-05T19:18:54.042Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 64%
+2023-10-05T19:18:54.050Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 65%
+2023-10-05T19:18:54.054Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 66%
+2023-10-05T19:18:54.063Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 67%
+2023-10-05T19:18:54.070Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 68%
+2023-10-05T19:18:54.075Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 69%
+2023-10-05T19:18:54.077Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 70%
+2023-10-05T19:18:54.082Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 71%
+2023-10-05T19:18:54.089Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 72%
+2023-10-05T19:18:54.095Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 73%
+2023-10-05T19:18:54.101Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 74%
+2023-10-05T19:18:54.107Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 75%
+2023-10-05T19:18:54.112Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 76%
+2023-10-05T19:18:54.118Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 77%
+2023-10-05T19:18:54.123Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 78%
+2023-10-05T19:18:54.129Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 79%
+2023-10-05T19:18:54.139Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 80%
+2023-10-05T19:18:54.144Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 81%
+2023-10-05T19:18:54.149Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 82%
+2023-10-05T19:18:54.153Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 83%
+2023-10-05T19:18:54.161Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 84%
+2023-10-05T19:18:54.167Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 85%
+2023-10-05T19:18:54.173Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 86%
+2023-10-05T19:18:54.179Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 87%
+2023-10-05T19:18:54.181Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 88%
+2023-10-05T19:18:54.188Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 89%
+2023-10-05T19:18:54.193Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 90%
+2023-10-05T19:18:54.200Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 91%
+2023-10-05T19:18:54.205Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 92%
+2023-10-05T19:18:54.213Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 93%
+2023-10-05T19:18:54.225Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 94%
+2023-10-05T19:18:54.227Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 95%
+2023-10-05T19:18:54.231Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 96%
+2023-10-05T19:18:54.238Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 97%
+2023-10-05T19:18:54.243Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 98%
+2023-10-05T19:18:54.249Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 99%
+2023-10-05T19:18:54.253Z [Modules] Streaming discord_krisp@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip: 100%
+2023-10-05T19:18:54.254Z [Modules] Fetching discord_game_utils@1 from https://discord.com/api/modules/stable/discord_game_utils/1
+2023-10-05T19:18:54.255Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip
+2023-10-05T19:18:54.255Z [Modules] Installing discord_krisp@1 from /home/talin/.config/discord/0.0.30/modules/pending/discord_krisp-1.zip
+2023-10-05T19:18:54.387Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 2%
+2023-10-05T19:18:54.388Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 3%
+2023-10-05T19:18:54.393Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 6%
+2023-10-05T19:18:54.394Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 8%
+2023-10-05T19:18:54.397Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 10%
+2023-10-05T19:18:54.399Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 13%
+2023-10-05T19:18:54.403Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 16%
+2023-10-05T19:18:54.404Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 20%
+2023-10-05T19:18:54.405Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 23%
+2023-10-05T19:18:54.406Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 24%
+2023-10-05T19:18:54.408Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 27%
+2023-10-05T19:18:54.409Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 28%
+2023-10-05T19:18:54.412Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 31%
+2023-10-05T19:18:54.412Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 34%
+2023-10-05T19:18:54.415Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 37%
+2023-10-05T19:18:54.415Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 38%
+2023-10-05T19:18:54.418Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 41%
+2023-10-05T19:18:54.418Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 44%
+2023-10-05T19:18:54.421Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 47%
+2023-10-05T19:18:54.424Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 49%
+2023-10-05T19:18:54.425Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 50%
+2023-10-05T19:18:54.436Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 66%
+2023-10-05T19:18:54.437Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 72%
+2023-10-05T19:18:54.439Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 75%
+2023-10-05T19:18:54.440Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 76%
+2023-10-05T19:18:54.442Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 79%
+2023-10-05T19:18:54.442Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 81%
+2023-10-05T19:18:54.445Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 83%
+2023-10-05T19:18:54.446Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 86%
+2023-10-05T19:18:54.448Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 89%
+2023-10-05T19:18:54.448Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 91%
+2023-10-05T19:18:54.451Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 94%
+2023-10-05T19:18:54.452Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 95%
+2023-10-05T19:18:54.455Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 98%
+2023-10-05T19:18:54.455Z [Modules] Streaming discord_game_utils@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip: 100%
+2023-10-05T19:18:54.456Z [Modules] Finished module downloads. [success: 2] [failure: 0]
+2023-10-05T19:18:54.513Z [Modules] Host is up to date.
+2023-10-05T19:18:54.513Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-05T19:18:54.516Z [Modules] No module updates available.
+2023-10-05T19:18:54.721Z [Modules] Installing discord_game_utils@1 from /home/talin/.config/discord/0.0.30/modules/pending/discord_game_utils-1.zip
+2023-10-05T19:18:54.773Z [Modules] Finished module installations. [success: 2] [failure: 0]
+2023-10-05T19:18:54.997Z [Modules] Starting to install discord_rpc...
+2023-10-05T19:18:54.998Z [Modules] Fetching discord_rpc@1 from https://discord.com/api/modules/stable/discord_rpc/1
+2023-10-05T19:18:54.998Z [Modules] Streaming discord_rpc@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_rpc-1.zip
+2023-10-05T19:18:55.152Z [Modules] Streaming discord_rpc@1 to /home/talin/.config/discord/0.0.30/modules/pending/discord_rpc-1.zip: 100%
+2023-10-05T19:18:55.153Z [Modules] Finished module downloads. [success: 1] [failure: 0]
+2023-10-05T19:18:55.153Z [Modules] Installing discord_rpc@1 from /home/talin/.config/discord/0.0.30/modules/pending/discord_rpc-1.zip
+2023-10-05T19:18:55.165Z [Modules] Finished module installations. [success: 1] [failure: 0]
+2023-10-05T19:21:17.907Z [Modules] Modules initializing
+2023-10-05T19:21:17.908Z [Modules] Distribution: remote
+2023-10-05T19:21:17.908Z [Modules] Host updates: disabled
+2023-10-05T19:21:17.908Z [Modules] Module updates: enabled
+2023-10-05T19:21:17.909Z [Modules] Module install path: /home/talin/.config/discord/0.0.30/modules
+2023-10-05T19:21:17.909Z [Modules] Module installed file path: /home/talin/.config/discord/0.0.30/modules/installed.json
+2023-10-05T19:21:17.909Z [Modules] Module download path: /home/talin/.config/discord/0.0.30/modules/pending
+2023-10-05T19:21:18.089Z [Modules] No updates to install
+2023-10-05T19:21:18.089Z [Modules] Host is up to date.
+2023-10-05T19:21:18.090Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-05T19:21:18.630Z [Modules] No module updates available.
+2023-10-05T19:21:24.969Z [Modules] Host is up to date.
+2023-10-05T19:21:24.969Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-05T19:21:24.974Z [Modules] No module updates available.
+2023-10-06T14:03:27.587Z [Modules] Modules initializing
+2023-10-06T14:03:27.589Z [Modules] Distribution: remote
+2023-10-06T14:03:27.589Z [Modules] Host updates: disabled
+2023-10-06T14:03:27.590Z [Modules] Module updates: enabled
+2023-10-06T14:03:27.590Z [Modules] Module install path: /home/talin/.config/discord/0.0.30/modules
+2023-10-06T14:03:27.590Z [Modules] Module installed file path: /home/talin/.config/discord/0.0.30/modules/installed.json
+2023-10-06T14:03:27.590Z [Modules] Module download path: /home/talin/.config/discord/0.0.30/modules/pending
+2023-10-06T14:03:27.900Z [Modules] No updates to install
+2023-10-06T14:03:27.900Z [Modules] Host is up to date.
+2023-10-06T14:03:27.901Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-06T14:03:28.299Z [Modules] No module updates available.
+2023-10-06T14:03:32.739Z [Modules] Host is up to date.
+2023-10-06T14:03:32.739Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-06T14:03:32.742Z [Modules] No module updates available.
+2023-10-06T14:05:10.511Z [Modules] Modules initializing
+2023-10-06T14:05:10.511Z [Modules] Distribution: remote
+2023-10-06T14:05:10.511Z [Modules] Host updates: disabled
+2023-10-06T14:05:10.512Z [Modules] Module updates: enabled
+2023-10-06T14:05:10.512Z [Modules] Module install path: /home/talin/.config/discord/0.0.30/modules
+2023-10-06T14:05:10.512Z [Modules] Module installed file path: /home/talin/.config/discord/0.0.30/modules/installed.json
+2023-10-06T14:05:10.512Z [Modules] Module download path: /home/talin/.config/discord/0.0.30/modules/pending
+2023-10-06T14:05:10.680Z [Modules] No updates to install
+2023-10-06T14:05:10.680Z [Modules] Host is up to date.
+2023-10-06T14:05:10.681Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-06T14:05:11.152Z [Modules] No module updates available.
+2023-10-06T14:05:14.364Z [Modules] Host is up to date.
+2023-10-06T14:05:14.365Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-06T14:05:14.369Z [Modules] No module updates available.
