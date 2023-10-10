@@ -6,16 +6,21 @@
     homeDirectory = "/home/talin";
     
     packages = with pkgs; [
-      neofetch
-      google-chrome
-      fish
-      swww
-      brightnessctl
+      neofetch # System Fetch
+      google-chrome # Chrome
+      fish # Fish
+      swww # Wallpaper
+      pipes # Terminal Pipes
+      matrixcli # Terminal matrix
+      grimblast # Screenshot
+      killall # Kill
+      brightnessctl # Screen Brightness
       
-      discord
-      betterdiscordctl
+      discord # Discord
+      betterdiscordctl # Better Discord lmao
 
-      xfce.thunar
+      xfce.thunar # File Manager
+      eww-wayland # Bar
     ];
 
     stateVersion = "23.05";
