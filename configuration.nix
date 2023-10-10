@@ -23,40 +23,26 @@
   time.timeZone = "America/New_York";
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.package = pkgs.pulseaudioFull;
 
   users.users.talin = {
     description = "Talin Sharma";
     isNormalUser = true;
-    extraGroups = [ "wheel" "video" "networkmanager" ];
+    extraGroups = [ "wheel" "video" "networkmanager" "audio" ];
   };
   programs = {
     hyprland = {
       enable = true;
     };
-    firefox = {
-      enable = true;
-    };
   };
   environment.systemPackages = with pkgs; [
     kitty
-    gitFull
+    git
     gnome.gnome-keyring
     libsecret
-    numlockx
     rofi-wayland
-    eww-wayland
-    swaybg
-    swaylock-effects
     (callPackage ./pkgs/sddm-sugar-dark/sddm-sugar-dark.nix {}).sddm-sugar-dark
     #(callPackage ./pkgs/ags/ags.nix {}).ags
-    libsForQt5.qt5.qtgraphicaleffects
-    bamf
-    
-    # For EWW
-    jq 
-    socat
-    swaynotificationcenter
-    libnotify
   ];
 
   services = {
@@ -75,12 +61,10 @@
         sddm.theme = "sugar-dark";
       };
     };
-    printing.enable = true;
   };
 
   system = {
     stateVersion = "23.05";
   };
   security.pam.services.sddm.enableGnomeKeyring = true;
-  security.pam.services.swaylock = {};
 }
