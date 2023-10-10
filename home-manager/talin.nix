@@ -11,7 +11,7 @@
       fish # Fish
       swww # Wallpaper
       pipes # Terminal Pipes
-      matrixcli # Terminal matrix
+      cmatrix # Terminal matrix
       grimblast # Screenshot
       killall # Kill
       brightnessctl # Screen Brightness
