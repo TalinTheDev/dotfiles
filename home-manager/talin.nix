@@ -59,12 +59,6 @@
       source = ./config/.vscode;
     };
   };
-    home.file = {
-    ".config/mantablockscreen" = {
-      recursive = true;
-      source = ./config/mantablockscreen;
-    };
-  };
 
   xresources.properties = {
     "Xcursor.size" = 16;
@@ -72,13 +66,6 @@
   };
   
   programs = {
-    bash = {
-      enable = true;
-      enableCompletion = true;
-      shellAliases = {
-      };
-    };
-
     fish = {
       enable = true;
       interactiveShellInit = ''set fish_greeting'';
