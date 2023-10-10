@@ -40,12 +40,6 @@
       source = ./config/kitty;
     };
   };
-  home.file = {
-    ".config/BetterDiscord" = {
-      recursive = true;
-      source = ./config/BetterDiscord;
-    };
-  };
   # home.file = {
   #   ".config/hypr" = {
   #     recursive = true;
@@ -70,12 +64,6 @@
       source = ./config/.vscode;
     };
   };
-    home.file = {
-    ".config/mantablockscreen" = {
-      recursive = true;
-      source = ./config/mantablockscreen;
-    };
-  };
 
   xresources.properties = {
     "Xcursor.size" = 16;
@@ -83,13 +71,6 @@
   };
   
   programs = {
-    bash = {
-      enable = true;
-      enableCompletion = true;
-      shellAliases = {
-      };
-    };
-
     fish = {
       enable = true;
       interactiveShellInit = ''set fish_greeting'';
