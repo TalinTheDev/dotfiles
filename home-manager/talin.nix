@@ -5,27 +5,22 @@
     username = "talin";
     homeDirectory = "/home/talin";
     
-    packages = [
-      pkgs.neofetch
-      pkgs.google-chrome
-      pkgs.fish
-      pkgs.fishPlugins.hydro
-      pkgs.bash
-      pkgs.firefox
-      pkgs.swww
-      pkgs.brightnessctl
-      pkgs.sassc
-      pkgs.discord
-      pkgs.betterdiscordctl
+    packages = with pkgs; [
+      neofetch # System Fetch
+      google-chrome # Chrome
+      fish # Fish
+      swww # Wallpaper
+      pipes # Terminal Pipes
+      matrixcli # Terminal matrix
+      grimblast # Screenshot
+      killall # Kill
+      brightnessctl # Screen Brightness
+      
+      discord # Discord
+      betterdiscordctl # Better Discord lmao
 
-      pkgs.zip
-      pkgs.unzip
-      pkgs.xfce.thunar
-      pkgs.xfce.thunar-archive-plugin
-      pkgs.xfce.thunar-volman
-
-      pkgs.nerdfonts
-      inputs.ags.packages.${pkgs.system}.default
+      xfce.thunar # File Manager
+      eww-wayland # Bar
     ];
 
     stateVersion = "23.05";
