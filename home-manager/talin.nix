@@ -21,6 +21,8 @@
 
       xfce.thunar # File Manager
       eww-wayland # Bar
+      wev # Waybar event viewer
+      libsForQt5.qt5.qtgraphicaleffects # For SDDM
     ];
 
     stateVersion = "23.05";
