@@ -45,6 +45,10 @@
     #(callPackage ./pkgs/ags/ags.nix {}).ags
   ];
 
+  fonts.fonts = with pkgs; [
+    font-awesome
+  ];
+
   services = {
     bamf.enable = true;
     gnome.gnome-keyring = {
