@@ -20,7 +20,7 @@
       betterdiscordctl # Better Discord lmao
 
       xfce.thunar # File Manager
-      eww-wayland # Bar
+      waybar # Bar
       wev # Waybar event viewer
       libsForQt5.qt5.qtgraphicaleffects # For SDDM
     ];
