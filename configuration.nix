@@ -41,7 +41,7 @@
     gnome.gnome-keyring
     libsecret
     rofi-wayland
-    (callPackage ./pkgs/sddm-sugar-dark/sddm-sugar-dark.nix {}).sddm-sugar-dark
+    (callPackage ./pkgs/sddm-chili/sddm-chili.nix {}).sddm-chili
     #(callPackage ./pkgs/ags/ags.nix {}).ags
   ];
 
@@ -62,7 +62,7 @@
 
       displayManager = {
         sddm.enable = true;
-        sddm.theme = "sugar-dark";
+        sddm.theme = "chili";
       };
     };
   };

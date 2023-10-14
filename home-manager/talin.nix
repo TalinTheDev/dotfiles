@@ -9,6 +9,7 @@
       neofetch # System Fetch
       google-chrome # Chrome
       fish # Fish
+      neovim # NVIM
       swww # Wallpaper
       pipes # Terminal Pipes
       cmatrix # Terminal matrix
