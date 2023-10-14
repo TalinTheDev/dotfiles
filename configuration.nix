@@ -45,7 +45,7 @@
     #(callPackage ./pkgs/ags/ags.nix {}).ags
   ];
 
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     font-awesome
   ];
 
