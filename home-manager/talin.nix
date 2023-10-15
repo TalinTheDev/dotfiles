@@ -100,7 +100,6 @@
       userSettings = {
         "password-store" = "gnome";
         "window.menuBarVisibility" = "toggle";
-        "editor.fontFamily" = "'Droid Sans Mono', 'monospace', 'Font Awesome 6 Sharp', 'Font Awesome 6 Free', monospace";
       };
     };
 
