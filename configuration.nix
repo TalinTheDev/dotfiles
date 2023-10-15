@@ -47,6 +47,8 @@
 
   fonts.packages = with pkgs; [
     font-awesome
+    google-fonts
+    nerdfonts
   ];
 
   services = {
