@@ -11,6 +11,7 @@
       fish # Fish
       neovim # NVIM
       swww # Wallpaper
+      pywal # Theming
       pipes # Terminal Pipes
       cmatrix # Terminal matrix
       grimblast # Screenshot
