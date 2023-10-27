@@ -20,8 +20,11 @@
     firewall.enable = true;
   };
 
+
   time.timeZone = "America/New_York";
   hardware.pulseaudio.enable = true;
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
 
   users.users.talin = {
     description = "Talin Sharma";
@@ -40,8 +43,9 @@
     gnome.gnome-keyring
     libsecret
     rofi-wayland
-    (callPackage ./pkgs/sddm-chili/sddm-chili.nix {}).sddm-chili
-    #(callPackage ./pkgs/ags/ags.nix {}).ags
+    libsForQt5.qt5.qtgraphicaleffects # SDDM
+    libsForQt5.qt5.qtquickcontrols2 # SDDM
+    (callPackage ./pkgs/sddm-theme-corners/sddm-theme-corners.nix {}).sddm-theme-corners
   ];
 
   fonts.packages = with pkgs; [
@@ -51,6 +55,7 @@
   ];
 
   services = {
+    blueman.enable = true;
     bamf.enable = true;
     gnome.gnome-keyring = {
       enable = true;
@@ -63,7 +68,7 @@
 
       displayManager = {
         sddm.enable = true;
-        sddm.theme = "chili";
+        sddm.theme = "corners";
       };
     };
   };
