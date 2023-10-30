@@ -1,17 +1,12 @@
 { stdenv, pkgs }:
 {
   sddm-theme-corners = stdenv.mkDerivation {
-    name = "sddm-theme-corners-0.1.0";
+    name = "sddm-theme-corners-0.1.1";
     dontBuild = true;
     installPhase = ''
       mkdir -p $out/share/sddm/themes
-      cp -aR $src $out/share/sddm/themes/corners
+      cp -R $src $out/share/sddm/themes/corners
     '';
-    src = pkgs.fetchFromGitHub {
-      owner = "TalinTheDev";
-      repo = "sddm-theme-corners";
-      rev = "v0.1.0";
-      sha256 = "";
-    };
+    src = /home/talin/sddm-theme-corners/corners;
   };
 }

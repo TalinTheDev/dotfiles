@@ -43,6 +43,7 @@
     gnome.gnome-keyring
     libsecret
     rofi-wayland
+    wlogout
     libsForQt5.qt5.qtgraphicaleffects # SDDM
     libsForQt5.qt5.qtquickcontrols2 # SDDM
     (callPackage ./pkgs/sddm-theme-corners/sddm-theme-corners.nix {}).sddm-theme-corners
