@@ -5,26 +5,28 @@
     username = "talin";
     homeDirectory = "/home/talin";
     
-    packages = with pkgs; [
-      neofetch # System Fetch
-      google-chrome # Chrome
-      fish # Fish
-      neovim # NVIM
-      swww # Wallpaper
-      pywal # Theming
-      pipes # Terminal Pipes
-      cmatrix # Terminal matrix
-      grimblast # Screenshot
-      killall # Kill
-      brightnessctl # Screen Brightness
-      
-      discord # Discord
-      betterdiscordctl # Better Discord lmao
+    packages = [
+      inputs.ags.packages.${pkgs.system}.default
 
-      xfce.thunar # File Manager
-      waybar # Bar
-      wev # Waybar event viewer
-      libsForQt5.qt5.qtgraphicaleffects # For SDDM
+      pkgs.neofetch # System Fetch
+      pkgs.google-chrome # Chrome
+      pkgs.fish # Fish
+      pkgs.neovim # NVIM
+      pkgs.swww # Wallpaper
+      pkgs.pywal # Theming
+      pkgs.pipes # Terminal Pipes
+      pkgs.cmatrix # Terminal matrix
+      pkgs.grimblast # Screenshot
+      pkgs.killall # Kill
+      pkgs.brightnessctl # Screen Brightness
+      
+      pkgs.discord # Discord
+      pkgs.betterdiscordctl # Better Discord lmao
+
+      pkgs.xfce.thunar # File Manager
+      pkgs.waybar # Bar
+      pkgs.wev # Waybar event viewer
+      pkgs.libsForQt5.qt5.qtgraphicaleffects # For SDDM
     ];
 
     stateVersion = "23.05";
