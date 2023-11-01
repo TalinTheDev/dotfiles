@@ -11,6 +11,7 @@
       pkgs.neofetch # System Fetch
       pkgs.google-chrome # Chrome
       pkgs.fish # Fish
+      pkgs.ranger # File Manager
       pkgs.neovim # NVIM
       pkgs.swww # Wallpaper
       pkgs.pywal # Theming
@@ -25,6 +26,7 @@
 
       pkgs.xfce.thunar # File Manager
       pkgs.waybar # Bar
+      pkgs.htop # Task manager
       pkgs.wev # Waybar event viewer
       pkgs.libsForQt5.qt5.qtgraphicaleffects # For SDDM
     ];
@@ -70,6 +72,30 @@
     "Xcursor.size" = 16;
     "Xft.dpi" = 101;
   };
+      gtk = {
+      enable = true;
+      font.name = "TeX Gyre Adventor 10";
+      theme = {
+        name = "Orchis";
+        package = pkgs.orchis-theme;
+      };
+      iconTheme = {
+        name = "Papirus-Dark";
+        package = pkgs.papirus-icon-theme;
+      };
+
+      gtk3.extraConfig = {
+        Settings = ''
+          gtk-application-prefer-dark-theme=1
+        '';
+      };
+
+      gtk4.extraConfig = {
+        Settings = ''
+          gtk-application-prefer-dark-theme=1
+        '';
+      };
+    };
   
   programs = {
     fish = {
@@ -87,10 +113,8 @@
         }
       ];
     };
-
     kitty = {
       enable = true;
-      theme = "Afterglow";
       shellIntegration.enableFishIntegration = true;
     };
 
