@@ -59,6 +59,7 @@
 
   services = {
     blueman.enable = true;
+    printing.enable = true;
     bamf.enable = true;
     gnome.gnome-keyring = {
       enable = true;
