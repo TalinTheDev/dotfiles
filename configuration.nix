@@ -76,7 +76,7 @@
 
       excludePackages = [
         pkgs.xterm
-      ]
+      ];
     };
   };
 
