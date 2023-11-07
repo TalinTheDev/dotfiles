@@ -39,6 +39,8 @@
   environment.systemPackages = with pkgs; [
     kitty
     git
+    mako
+    libnotify
     pulseaudio
     gnome.gnome-keyring
     libsecret
@@ -71,6 +73,10 @@
         sddm.enable = true;
         sddm.theme = "corners";
       };
+
+      excludePackages = [
+        pkgs.xterm
+      ]
     };
   };
 

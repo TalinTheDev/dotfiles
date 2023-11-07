@@ -74,7 +74,6 @@
   };
       gtk = {
       enable = true;
-      font.name = "TeX Gyre Adventor 10";
       theme = {
         name = "Orchis";
         package = pkgs.orchis-theme;
