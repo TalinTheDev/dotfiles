@@ -11,6 +11,7 @@
       pkgs.neofetch # System Fetch
       pkgs.google-chrome # Chrome
       pkgs.fish # Fish
+      pkgs.gtklock # Lock
       pkgs.ranger # File Manager
       pkgs.neovim # NVIM
       pkgs.swww # Wallpaper

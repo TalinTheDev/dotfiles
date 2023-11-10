@@ -65,6 +65,12 @@
       enable = true;
     };
 
+    avahi = {
+      enable = true;
+      nssmdns = true;
+      openFirewall = true;
+    };
+
     xserver = {
       enable = true;
       layout = "us";
