@@ -7,6 +7,6 @@
       mkdir -p $out/share/sddm/themes
       cp -R $src $out/share/sddm/themes/corners
     '';
-    src = /home/talin/sddm-theme-corners/corners;
+    src = ./corners;
   };
 }

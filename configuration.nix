@@ -91,4 +91,5 @@
     stateVersion = "23.05";
   };
   security.pam.services.sddm.enableGnomeKeyring = true;
+  security.pam.services.gtklock = {};
 }
