@@ -73,31 +73,40 @@
     "Xcursor.size" = 16;
     "Xft.dpi" = 101;
   };
-      gtk = {
-      enable = true;
-      theme = {
-        name = "Orchis";
-        package = pkgs.orchis-theme;
-      };
-      iconTheme = {
-        name = "Papirus-Dark";
-        package = pkgs.papirus-icon-theme;
-      };
-
-      gtk3.extraConfig = {
-        Settings = ''
-          gtk-application-prefer-dark-theme=1
-        '';
-      };
-
-      gtk4.extraConfig = {
-        Settings = ''
-          gtk-application-prefer-dark-theme=1
-        '';
-      };
+  
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Orchis";
+      package = pkgs.orchis-theme;
     };
+    iconTheme = {
+      name = "Papirus-Dark";
+      package = pkgs.papirus-icon-theme;
+    };
+    cursorTheme = {
+      name = "Volantes";
+      package = pkgs.volantes-cursors;
+    };
+
+    gtk3.extraConfig = {
+      Settings = ''
+        gtk-application-prefer-dark-theme=1
+      '';
+    };
+
+    gtk4.extraConfig = {
+      Settings = ''
+        gtk-application-prefer-dark-theme=1
+      '';
+    };
+  };
   
   programs = {
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
     fish = {
       enable = true;
       interactiveShellInit = ''set fish_greeting'';
