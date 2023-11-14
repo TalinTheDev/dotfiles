@@ -109,7 +109,11 @@
     };
     fish = {
       enable = true;
-      interactiveShellInit = ''set fish_greeting'';
+      interactiveShellInit = ''
+        set fish_greeting
+        direnv hook fish | source
+        set -g direnv_fish_mode disable_arrow
+      '';
       plugins = [
         {
           name = "hydro";
@@ -132,6 +136,7 @@
       extensions = with pkgs.vscode-extensions; [
         bbenoist.nix
         jdinhlife.gruvbox
+        astro-build.astro-vscode
       ];
       userSettings = {
         "password-store" = "gnome";
