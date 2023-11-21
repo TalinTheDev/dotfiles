@@ -50,7 +50,6 @@
     libsForQt5.qt5.qtquickcontrols2 # SDDM
     nwg-look # GTK Themes
     (callPackage ./pkgs/sddm-theme-corners/sddm-theme-corners.nix {}).sddm-theme-corners
-    (callPackage ./pkgs/feather/feather.nix {}).feather
   ];
 
   fonts.packages = with pkgs; [

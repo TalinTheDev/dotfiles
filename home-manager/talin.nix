@@ -6,7 +6,7 @@
     homeDirectory = "/home/talin";
     
     packages = [
-      inputs.ags.packages.${pkgs.system}.default
+      # inputs.ags.packages.${pkgs.system}.default
 
       pkgs.neofetch # System Fetch
       pkgs.google-chrome # Chrome
