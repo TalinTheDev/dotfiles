@@ -1,0 +1,1 @@
+/nix/store/qbd9dhnpfyydzhcqmx63hwcj5fvzy1zb-home-manager-files/.config/fish/conf.d/plugin-hydro.fish
