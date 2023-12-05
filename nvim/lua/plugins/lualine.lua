@@ -1,5 +1,5 @@
 return {
   {
-    "nvim-lualine/lualine.nvim.git"
+    "nvim-lualine/lualine.nvim"
   }
 }
