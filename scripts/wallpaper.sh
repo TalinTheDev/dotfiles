@@ -11,7 +11,7 @@ if [[ $runCount != "1" ]]; then
     swww init
     swww img $wallpaper --transition-step 60 
 
-    sh /home/talin/.config/scripts/waybar.sh
+    sh ~/.config/scripts/waybar.sh
 
     echo 1 > ~/.config/scripts/settings/initCount
 fi

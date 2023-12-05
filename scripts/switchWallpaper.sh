@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 wallpaperList=""
-folderPath="/home/talin/Pictures/Wallpapers/"
-wallpaperSafe="/home/talin/.config/scripts/settings/wallpaper"
+folderPath=~/Pictures/Wallpapers/
+wallpaperSafe=~/.config/scripts/settings/wallpaper
 
 file_list=$(ls $folderPath)
 
