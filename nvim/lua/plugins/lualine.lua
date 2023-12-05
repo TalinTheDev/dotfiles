@@ -1,1 +1,5 @@
-require("lualine").setup()
+return {
+  {
+    "nvim-lualine/lualine.nvim.git"
+  }
+}
