@@ -1,3 +1,5 @@
 require("lazy-setup")
 require("lazy").setup("plugins")
 require("lualine").setup()
+require("neo-tree").setup()
+vim.cmd("colorscheme kanagawa")
