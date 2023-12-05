@@ -17,7 +17,6 @@ vim.keymap.set('n', 'ff', function()
     require("neo-tree.command").execute({
       action = "focus",
       source = "filesystem",
-      position = "right",
       reveal_file = reveal_file,
       reveal_force_cwd = true
     })
