@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 require("lualine").setup({
   options = {
-    disabled_filetypes = {     -- Filetypes to disable lualine for.
+    disabled_filetypes = {
       "neo-tree"
     }
   },
