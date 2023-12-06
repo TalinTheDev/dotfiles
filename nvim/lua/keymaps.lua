@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 
-vim.keymap.set({ "n", "v", "i", "c" }, "<leader>ft", function()
+vim.keymap.set( { "n", "v" }, "zz", ":update<cr>", { silent = true}); -- Save File
+vim.keymap.set({ "n", "v", "i", "c" }, "<leader>ft", function() -- Toggle File Explorer
     local reveal_file = vim.fn.expand("%:p")
     if (reveal_file == "") then
       reveal_file = vim.fn.getcwd()
@@ -17,7 +18,7 @@ vim.keymap.set({ "n", "v", "i", "c" }, "<leader>ft", function()
       source = "filesystem",
       reveal_file = reveal_file,
       reveal_force_cwd = true,
-      position = "float"
+      position = "left",
     })
   end,
   { silent = true }

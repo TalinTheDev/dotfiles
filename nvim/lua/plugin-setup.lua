@@ -13,6 +13,20 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
-require("lualine").setup()
+require("lualine").setup({
+  options = {
+    disabled_filetypes = {     -- Filetypes to disable lualine for.
+      "neo-tree"
+    }
+  },
+  sections =  {
+    lualine_a = { "mode" },
+    lualine_b = { "branch", "diff", "diagnostics" },
+    lualine_c = { "filename" },
+    lualine_x = { "filetype" },
+    lualine_y = { "progress" },
+    lualine_z = { "location" }
+  }
+})
 require("neo-tree").setup()
 vim.cmd("colorscheme kanagawa")

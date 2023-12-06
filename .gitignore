@@ -1,5 +1,6 @@
-google-chrome/*
-pulse/*
-menus/*
-mimeapps.list
 .avalonia-build-tasks/*
+discord/*
+google-chrome/*
+menus/*
+pulse/*
+mimeapps.list
