@@ -48,7 +48,7 @@
 - htop (task manager)
 - bottom (task manager)
 - wl-clipboard (clipboard)
-
+- gparted (disk editor)
 ## Apps
 - google-chrome (browser) [AUR]
 - thunar (file manager)
