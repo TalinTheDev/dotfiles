@@ -27,6 +27,8 @@
 - linux-firmware (system firmware)
 - refind (boot manager)
 - xf86-video-intel (video drivers)
+- syslinux (boot stuff for recovery)
+- mtools (boot stuff for recovery)
 
 ### System Utilities
 - brightnessctl	(screen brightness)
