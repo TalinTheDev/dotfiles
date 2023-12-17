@@ -31,46 +31,37 @@ tooltip label{
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.25);/*transparent*/
-    /* background-color: @color; */
-    /* opacity: 1; */
+    background-color: transparent;
 }
 
-#workspaces{
-    padding: 0px 0px 0px 5px;
-    color: @background;
+#workspaces {
+    margin: 0px 0px 5px 0px;
+    padding: 0px 7px 0px 5px;
+    background-color: @color2;
+    border-radius: 0px 0px 10px 0px;
 }
 
-#workspaces *{
+#workspaces * {
     font-size: 8px;
 }
 
-#workspaces button:hover *{
-    color: @color6;
-    transition: 0.1s;
-}
-
-#window {
-    margin: 7px 0px 7px 0px;
-}
-
 #clock{
-    margin: 0px 10px 0px 10px;
+    margin: 0px 0px 5px 0px;
+    padding: 0px 10px;
+    background-color: @color3;
+    border-radius: 0px 0px 5px 5px;
 }
 
-#network{
-    margin: -2px 10px 0px 10px;
+#custom-brightness, #pulseaudio, #battery, #network {
+    background-color: @color4;
+    margin: 0px 5px 5px 2px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 0px 10px;
 }
 
-#custom-brightness {
-    margin: -2px 10px 0px 10px;
-}
-
-#pulseaudio{
-    margin: 0px 10px 0px 10px;
-    font-size: 14px
-}
-
-#battery{
-    margin: -2px 10px 0px 10px;
+#custom-power{
+    background-color: @color2;
+    margin: 0px 1px 5px 10px;
+    border-radius: 0px 0px 0px 5px;
+    padding: 0px 10px;
 }

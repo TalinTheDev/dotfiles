@@ -29,4 +29,18 @@ require("lualine").setup({
   }
 })
 require("neo-tree").setup()
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme kanagawa") -- Color scheme
+
+require("nvim-treesitter").setup({
+  build = ":TSUpdate",
+  config = function ()
+    local configs = require("nvim-treesitter.configs")
+    configs.setup({
+          ensure_installed = { "lua", "javascript", "html", "astro", "bash", "cpp", "css", "gitignore", "json", "python", "rust", "scss", "sql", "toml", "vue" }, 
+          sync_install = true,
+          auto_install = true,
+          highlight = { enable = true },
+          indent = { enable = true },  
+    })
+  end
+})

@@ -1,7 +1,6 @@
 {
     "position": "top",
     "layer": "top",
-    "height": 25,
     "margin-top": 0,
     "margin-bottom": 0,
     "margin-left": 0,
@@ -10,14 +9,14 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "hyprland/window"
+        "clock"
     ],
     "modules-right": [
-        "pulseaudio",
         "custom/brightness",
+        "pulseaudio",
         "battery",
         "network",
-        "clock"
+        "custom/power"
     ],
     "hyprland/workspaces": {
         "active-only": false,
@@ -34,9 +33,6 @@
             "sort-by-number": true
         }
     },
-    "hyprland/window": {
-        "rewrite": {}
-    },
     "custom/brightness": {
         "exec": "~/.config/scripts/getBrightness.sh",
         "return-type": "string",
@@ -45,11 +41,11 @@
     },
     "clock": {
         "interval": 1,
-        "format": "{:%I:%M:%S}",
-        "format-alt": "{:%A, %B %e}"
+        "format": "{:%Ex   󰃰   %I:%M:%S}",
+        "format-alt": "{:%A, %B %e   󰃰   %I:%M:%S}"
     },
     "network": {
-        "format-wifi": "{icon}",
+        "format-wifi": "{icon}    {essid}",
         "format-disconnected": "󰤭",
         "tooltip-format-wifi": "{essid} - {signalStrength}%",
         "tooltip-format-disconnected": "Disconnected",
@@ -61,11 +57,11 @@
         ]
     },
     "pulseaudio": {
-        "format": "",
-        "format-muted": "󰝟",
-        "format-low": "󰕿",
-        "format-half": "󰖀",
-        "format-medium": "󰕾",
+        "format": "   {volume}%",
+        "format-muted": "  {volume}%",
+        "format-low": "  {volume}%",
+        "format-half": "  {volume}%",
+        "format-medium": "   {volume}%",
         "tooltip-format": "Volume At {volume}%",
         "states": {
             "muted": 1,
@@ -75,13 +71,12 @@
         }
     },
     "battery": {
-        "format-critical": "󰂎",
-        "format-one-fourth": "󰁼",
-        "format-half": "󰁾",
-        "format-three-fourths": "󰂀",
-        "format-full": "󰁹",
+        "format-critical": "󰂎  {capacity}%",
+        "format-one-fourth": "󰁼  {capacity}%",
+        "format-half": "󰁾  {capacity}%",
+        "format-three-fourths": "󰂀  {capacity}%",
+        "format-full": "󰁹  {capacity}%",
         "tooltip-format": "Battery At {capacity}% - {time}",
-        "max-length": 6,
         "states": {
             "critical": 15,
             "one-fourth": 25,
@@ -89,5 +84,10 @@
             "three-fourths": 75,
             "full": 100
         }
+    },
+    "custom/power": {
+        "format": "",
+	"on-click": "~/.config/scripts/rofi/powermenu/powermenu.sh &",
+	"tooltip": false
     }
 }

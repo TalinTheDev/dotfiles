@@ -69,6 +69,7 @@
 - ttf-google-fonts-git (fonts) [AUR]
 - gtklock (screen locker) [AUR]
 - sddm (display manager)
+- waybar-module-pacman-updates-git (updates script for waybar) [AUR]
 
 ## Dev Packages
 - neovim (file editor)
@@ -81,6 +82,8 @@
 - git (version control)
 - nodejs (node.js)
 - npm (node package manager)
+- libsoup (tauri stuff)
+- webkit2gtk (tauri stuff)
 
 ## Misc
 - neofetch (system fetch)
