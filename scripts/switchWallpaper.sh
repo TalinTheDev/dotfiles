@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 wallpaperList=""
-folderPath=~/Pictures/Wallpapers/
+folderPath=~/.config/wallpapers/
 wallpaperSafe=~/.config/scripts/settings/wallpaper
 
 file_list=$(ls $folderPath)

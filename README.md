@@ -51,6 +51,8 @@
 - bottom (task manager)
 - wl-clipboard (clipboard)
 - gparted (disk editor)
+- rsync (file copy)
+
 ## Apps
 - google-chrome (browser) [AUR]
 - thunar (file manager)
@@ -67,9 +69,11 @@
 - ttf-font-awesome (icon font)
 - nerd-fonts (fonts)
 - ttf-google-fonts-git (fonts) [AUR]
-- gtklock (screen locker) [AUR]
+- swaylock (screen locker)
 - sddm (display manager)
 - waybar-module-pacman-updates-git (updates script for waybar) [AUR]
+- swayidle (idle)
+- grimblast-git (screenshoter) [AUR]
 
 ## Dev Packages
 - neovim (file editor)
@@ -90,6 +94,5 @@
 - ranger (file manager TUI)
 - pipes.sh (pipes terminal screensaver) [AUR]
 - cmatrix (matrix terminal screensaver)
-- grimblast-git (screenshoter) [AUR]
 - discord (chat application)
 - wev (wayland event viewer)
