@@ -29,7 +29,9 @@ require("lualine").setup({
   }
 })
 require("neo-tree").setup()
-vim.cmd("colorscheme kanagawa") -- Color scheme
+vim.g.material_style = "darker"
+vim.cmd[[colorscheme material]] -- Color scheme
+
 
 require("nvim-treesitter").setup({
   build = ":TSUpdate",
@@ -44,3 +46,4 @@ require("nvim-treesitter").setup({
     })
   end
 })
+vim.cmd("TSEnable highlight indent")

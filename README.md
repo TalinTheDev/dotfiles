@@ -74,6 +74,7 @@
 - waybar-module-pacman-updates-git (updates script for waybar) [AUR]
 - swayidle (idle)
 - grimblast-git (screenshoter) [AUR]
+- wlr-randr-git (video output) [AUR]
 
 ## Dev Packages
 - neovim (file editor)

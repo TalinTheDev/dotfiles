@@ -1,6 +1,6 @@
 return {
   require("plugins.lualine"),
   require("plugins.neotree"),
-  require("plugins.kanagawa"),
+  require("plugins.material"),
   require("plugins.treesitter")
 }
