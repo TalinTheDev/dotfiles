@@ -1,5 +1,5 @@
 return {
   {
-    "marko-cerovac/material.nvim",
+    "sainnhe/edge"
   } 
 }

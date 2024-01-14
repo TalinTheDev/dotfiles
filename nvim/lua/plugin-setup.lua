@@ -30,7 +30,7 @@ require("lualine").setup({
 })
 require("neo-tree").setup()
 vim.g.material_style = "darker"
-vim.cmd[[colorscheme material]] -- Color scheme
+vim.cmd[[colorscheme edge]] -- Color scheme
 
 
 require("nvim-treesitter").setup({

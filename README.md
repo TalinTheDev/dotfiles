@@ -15,7 +15,7 @@
     - `systemctl enable bluetooth.service`
 5. !!!TRY WITHOUT IT AND SEE IF IT WORKS!!!
     - Edit `/etc/pulse/client.conf` and change `autospawn=no` to `autospawn=yes`
-6. Execute: `npm i -g neovim`
+6. Execute: `npm i -g neovim pnpm`
 
 ## Packages
 ### Core System
