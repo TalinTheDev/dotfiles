@@ -4,7 +4,7 @@
     color: @color7;
     border: 0px;
     border-radius: 0px;
-    font-size: 15px;
+    font-size: 12px;
     font-family: "Yantramanav";
     font-weight: bold;
     padding: 0px;
@@ -14,7 +14,6 @@
 button {
     border: none;
     border-radius: 0;
-
 }
 button:hover {
     box-shadow: inherit;
@@ -38,30 +37,36 @@ window#waybar {
     margin: 0px 0px 8px 0px;
     padding: 0px 10px 0px 8px;
     background-color: @color2;
-    border-radius: 0px 0px 10px 0px;
+    border-radius: 10px;
 }
 
 #workspaces * {
     font-size: 11px;
 }
 
-#clock{
-    margin: 0px 0px 5px 0px;
-    padding: 0px 10px;
-    background-color: @color3;
-    border-radius: 0px 0px 5px 5px;
+#pulseaudio, #battery, #network, #clock, #custom-power {
+  background-color: @foreground;
+  color: @background;
+  padding: 0px 10px;
 }
 
-#custom-brightness, #pulseaudio, #battery, #network {
-    background-color: @color4;
-    margin: 0px 5px 5px 2px;
-    border-radius: 0px 0px 5px 5px;
-    padding: 0px 10px;
+#pulseaudio {
+  border-radius: 25px 0px 0px 25px;
+  padding-left: 13px;
 }
 
-#custom-power{
-    background-color: @color2;
-    margin: 0px 1px 5px 10px;
-    border-radius: 0px 0px 0px 5px;
-    padding: 0px 10px;
+#custom-power  {
+  border-radius: 0px 25px 25px 0px;
+}
+
+#clock {
+  padding: 0 5px;
+}
+
+#network {
+  padding-right: 13px;
+}
+
+#custom-power {
+  padding-right: 15px;
 }
