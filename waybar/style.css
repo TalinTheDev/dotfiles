@@ -63,10 +63,23 @@ window#waybar {
   padding: 0 5px;
 }
 
+#clock.date {
+  padding-left: 20px;
+}
+
+#clock.time {
+  padding-right: 20px;
+}
+
 #network {
   padding-right: 13px;
 }
 
 #custom-power {
-  padding-right: 15px;
+  padding-right: 20px;
+  padding-bottom: 2px;
+}
+
+#battery {
+  padding-bottom: 1px;
 }
