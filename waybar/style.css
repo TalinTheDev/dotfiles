@@ -11,6 +11,10 @@
     margin: 0px;
 }
 
+window.eDP-1 * {
+  font-size: 10px;
+}
+
 button {
     border: none;
     border-radius: 0;

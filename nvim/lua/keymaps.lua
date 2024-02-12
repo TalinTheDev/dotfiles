@@ -18,7 +18,8 @@ vim.keymap.set({ "n", "v", "i", "c" }, "<leader>ft", function() -- Focus File Ex
       source = "filesystem",
       reveal_file = reveal_file,
       reveal_force_cwd = true,
-      position = "left",
+      position = "float",
+      toggle = true
     })
   end,
   { silent = true }

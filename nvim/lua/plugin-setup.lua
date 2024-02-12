@@ -28,7 +28,11 @@ require("lualine").setup({
     lualine_z = { "location" }
   }
 })
-require("neo-tree").setup()
+
+require("neo-tree").setup({
+    position = "float"  -- Set the default position to floating
+})
+
 vim.g.material_style = "darker"
 vim.cmd[[colorscheme edge]] -- Color scheme
 
