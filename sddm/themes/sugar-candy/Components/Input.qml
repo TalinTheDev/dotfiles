@@ -183,7 +183,7 @@ Column {
             text: config.ForceLastUser == "true" ? selectUser.currentText : null
             font.capitalization: config.AllowBadUsernames == "false" ? Font.Capitalize : Font.MixedCase
             anchors.centerIn: parent
-            height: root.font.pointSize * 3
+            height: root.font.pointSize * 3 + 5
             width: parent.width
             placeholderText: config.TranslatePlaceholderUsername || textConstants.userName
             selectByMouse: true
@@ -230,7 +230,7 @@ Column {
         TextField {
             id: password
             anchors.centerIn: parent
-            height: root.font.pointSize * 3
+            height: root.font.pointSize * 3 + 5
             width: parent.width
             focus: config.ForcePasswordFocus == "true" ? true : false
             selectByMouse: true

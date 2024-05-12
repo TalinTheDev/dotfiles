@@ -38,32 +38,36 @@
 - qt5‑graphicaleffects (SDDM Theme - Sugar Candy)
 - qt5‑quickcontrols2 (SDDM Theme - Sugar Candy)
 - qt5‑svg (SDDM Theme - Sugar Candy)
+- ttf-jetbrains-mono (Font)
 ## AUR Packages
 - anki (Flashcards)
 - paru (AUR Helper)
 - swww (Wallpaper)
 
 ## Install Commands
+
 ### Packages
+
 ```bash
-sudo pacman -Syu base base-devel bottom brightnessctl cups exfatprogs firefox fish fisher git gparted hyprland intel-ucode kitty libnotify linux linux-firmware linux-lts mako neovim networkmanager openssh polkit-kde-agent powertop ranger refind reflector rustup sddm thermald timeshift tlp wofi xf86-video-intel qt5‑graphicaleffects qt5‑quickcontrols2 qt5‑svg
+sudo pacman -Syu base base-devel bottom brightnessctl cups exfatprogs firefox fish fisher git gparted hyprland intel-ucode kitty libnotify linux linux-firmware linux-lts mako neovim networkmanager openssh polkit-kde-agent powertop ranger refind reflector rustup sddm thermald timeshift tlp wofi xf86-video-intel qt5‑graphicaleffects qt5‑quickcontrols2 qt5‑svg ttf-jetbrains-mono
 ```
+#### Paru setup and AUR package install 
 ```bash
-# Paru setup and AUR package install
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 paru -Syu anki swww`
 ```
+
 ### System Setup
+#### Fish
 ```bash
-# Fish
 fisher install jorgebucaran/hydro
 set -U fish_greeting ""
 set -U EDITOR nvim
 ```
+#### Git & SSH
 ```bash
-# Git & SSH
 git config --global user.name "Talin Sharma"
 git config --global user.email "talinsharma.dev@gmai.com"
 ssh-keygen -t ed25519 -C "talinsharma.dev@gmail.com"
@@ -72,27 +76,27 @@ bash
 exec ssh-agent bash
 ssh-add /home/talins/.ssh/<SSH_KEY>
 ```
+#### Wifi
 ```bash
-# Wifi
 nmcli device wifi connect "<SSID>" password "<PASSWORD>"
 ```
+#### Refind
 ```bash
-# Refind
 sudo cp ~/.config/refind.conf /boot/EFI/refind/refind.conf
 sudo cp ~/.config/themes /boot/EFI/refind/themes -r
 ```
+#### SDDM
 ```bash
-# SDDM
-sudo cp ~/.config/sddm/themes/sddm-sugar-candy-1.6 /usr/share/sddm/themes/sugar-candy -R
+sudo cp ~/.config/sddm/themes/sugar-candy/* /usr/share/sddm/themes/sugar-candy -r
 sudo cp ~/.config/sddm/sddm.conf /etc/sddm.conf
 ```
+#### Timeshift
 ```bash
-# Timeshift
 sudo cp ~/.config/services/timeshift.service /usr/lib/systemd/system/timeshift.service
 sudo cp ~/.config/services/timeshift.timer /usr/lib/systemd/system/timeshift.timer
 ```
+#### System Service & Timers
 ```bash
-# System Service & Timers
 sudo systemctl enable cups.service
 sudo systemctl enable NetworkManager.service
 sudo systemctl enable polkit.service

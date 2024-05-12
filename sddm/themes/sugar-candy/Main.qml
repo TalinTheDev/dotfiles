@@ -98,7 +98,7 @@ Pane {
         LoginForm {
             id: form
 
-            height: virtualKeyboard.state == "visible" ? parent.height - virtualKeyboard.implicitHeight : parent.height
+            height: virtualKeyboard.state == "visible" ? parent.height - virtualKeyboard.implicitHeight * 2 : parent.height
             width: parent.width / 2.5
             anchors.horizontalCenter: config.FormPosition == "center" ? parent.horizontalCenter : undefined
             anchors.left: config.FormPosition == "left" ? parent.left : undefined
