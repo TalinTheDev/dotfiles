@@ -35,7 +35,9 @@
 - tlp (Power management)
 - wofi (Application launcher)
 - xf86-video-intel (Video Drivers)
-
+- qt5‑graphicaleffects (SDDM Theme - Sugar Candy)
+- qt5‑quickcontrols2 (SDDM Theme - Sugar Candy)
+- qt5‑svg (SDDM Theme - Sugar Candy)
 ## AUR Packages
 - anki (Flashcards)
 - paru (AUR Helper)
@@ -44,7 +46,7 @@
 ## Install Commands
 ### Packages
 ```bash
-sudo pacman -Syu base base-devel bottom brightnessctl cups exfatprogs firefox fish fisher git gparted hyprland intel-ucode kitty libnotify linux linux-firmware linux-lts mako neovim networkmanager openssh polkit-kde-agent powertop ranger refind reflector rustup sddm thermald timeshift tlp wofi xf86-video-intel
+sudo pacman -Syu base base-devel bottom brightnessctl cups exfatprogs firefox fish fisher git gparted hyprland intel-ucode kitty libnotify linux linux-firmware linux-lts mako neovim networkmanager openssh polkit-kde-agent powertop ranger refind reflector rustup sddm thermald timeshift tlp wofi xf86-video-intel qt5‑graphicaleffects qt5‑quickcontrols2 qt5‑svg
 ```
 ```bash
 # Paru setup and AUR package install
@@ -81,6 +83,8 @@ sudo cp ~/.config/themes /boot/EFI/refind/themes -r
 ```
 ```bash
 # SDDM
+sudo cp ~/.config/sddm/themes/sddm-sugar-candy-1.6 /usr/share/sddm/themes/sugar-candy -R
+sudo cp ~/.config/sddm/sddm.conf /etc/sddm.conf
 ```
 ```bash
 # Timeshift
