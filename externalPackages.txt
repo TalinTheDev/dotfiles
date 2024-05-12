@@ -1,0 +1,4 @@
+- paru
+- swww
+
+Firefox Theme: KorySchneider/tab
