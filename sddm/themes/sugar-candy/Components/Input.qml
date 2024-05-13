@@ -74,7 +74,7 @@ Column {
                 contentItem: Text {
                     text: model.name
                     font.pointSize: root.font.pointSize * 0.8
-                    font.capitalization: Font.Capitalize
+                    font.capitalization: Font.MixedCase
                     color: selectUser.highlightedIndex === index ? root.palette.highlight.hslLightness >= 0.7 ? "#444" : "white" : root.palette.window.hslLightness >= 0.8 ? root.palette.highlight.hslLightness >= 0.8 ? "#444" : root.palette.highlight : "white"
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
@@ -181,7 +181,7 @@ Column {
         TextField {
             id: username
             text: config.ForceLastUser == "true" ? selectUser.currentText : null
-            font.capitalization: config.AllowBadUsernames == "false" ? Font.Capitalize : Font.MixedCase
+            font.capitalization: Font.MixedCase
             anchors.centerIn: parent
             height: root.font.pointSize * 3 + 5
             width: parent.width
