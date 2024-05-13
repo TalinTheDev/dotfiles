@@ -44,7 +44,8 @@
 - anki (Flashcards)
 - paru (AUR Helper)
 - swww (Wallpaper)
-
+- aylurs-gtk-shell (Widgets)
+- google-chrome (Backup browser)
 ## Install Commands
 
 ### Packages
@@ -57,7 +58,8 @@ sudo pacman -Syu base base-devel bottom brightnessctl cups exfatprogs firefox fi
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
-paru -Syu anki swww`
+paru -Syu anki swww aylurs-gtk-shell
+# paru -S google-chrome
 ```
 
 ### System Setup
