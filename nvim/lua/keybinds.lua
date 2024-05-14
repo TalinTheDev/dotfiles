@@ -1,0 +1,1 @@
+vim.api.nvim_set_keymap("", "<leader>f", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
