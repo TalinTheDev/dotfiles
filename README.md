@@ -47,6 +47,7 @@
 - swww (Wallpaper)
 - aylurs-gtk-shell (Widgets)
 - google-chrome (Backup browser)
+- freshfetch-bin (System fetch)
 ## Install Commands
 
 ### Packages
@@ -59,7 +60,7 @@ sudo pacman -Syu base base-devel bottom brightnessctl cups exfatprogs firefox fi
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
-paru -Syu anki swww aylurs-gtk-shell
+paru -Syu anki swww aylurs-gtk-shell freshfetch-bin
 # paru -S google-chrome
 ```
 
