@@ -7,8 +7,8 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     config = function()
-      local HEIGHT_RATIO = 0.4
-      local WIDTH_RATIO = 0.5
+      local HEIGHT_RATIO = 0.7
+      local WIDTH_RATIO = 0.6
       require("nvim-tree").setup({
         filters = {
           dotfiles = false,
