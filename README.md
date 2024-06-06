@@ -1,6 +1,7 @@
 # Dotfiles
 
 ## Package List
+
 - base
 - base-devel
 - bottom (Task manager/system info viewer)
@@ -43,12 +44,14 @@
 - vscode (Backup file editor)
 
 ## AUR Packages
+
 - anki (Flashcards)
 - paru (AUR Helper)
 - swww (Wallpaper)
 - aylurs-gtk-shell (Widgets)
 - google-chrome (Backup browser)
 - freshfetch-bin (System fetch)
+
 ## Install Commands
 
 ### Packages
@@ -56,7 +59,9 @@
 ```bash
 sudo pacman -Syu base base-devel bottom brightnessctl cups exfatprogs firefox fish fisher git gparted hyprland intel-ucode kitty libnotify linux linux-firmware linux-lts mako neovim networkmanager openssh polkit-kde-agent powertop ranger refind reflector rustup sddm thermald timeshift tlp wofi xf86-video-intel qt5‑graphicaleffects qt5‑quickcontrols2 qt5‑svg ttf-jetbrains-mono-nerd hyprlock vscode wev
 ```
-#### Paru setup and AUR package install 
+
+#### Paru setup and AUR package install
+
 ```bash
 git clone https://aur.archlinux.org/paru.git
 cd paru
@@ -66,13 +71,17 @@ paru -Syu anki swww aylurs-gtk-shell freshfetch-bin
 ```
 
 ### System Setup
+
 #### Fish
+
 ```bash
 fisher install jorgebucaran/hydro
 set -U fish_greeting ""
 set -U EDITOR nvim
 ```
+
 #### Git & SSH
+
 ```bash
 git config --global user.name "Talin Sharma"
 git config --global user.email "talinsharma.dev@gmai.com"
@@ -82,26 +91,42 @@ bash
 exec ssh-agent bash
 ssh-add /home/talins/.ssh/<SSH_KEY>
 ```
+
 #### Wifi
+
 ```bash
 nmcli device wifi connect "<SSID>" password "<PASSWORD>"
 ```
+
 #### Refind
+
 ```bash
 sudo cp ~/.config/refind.conf /boot/EFI/refind/refind.conf
 sudo cp ~/.config/themes /boot/EFI/refind/themes -r
 ```
+
 #### SDDM
+
 ```bash
 sudo cp ~/.config/sddm/themes/sugar-candy/* /usr/share/sddm/themes/sugar-candy -r
 sudo cp ~/.config/sddm/sddm.conf /etc/sddm.conf
 ```
+
+#### /etc Config Files
+
+```bash
+sudo cp ~/.config/etc/* /etc -r
+```
+
 #### Timeshift
+
 ```bash
 sudo cp ~/.config/services/timeshift.service /usr/lib/systemd/system/timeshift.service
 sudo cp ~/.config/services/timeshift.timer /usr/lib/systemd/system/timeshift.timer
 ```
+
 #### System Service & Timers
+
 ```bash
 sudo systemctl enable cups.service
 sudo systemctl enable NetworkManager.service
