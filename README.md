@@ -2,62 +2,74 @@
 
 ## Package List
 
-- base
-- base-devel
-- bottom (Task manager/system info viewer)
-- brightnessctl (Screen brightness control)
-- cups (Printing)
-- exfatprogs (Work with exfat partitions)
-- firefox (Browser)
-- fish (Shell prompt)
-- fisher (Fish's package manager)
-- git
-- gparted (Disk management)
-- hyprland (Window manager)
+- base (system)
+- base-devel (system)
+- bottom (process manager)
+- brightnessctl (screen brightness controls)
+- code (code editor)
+- cups (print support)
+- exfatprogs (exfat file system tools)
+- firefox (browser)
+- fish (shell)
+- fisher (shell package manager)
+- git (version control system)
+- gparted (partition manager)
+- grim (screenshotter)
+- hyprland (window manager)
+- hyprlock (lock screen)
 - intel-ucode (CPU microcode)
-- kitty (Terminal)
-- libnotify (Notifications)
-- linux (Main kernel)
-- linux-firmware (Kernel firmware)
-- linux-lts (Backup kernel)
-- mako (Notifications)
-- neovim (File editor)
-- networkmanager (Wifi)
+- kitty (terminal)
+- libnotify (notification backend)
+- linux (kernal)
+- linux-firmware (kernal firmware)
+- linux-lts (backup kernal)
+- mako (notifications)
+- man (manpages)
+- neovim (code editor)
+- networkmanager (wifi)
 - openssh (SSH)
-- polkit-kde-agent (Authentication)
-- powertop (Power management)
-- ranger (File explorer)
-- refind (Bootloader)
-- reflector (Pacman mirrors)
-- rustup (Rust)
-- sddm (Login manager)
-- thermald (CPU scaling)
-- timeshift (Backups)
-- tlp (Power management)
-- rofi (Application launcher)
-- xf86-video-intel (Video Drivers)
-- qt5‑graphicaleffects (SDDM Theme - Sugar Candy)
-- qt5‑quickcontrols2 (SDDM Theme - Sugar Candy)
-- qt5‑svg (SDDM Theme - Sugar Candy)
-- ttf-jetbrains-mono-nerd (Font)
-- hyprlock (Locker)
-- vscode (Backup file editor)
+- paru (AUR package manager)
+- pipewire (audio)
+- pipewire-alsa (audio)
+- pipewire-audio (audio)
+- pipewire-pulse (audio)
+- polkit-kde-agent (audio)
+- powertop (battery)
+- python-pywal (color scheme generator)
+- qt5-graphicaleffects (login screen tools)
+- qt5-quickcontrols2 (login screen tools)
+- qt5-svg (login screen tools)
+- yazi (terminal file manager)
+- refind (boot loader)
+- reflector (pacman server configurator)
+- rofi-wayland (rofi:?)
+- rustup (rust installer/manager)
+- sddm (login manager)
+- slurp (screen area selector)
+- sudo (root priviliges giver)
+- swww (wallpaper)
+- thermald (CPU temperature)
+- timeshift (backups)
+- tlp (battery)
+- ttf-jetbrains-mono-nerd (jetbrains mono font)
+- unzip (archive manager)
+- wev (wayland event viewer)
+- wget (http worker?)
+- wl-clipboard (wayland clipboard)
+- xf86-video-intel (video drivers)
+ 
+- ## AUR Packages
 
-## AUR Packages
-
-- anki (Flashcards)
-- paru (AUR Helper)
-- swww (Wallpaper)
-- aylurs-gtk-shell (Widgets)
-- google-chrome (Backup browser)
-- freshfetch-bin (System fetch)
+- anki (flashcards)
+- aylurs-gtk-shell (widgets)
+- google-chrome (backup browser)
 
 ## Install Commands
 
 ### Packages
 
 ```bash
-sudo pacman -Syu base base-devel bottom brightnessctl cups exfatprogs firefox fish fisher git gparted hyprland intel-ucode kitty libnotify linux linux-firmware linux-lts mako neovim networkmanager openssh polkit-kde-agent powertop ranger refind reflector rustup sddm thermald timeshift tlp rofi-wayland xf86-video-intel qt5‑graphicaleffects qt5‑quickcontrols2 qt5‑svg ttf-jetbrains-mono-nerd hyprlock vscode wev
+sudo pacman -Syu base base-devel bottom brightnessctl code cups exfatprogs firefox fish fisher git gparted grim hyprland hyprlock intel-ucode kitty libnotify linux linux-firmware linux-lts mako man-db neovim networkmanager openssh paru pipewire pipewire-alsa pipewire-audio pipewire-pulse polkit-kde-agent powertop python-pywal qt5-graphicaleffects qt5-quickcontrols2 qt5-svg refind reflector rofi-wayland rustup sddm slurp sudo swww thermald timeshift tlp ttf-jetbrains-mono-nerd unzip wev wgetwl-clipboard xf86-video-intel yazi
 ```
 
 #### Paru setup and AUR package install
@@ -66,8 +78,7 @@ sudo pacman -Syu base base-devel bottom brightnessctl cups exfatprogs firefox fi
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
-paru -Syu anki swww aylurs-gtk-shell freshfetch-bin
-# paru -S google-chrome
+paru -Syu anki aylurs-gtk-shell google-chrome
 ```
 
 ### System Setup
@@ -103,6 +114,7 @@ nmcli device wifi connect "<SSID>" password "<PASSWORD>"
 ```bash
 sudo cp ~/.config/refind.conf /boot/EFI/refind/refind.conf
 sudo cp ~/.config/themes /boot/EFI/refind/themes -r
+refind-install
 ```
 
 #### SDDM
