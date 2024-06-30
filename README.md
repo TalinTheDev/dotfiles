@@ -3,65 +3,123 @@
 ## Package List
 
 - base (system)
+
 - base-devel (system)
+
 - bottom (process manager)
+
 - brightnessctl (screen brightness controls)
+
 - code (code editor)
+
 - cups (print support)
+
 - exfatprogs (exfat file system tools)
+
 - firefox (browser)
+
 - fish (shell)
+
 - fisher (shell package manager)
+
 - git (version control system)
+
 - gparted (partition manager)
+
 - grim (screenshotter)
+
 - hyprland (window manager)
+
 - hyprlock (lock screen)
+
 - intel-ucode (CPU microcode)
+
 - kitty (terminal)
+
 - libnotify (notification backend)
+
 - linux (kernal)
+
 - linux-firmware (kernal firmware)
+
 - linux-lts (backup kernal)
+
 - mako (notifications)
+
 - man (manpages)
+
 - neovim (code editor)
+
 - networkmanager (wifi)
+
 - openssh (SSH)
+
 - paru (AUR package manager)
+
 - pipewire (audio)
+
 - pipewire-alsa (audio)
+
 - pipewire-audio (audio)
+
 - pipewire-pulse (audio)
+
 - polkit-kde-agent (audio)
+
 - powertop (battery)
+
 - python-pywal (color scheme generator)
+
 - qt5-graphicaleffects (login screen tools)
+
 - qt5-quickcontrols2 (login screen tools)
+
 - qt5-svg (login screen tools)
+
 - yazi (terminal file manager)
+
 - refind (boot loader)
+
 - reflector (pacman server configurator)
+
 - rofi-wayland (rofi:?)
+
 - rustup (rust installer/manager)
+
 - sddm (login manager)
+
 - slurp (screen area selector)
+
 - sudo (root priviliges giver)
+
 - swww (wallpaper)
+
 - thermald (CPU temperature)
+
 - timeshift (backups)
+
 - tlp (battery)
+
 - ttf-jetbrains-mono-nerd (jetbrains mono font)
+
 - unzip (archive manager)
+
 - wev (wayland event viewer)
+
 - wget (http worker?)
+
 - wl-clipboard (wayland clipboard)
+
 - xf86-video-intel (video drivers)
- 
+
+- ripgrep (file search)
+
 - ## AUR Packages
 
 - anki (flashcards)
+
 - aylurs-gtk-shell (widgets)
+
 - google-chrome (backup browser)
 
 ## Install Commands
@@ -69,7 +127,7 @@
 ### Packages
 
 ```bash
-sudo pacman -Syu base base-devel bottom brightnessctl code cups exfatprogs firefox fish fisher git gparted grim hyprland hyprlock intel-ucode kitty libnotify linux linux-firmware linux-lts mako man-db neovim networkmanager openssh paru pipewire pipewire-alsa pipewire-audio pipewire-pulse polkit-kde-agent powertop python-pywal qt5-graphicaleffects qt5-quickcontrols2 qt5-svg refind reflector rofi-wayland rustup sddm slurp sudo swww thermald timeshift tlp ttf-jetbrains-mono-nerd unzip wev wgetwl-clipboard xf86-video-intel yazi
+sudo pacman -Syu base base-devel bottom brightnessctl code cups exfatprogs firefox fish fisher git gparted grim hyprland hyprlock intel-ucode kitty libnotify linux linux-firmware linux-lts mako man-db neovim networkmanager openssh paru pipewire pipewire-alsa pipewire-audio pipewire-pulse polkit-kde-agent powertop python-pywal qt5-graphicaleffects qt5-quickcontrols2 qt5-svg refind reflector rofi-wayland rustup sddm slurp sudo swww thermald timeshift tlp ttf-jetbrains-mono-nerd unzip wev wgetwl-clipboard xf86-video-intel yazi ripgrep
 ```
 
 #### Paru setup and AUR package install
