@@ -13,6 +13,11 @@ return {
         filters = {
           dotfiles = false,
         },
+        update_cwd = true,
+        update_focused_file = {
+          enable = true,
+          update_cwd = true,
+        },
         view = {
           number = true,
           relativenumber = false,

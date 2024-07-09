@@ -10,15 +10,16 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   })
 end
 
-vim.opt.rtp:prepend(lazypath) 
+vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     { import = "plugins" },
   },
   defaults = {
     lazy = false,
-    version = "*", 
+    version = "*",
   },
   checker = { enabled = true },
 })
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme onedark]])
+vim.g.nvim_tree_respect_buf_cwd = 1

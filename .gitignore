@@ -4,4 +4,6 @@ fish/*
 !fish/functions/
 google-chrome/*
 menus/*
-Code - OSS/*
+Code/*
+Electron/*
+Insomnia/*
