@@ -1,3 +1,3 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open file tree" })
+vim.keymap.set("n", "<leader>e", vim.cmd.Ex, { desc = "Open file tree" })
