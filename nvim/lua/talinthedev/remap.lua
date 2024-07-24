@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 vim.g.localmapleader = " "
 
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex, { desc = "Open file tree" })
+vim.keymap.set("n", "<leader>ds", ":update<cr>", { desc = "[D]ocument [S]ave" })
 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Stop highlighting search results on Esc" })
 
