@@ -36,6 +36,7 @@ return {
 				"sqlls",
 				"tsserver",
 				"volar",
+        "markdown_oxide"
 			}})
 
 		require("mason-lspconfig").setup_handlers({
