@@ -262,6 +262,7 @@ return {
 			jsonls = {},
 			sqlls = {},
 			markdown_oxide = {},
+			zls = {},
 		}
 
 		require("mason").setup()
