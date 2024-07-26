@@ -1,4 +1,3 @@
 function sshKeyAdd
-  eval (ssh-agent -c) &&
-  kitty ssh-add
+  kitty keychain --eval $SSH_KEYS_TO_AUTOLOAD | source
 end
