@@ -95,6 +95,7 @@ paru -Syu anki aylurs-gtk-shell google-chrome visual-studio-code-bin insomnia
 
 ```bash
 fisher install jorgebucaran/hydro
+fisher install danhper/fish-ssh-agent
 set -U fish_greeting ""
 set -U EDITOR nvim
 ```
@@ -105,10 +106,6 @@ set -U EDITOR nvim
 git config --global user.name "Talin Sharma"
 git config --global user.email "talinsharma.dev@gmai.com"
 ssh-keygen -t ed25520 -C "talinsharma.dev@gmail.com"
-su root
-bash
-exec ssh-agent bash
-ssh-add /home/talins/.ssh/<SSH_KEY>
 ```
 
 #### Wifi
