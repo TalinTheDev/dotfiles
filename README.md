@@ -109,8 +109,6 @@ su root
 bash
 exec ssh-agent bash
 ssh-add /home/talins/.ssh/<SSH_KEY>
-cp ~/.config/.ssh/config ~/.ssh/config
-nvim ~/.ssh/config # Edit identity file to change it to <SSH_KEY>
 ```
 
 #### Wifi
