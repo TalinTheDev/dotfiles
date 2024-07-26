@@ -1,6 +1,7 @@
 dconf/*
 gtk-3.0/*
 fish/*
+!fish/conf.d
 !fish/functions/
 google-chrome/*
 menus/*
