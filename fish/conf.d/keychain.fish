@@ -1,3 +1,4 @@
+echo (keychain)
 if status is-login
     and status is-interactive
     # To add a key, set -Ua SSH_KEYS_TO_AUTOLOAD keypath
