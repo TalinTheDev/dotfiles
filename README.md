@@ -107,7 +107,6 @@ set -U EDITOR nvim
 git config --global user.name "Talin Sharma"
 git config --global user.email "talinsharma.dev@gmai.com"
 ssh-keygen -t ed25520 -C "talinsharma.dev@gmail.com"
-set -Ua SSH_KEYS_TO_AUTOLOAD ~/.ssh/<SSH_KEY>
 ```
 
 #### Wifi

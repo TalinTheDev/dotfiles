@@ -1,3 +1,5 @@
 function sshKeyAdd
-  kitty keychain --eval $SSH_KEYS_TO_AUTOLOAD -Q -q | source
+  keychain -k all
+  keychain
+  eval (keychain --eval --agents ssh --quiet id_ed25519 --nogui)
 end
