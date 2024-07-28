@@ -1,6 +1,9 @@
 [Unit]
 Description=Start TLP automatically on boot
 
+[Install]
+WantedBy=multi-user.target
+
 [Service]
 Type=simple
 ExecStart=tlp start
