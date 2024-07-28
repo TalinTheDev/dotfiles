@@ -65,6 +65,7 @@
 - waybar (system bar)
 - keychain (ssh-agent manager)
 - zig (zig)
+- tmux (terminal multiplexer)
 
 ## AUR Packages
 
@@ -79,7 +80,7 @@
 ### Packages
 
 ```bash
-sudo pacman -Syu base base-devel bottom brightnessctl code cups exfatprogs firefox fish fisher git gparted grim hyprland hyprlock intel-ucode kitty libnotify linux linux-firmware linux-lts mako man-db neovim networkmanager openssh paru pipewire pipewire-alsa pipewire-audio pipewire-pulse polkit-kde-agent powertop python-pywal qt5-graphicaleffects qt5-quickcontrols2 qt5-svg refind reflector rofi-wayland rustup sddm slurp sudo swww thermald timeshift tlp ttf-jetbrains-mono-nerd unzip wev wgetwl-clipboard xf86-video-intel yazi ripgrep gmome-keyring libsecret seahorse ntfs-3g luarocks waybar keychain zig
+sudo pacman -Syu base base-devel bottom brightnessctl code cups exfatprogs firefox fish fisher git gparted grim hyprland hyprlock intel-ucode kitty libnotify linux linux-firmware linux-lts mako man-db neovim networkmanager openssh paru pipewire pipewire-alsa pipewire-audio pipewire-pulse polkit-kde-agent powertop python-pywal qt5-graphicaleffects qt5-quickcontrols2 qt5-svg refind reflector rofi-wayland rustup sddm slurp sudo swww thermald timeshift tlp ttf-jetbrains-mono-nerd unzip wev wgetwl-clipboard xf86-video-intel yazi ripgrep gmome-keyring libsecret seahorse ntfs-3g luarocks waybar keychain zig tmux
 ```
 
 #### Paru setup and AUR package install
