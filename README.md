@@ -162,4 +162,5 @@ sudo systemctl enable tlp-start.service
 sudo systemctl enable fstrim.timer
 sudo systemctl enable reflector.timer
 sudo systemctl enable timeshift.timer
+sudo systemctl enable thermald 
 ```
