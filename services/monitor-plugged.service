@@ -1,0 +1,9 @@
+[Unit]
+Description=Triggered when the HDMI cable for the monitor is plugged
+
+[Service]
+Type=oneshot
+ExecStart=/home/talins/.config/hypr/scripts/addMonitor.sh
+
+[Install]
+WantedBy=multi-user.target
