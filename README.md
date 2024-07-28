@@ -149,6 +149,11 @@ sudo cp ~/.config/services/timeshift.timer /usr/lib/systemd/system/timeshift.tim
 ```bash
 sudo cp ~/.config/services/tlp-start.service /usr/lib/systemd/system/tlp-start.service
 ```
+#### Monitor Services
+```bash
+sudo cp ~/.config/services/monitor-plugged.service /usr/lib/systemd/system/monitor-plugged.service
+sudo cp ~/.config/services/monitor-unplugged.service /usr/lib/systemd/system/monitor-unplugged.service
+```
 #### System Service & Timers
 
 ```bash
