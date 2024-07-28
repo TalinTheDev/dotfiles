@@ -144,6 +144,10 @@ sudo cp ~/.config/services/timeshift.service /usr/lib/systemd/system/timeshift.s
 sudo cp ~/.config/services/timeshift.timer /usr/lib/systemd/system/timeshift.timer
 ```
 
+#### TLP
+```bash
+sudo cp ~/.config/services/tlp-start.service /usr/lib/systemd/system/tlp-start.service
+```
 #### System Service & Timers
 
 ```bash
@@ -153,6 +157,7 @@ sudo systemctl enable polkit.service
 sudo systemctl enable sddm.service
 sudo systemctl enable sshd.service
 sudo systemctl enable powertop.service
+sudo systemctl enable tlp-start.service
 sudo systemctl enable fstrim.timer
 sudo systemctl enable reflector.timer
 sudo systemctl enable timeshift.timer
