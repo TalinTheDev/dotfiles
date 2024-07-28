@@ -5,5 +5,5 @@ Description=Start TLP automatically on boot
 WantedBy=multi-user.target
 
 [Service]
-Type=simple
+Type=oneshot
 ExecStart=tlp start && tlp usb
