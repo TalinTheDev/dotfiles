@@ -6,4 +6,4 @@ WantedBy=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=tlp start
+ExecStart=tlp start && tlp usb
