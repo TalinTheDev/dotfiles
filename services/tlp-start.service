@@ -1,0 +1,6 @@
+[Unit]
+Description=Start TLP automatically on boot
+
+[Service]
+Type=simple
+ExecStart=tlp start
