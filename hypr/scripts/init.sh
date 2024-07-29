@@ -10,4 +10,4 @@ echo "Adding ssh keys..."
 fish -c sshKeyAdd
 
 echo "System setup complete"
-sleep 2 && pkill kitty
+sleep 1 && pkill kitty
