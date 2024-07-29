@@ -1,9 +1,0 @@
-[Unit]
-Description=Triggered when the HDMI cable for the monitor is unplugged
-
-[Service]
-Type=oneshot
-ExecStart=/home/talins/.config/hypr/scripts/removeMonitor.sh
-
-[Install]
-WantedBy=multi-user.target
