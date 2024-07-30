@@ -76,6 +76,7 @@
 - google-chrome (backup browser)
 - visual-studio-code-bin (code editor)
 - insomnia (api tester)
+- ttf-tabler-icons (icon font for waybar)
 
 ## Install Commands
 
@@ -91,7 +92,7 @@ sudo pacman -Syu base base-devel bottom brightnessctl code cups exfatprogs firef
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
-paru -Syu anki aylurs-gtk-shell google-chrome visual-studio-code-bin insomnia
+paru -Syu anki aylurs-gtk-shell google-chrome visual-studio-code-bin insomnia ttf-tabler-icons
 ```
 
 ### System Setup

@@ -1,6 +1,7 @@
-import { applauncher } from "./applauncher.js";
+import bar from "./bar.js"
 
 App.config({
-  windows: [applauncher],
-  style: "./applauncher.css",
-});
+  windows: [
+    bar
+  ]
+})
