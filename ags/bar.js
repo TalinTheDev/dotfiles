@@ -6,6 +6,7 @@ import Date from "./widgets/date.js";
 import Time from "./widgets/time.js";
 
 const middle = Widget.Box({
+  className: "barBottom",
   vertical: true,
   children: [
     NetworkIndicator(),
@@ -15,6 +16,7 @@ const middle = Widget.Box({
 });
 
 const bottom = Widget.Box({
+  classNames: ["barBottom", "barBottomHalf"],
   vertical: true,
   children: [
     Date,
@@ -26,6 +28,8 @@ const bar = Widget.Window({
   name: "bar",
   anchor: ["left"],
   exclusivity: "exclusive",
+  margins: [0, 0, 0, 5],
+  className: "bar",
   child:
     Widget.CenterBox({
       vertical: true,

@@ -1,0 +1,89 @@
+window box {
+  background-color: transparent;
+  border-radius: 25px;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+button {
+  border: 0;
+  background-image: none;
+  background-color: transparent;
+}
+
+.workspaces box {
+  padding: 10px 0px;
+  background-color: #16161d;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.workspaceButton {
+  padding: 0px;
+  color: #dcd7ba;
+}
+
+.wifi {
+  padding: 15px 0px;
+}
+
+.barBottom {
+  border-radius: 0;
+  background-color: #353545;
+}
+
+.barBottomHalf {
+  border-radius: 0px 0px 25px 25px;
+}
+
+.wifiIcon {
+  color: #7aa89f;
+  font-size: 16px;
+}
+
+.audioIcon {
+  color: #c0a36e;
+  font-size: 16px;
+  padding: 0px 0px 7px 0px;
+}
+
+.audioText {
+  color: #dcd7ba;
+  font-size: 14px;
+  padding: 0px 0px 15px 0px;
+}
+
+.batteryIcon {
+  color: #98bb6c;
+  font-size: 16px;
+  padding: 0px 0px 7px 0px;
+}
+
+.batteryText {
+  color: #dcd7ba;
+  font-size: 14px;
+  padding: 0px 0px 15px 0px;
+}
+
+.dateIcon {
+  color: #957fb8;
+  font-size: 16px;
+  padding: 0px 0px 7px 0px;
+}
+
+.dateText {
+  color: #dcd7ba;
+  font-size: 14px;
+  padding: 0px 0px 15px 0px;
+}
+
+.timeIcon {
+  color: #7fb4ca;
+  font-size: 16px;
+  padding: 0px 0px 7px 0px;
+  font-family: "tabler-icons";
+}
+
+.timeText {
+  color: #dcd7ba;
+  font-size: 14px;
+  padding: 0px 0px 15px 0px;
+}

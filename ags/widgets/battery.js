@@ -4,7 +4,20 @@ const BatteryProgress = Widget.Box({
   visible: battery.bind('available'),
   vertical: true,
   children: [
-    Widget.Label().hook(battery, self => {
+    Widget.Icon({ className: "batteryIcon" }).hook(battery, self => {
+      const batteryPercent = battery.bind('percent').emitter.percent;
+      const icon = [
+        [100, 'full'],
+        [75, 'good'],
+        [50, 'caution'],
+        [20, 'low'],
+        [0, 'empty'],
+      ].find(([threshold]) => threshold <= batteryPercent)?.[1];
+
+      self.icon = `battery-${icon}-symbolic`;
+      self.tooltip_text = `Batter at ${batteryPercent}%`;
+    }),
+    Widget.Label({ className: "batteryText" }).hook(battery, self => {
       self.label = battery.bind('percent').emitter.percent.toString()
     })
   ],

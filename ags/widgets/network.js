@@ -1,8 +1,11 @@
 const network = await Service.import('network')
 
 const WifiIndicator = () => Widget.Box({
+  hpack: "center",
+  className: "wifi",
   children: [
     Widget.Icon({
+      className: "wifiIcon",
       icon: network.wifi.bind('icon_name'),
     }),
   ],
@@ -14,6 +17,7 @@ const WiredIndicator = () => Widget.Icon({
 })
 
 const NetworkIndicator = () => Widget.Stack({
+  hpack: "fill",
   children: {
     wifi: WifiIndicator(),
     wired: WiredIndicator(),

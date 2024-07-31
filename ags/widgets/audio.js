@@ -1,11 +1,12 @@
 const audio = await Service.import('audio')
 
 const VolumeIndicator = Widget.Button({
+  classNames: ["volumeButton", "flat"],
   on_clicked: () => audio.speaker.is_muted = !audio.speaker.is_muted,
   child: Widget.Box({
     vertical: true,
     children: [
-      Widget.Icon().hook(audio.speaker, self => {
+      Widget.Icon({ className: "audioIcon" }).hook(audio.speaker, self => {
         const vol = audio.speaker.volume * 100;
         const icon = [
           [101, 'overamplified'],
@@ -18,7 +19,7 @@ const VolumeIndicator = Widget.Button({
         self.icon = `audio-volume-${icon}-symbolic`;
         self.tooltip_text = `Volume ${Math.floor(vol)}%`;
       }),
-      Widget.Label().hook(audio.speaker, self => {
+      Widget.Label({ className: "audioText" }).hook(audio.speaker, self => {
         self.label = Math.floor(audio.speaker.volume * 100).toString()
       })
     ]
