@@ -12,9 +12,11 @@ main(){
 
   enable_internal(){
     hyprctl keyword monitor "$INTERNAL_NAME,enable" > /dev/null 2>&1
+    hyprctl dispatch workspace 1 > /dev/null
   }
   disable_internal(){
     hyprctl keyword monitor "$INTERNAL_NAME,disable" > /dev/null 2>&1
+    hyprctl dispatch workspace 1 > /dev/null
   }
 
 
