@@ -6,37 +6,30 @@ import Date from "./widgets/date.js";
 import Time from "./widgets/time.js";
 
 const middle = Widget.Box({
+  vpack: "center",
   className: "barBottom",
-  vertical: true,
-  children: [
-    NetworkIndicator(),
-    VolumeIndicator,
-    BatteryProgress
-  ]
+  //children: [NetworkIndicator(), VolumeIndicator, BatteryProgress],
 });
 
+
 const bottom = Widget.Box({
+  hpack: "end",
   classNames: ["barBottom", "barBottomHalf"],
-  vertical: true,
-  children: [
-    Date,
-    Time
-  ]
+  children: [NetworkIndicator(), VolumeIndicator, BatteryProgress, Date, Time]
 });
 
 const bar = Widget.Window({
   name: "bar",
-  anchor: ["left"],
+  anchor: ["top", "left", "right"],
   exclusivity: "exclusive",
-  margins: [0, 0, 0, 5],
+  margins: [5, 5, 0, 5],
+  hpack: "fill",
   className: "bar",
-  child:
-    Widget.CenterBox({
-      vertical: true,
-      startWidget: HyprlandWorkspaces(),
-      centerWidget: middle,
-      endWidget: bottom
-    })
-})
+  child: Widget.CenterBox({
+    startWidget: HyprlandWorkspaces,
+    centerWidget: middle,
+    endWidget: bottom,
+  }),
+});
 
-export default bar
+export default bar;

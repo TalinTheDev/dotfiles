@@ -2,7 +2,6 @@ const battery = await Service.import('battery')
 
 const BatteryProgress = Widget.Box({
   visible: battery.bind('available'),
-  vertical: true,
   children: [
     Widget.Icon({ className: "batteryIcon" }).hook(battery, self => {
       const batteryPercent = battery.bind('percent').emitter.percent;

@@ -1,5 +1,4 @@
 const Time = Widget.Box({
-  vertical: true,
   children: [
     Widget.Label({
       className: "timeIcon",
@@ -9,7 +8,7 @@ const Time = Widget.Box({
       justification: "center",
       className: "timeText",
       label: Variable("", {
-        poll: [1000, "date '+%-I%n%-M'"],
+        poll: [1000, "date '+%-I:%-M %p'"],
       }).bind()
     })
   ]

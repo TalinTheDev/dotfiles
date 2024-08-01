@@ -4,7 +4,6 @@ const VolumeIndicator = Widget.Button({
   classNames: ["volumeButton", "flat"],
   on_clicked: () => audio.speaker.is_muted = !audio.speaker.is_muted,
   child: Widget.Box({
-    vertical: true,
     children: [
       Widget.Icon({ className: "audioIcon" }).hook(audio.speaker, self => {
         const vol = audio.speaker.volume * 100;
