@@ -22,7 +22,7 @@ const bar = Widget.Window({
   name: "bar",
   anchor: ["top", "left", "right"],
   exclusivity: "exclusive",
-  margins: [5, 5, 0, 5],
+  margins: [10, 10, 0, 10],
   hpack: "fill",
   className: "bar",
   child: Widget.CenterBox({
