@@ -16,7 +16,7 @@ const WiredIndicator = () => Widget.Icon({
   icon: network.wired.bind('icon_name'),
 })
 
-const NetworkIndicator = () => Widget.Stack({
+const NetworkIndicator = Widget.Stack({
   hpack: "fill",
   children: {
     wifi: WifiIndicator(),

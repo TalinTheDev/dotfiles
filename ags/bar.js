@@ -5,17 +5,11 @@ import BatteryProgress from "./widgets/battery.js";
 import Date from "./widgets/date.js";
 import Time from "./widgets/time.js";
 
-const middle = Widget.Box({
-  vpack: "center",
-  className: "barBottom",
-  //children: [NetworkIndicator(), VolumeIndicator, BatteryProgress],
-});
-
 
 const bottom = Widget.Box({
   hpack: "end",
   classNames: ["barBottom", "barBottomHalf"],
-  children: [NetworkIndicator(), VolumeIndicator, BatteryProgress, Date, Time]
+  children: [NetworkIndicator, VolumeIndicator, BatteryProgress, Date, Time]
 });
 
 const bar = Widget.Window({
@@ -27,7 +21,6 @@ const bar = Widget.Window({
   className: "bar",
   child: Widget.CenterBox({
     startWidget: HyprlandWorkspaces,
-    centerWidget: middle,
     endWidget: bottom,
   }),
 });
