@@ -1,5 +1,25 @@
 #!/usr/bin/bash
 
+laptop_on=""
+
+enable_laptop() {
+  laptop_on="true"
+  hyprctl keyword monitor "eDP-1,enable" >/dev/null 2>&1
+}
+
+disable_laptop() {
+  laptop_on="false" 
+  hyprctl keyword monitor "eDP-1,disable" >/dev/null 2>&1
+}
+
+enable_monitor() {
+  hyprctl keyword monitor "HDMI-A-1,enable" >/dev/null 2>&1
+}
+
+disable_monitor() {
+  hyprctl keyword monitor "HDMI-A-1,disable" >/dev/null 2>&1
+}
+
 main(){
   MONITORS=$(hyprctl monitors all -j)
   MONITOR_COUNT=$(jq 'length' <<< "$MONITORS")
@@ -9,42 +29,70 @@ main(){
   EXTERNALS=$(jq "map(select(.id!=$(jq '.id' <<< "$INTERNAL")))" <<< "$MONITORS")
   EXTERNAL_COUNT=$(jq 'length' <<< "$EXTERNALS")
 
+  if [ "$laptop_on" == "" ]; then
+    laptop_on="$INTERNAL_DISABLED"
+  fi
 
   enable_internal(){
     hyprctl keyword monitor "$INTERNAL_NAME,enable" > /dev/null 2>&1
     hyprctl dispatch workspace 1 > /dev/null
+    laptop_on="false"
   }
   disable_internal(){
     hyprctl keyword monitor "$INTERNAL_NAME,disable" > /dev/null 2>&1
     hyprctl dispatch workspace 1 > /dev/null
+    laptop_on="true"
   }
 
-
-
   if [[ $EXTERNAL_COUNT > 0 ]]; then
-    if [[ $INTERNAL_DISABLED = "false" ]]; then
+    if [ "$INTERNAL_DISABLED" == "false" ] && [ "$laptop_on" == "false" ]; then
       disable_internal
     fi
   else
-    if [[ $INTERNAL_DISABLED = "true" ]]; then
+    if [ "$INTERNAL_DISABLED" == "true" ] && [ "$laptop_on" == "true" ]; then
       enable_internal
     fi
   fi
 }
 
-
-main
-
-handle_hyprland_event(){
+handle_hyprland_event() {
   case "$1" in
-    monitor*) 
-      main ;;
+  monitor*)
+    main
+    ;;
   esac
 }
 
-for var in "$@"; do
-  if [[ $var = "daemon" ]]; then
-    socat -U - UNIX-CONNECT:$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock | while read -r line; do handle_hyprland_event "$line"; done
-    exit 1
+if [[ $1 = "daemon" ]]; then
+  pkill socat
+  socat -U - UNIX-CONNECT:$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock | while read -r line; do handle_hyprland_event "$line"; done
+  exit 1
+elif [[ $1 = "laptop" ]]; then
+  if [[ $2 = "on" ]]; then
+    enable_laptop
+  elif [[ $2 = "off" ]]; then
+    disable_laptop
+  else
+    enable_laptop
+    disable_monitor
   fi
-done
+elif [[ $1 = "monitor" ]]; then
+  if [[ $2 = "on" ]]; then
+    enable_monitor
+  elif [[ $2 = "off" ]]; then
+    disable_monitor
+  else
+    disable_laptop
+    enable_monitor
+  fi
+elif [[ $1 = "both" ]]; then
+  if [[ $2 = "off" ]]; then
+    disable_laptop
+    disable_monitor
+  else
+    enable_laptop
+    enable_monitor
+  fi
+else
+  main
+fi
