@@ -14,4 +14,4 @@ wallpaperList=${wallpaperList%?}
 wallpaper="$folderPath/$(echo $wallpaperList | rofi -dmenu -sep '|' -p 'Wallpapers' -config ~/.cache/wal/colors-rofi-dark.rasi)"
 
 swww img $wallpaper --transition-step 60
-wal -i $wallpaper -n  -q
+wal -i $wallpaper -n -t -s -q

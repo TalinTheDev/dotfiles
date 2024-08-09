@@ -1,3 +1,3 @@
 function addMonitor
-  sh ~/.config/hypr/scripts/addMonitor.sh
+  sh ~/.config/hypr/scripts/changeMonitor.sh monitor on
 end

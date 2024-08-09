@@ -1,3 +1,3 @@
 function removeMonitor
-  sh ~/.config/hypr/scripts/removeMonitor.sh
+  sh ~/.config/hypr/scripts/changeMonitor.sh monitor off
 end

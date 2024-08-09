@@ -61,7 +61,6 @@
 - seahorse (keyring manager)
 - ntfs-3g (Windows parition access)
 - luarocks (Lua package manager for nvim)
-- waybar (system bar)
 - keychain (ssh-agent manager)
 - zig (zig)
 - tmux (terminal multiplexer)
@@ -78,7 +77,7 @@
 - google-chrome (backup browser)
 - visual-studio-code-bin (code editor)
 - insomnia (api tester)
-- ttf-tabler-icons (icon font for waybar)
+- ttf-tabler-icons (icon font for ags)
 
 ## Install
 

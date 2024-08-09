@@ -50,10 +50,7 @@ clear
 # Setup fish
 read -p "Setup fish? (Y/n): " resp
 if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$resp" = "Y" ]; then
-  fisher install jorgebucaran/hydro
-  fisher install danhper/fish-ssh-agent
-  set -U fish_greeting ""
-  set -U EDITOR nvim
+  fish -c installFish
 fi
 clear
 
