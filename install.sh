@@ -120,6 +120,7 @@ if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$rest" = "Y" ]; then
   sudo systemctl enable reflector.timer
   sudo systemctl enable timeshift.timer
   sudo systemctl enable thermald.service
+  sudo systemctl enable tlp.service
 fi
 clear
 
