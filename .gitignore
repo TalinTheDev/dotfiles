@@ -1,10 +1,11 @@
 dconf/*
 gtk-3.0/*
 fish/*
-!fish/conf.d
+!fish/config.fish
 !fish/functions/
 google-chrome/*
 menus/*
 Code/*
 Electron/*
 Insomnia/*
+.vscode

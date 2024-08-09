@@ -5,24 +5,38 @@ import BatteryProgress from "./widgets/battery.js";
 import Date from "./widgets/date.js";
 import Time from "./widgets/time.js";
 
+const bottom = () => {
+  return Widget.Box({
+    hpack: "end",
+    classNames: ["barBottom", "barBottomHalf"],
+    children: [
+      NetworkIndicator(),
+      VolumeIndicator(),
+      BatteryProgress(),
+      Date(),
+      Time(),
+    ],
+  });
+};
 
-const bottom = Widget.Box({
-  hpack: "end",
-  classNames: ["barBottom", "barBottomHalf"],
-  children: [NetworkIndicator, VolumeIndicator, BatteryProgress, Date, Time]
-});
+const barContents = () => {
+  return Widget.CenterBox({
+    startWidget: HyprlandWorkspaces(),
+    endWidget: bottom(),
+  });
+};
 
-const bar = Widget.Window({
-  name: "bar",
-  anchor: ["top", "left", "right"],
-  exclusivity: "exclusive",
-  margins: [10, 10, 0, 10],
-  hpack: "fill",
-  className: "bar",
-  child: Widget.CenterBox({
-    startWidget: HyprlandWorkspaces,
-    endWidget: bottom,
-  }),
-});
-
+const bar = (gdkMonitor, id) => {
+  print("Window adding " + `bar-${id}`);
+  return Widget.Window({
+    name: `bar-${id}`,
+    gdkmonitor: gdkMonitor,
+    anchor: ["top", "left", "right"],
+    exclusivity: "exclusive",
+    margins: [7, 10, 0, 10],
+    hpack: "fill",
+    className: "bar",
+    child: barContents(),
+  });
+};
 export default bar;
