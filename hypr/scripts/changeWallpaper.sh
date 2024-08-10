@@ -15,3 +15,4 @@ wallpaper="$folderPath/$(echo $wallpaperList | rofi -dmenu -sep '|' -p 'Wallpape
 
 swww img $wallpaper --transition-step 60
 wal -i $wallpaper -n -t -s -q
+ags -q && ags
