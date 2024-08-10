@@ -1,66 +1,38 @@
-import bar from "./bar.js";
 const hyprland = await Service.import("hyprland");
 import Gdk from "gi://Gdk?version=3.0";
+import bar from "./bar.js";
+import { getMonitorName } from "./utils.js";
 
-const prettyPrint = (json) => {
-  print(JSON.stringify(json, null, 2));
-};
-
-const setupBars = () => {
-  let monitors = hyprland.monitors;
-  let currentBars = [];
-  print(`${monitors.length} monitors`);
-  for (let monitorIndex = 0; monitorIndex < monitors.length; monitorIndex++) {
-    const currentMonitor = monitors[monitorIndex];
-    let { id } = currentMonitor;
-    let gdkMonitor;
-    const monitor = hyprland.getMonitor(id);
-    if (!monitor) return null;
-
-    gdkMonitor =
-      Gdk.Display.get_default()?.get_monitor_at_point(monitor.x, monitor.y) ||
-      null;
-
-    if (!gdkMonitor) continue;
-    if (
-      App.windows.filter((window) => window.name == `bar-${id}`).length == 0
-    ) {
-      print(id);
-      currentBars.push(bar(gdkMonitor, id));
-    }
-  }
-  return currentBars;
-};
+const display = Gdk.Display.get_default();
 
 App.config({
   style: "./style.css",
-  windows: setupBars(),
+  windows: () => {
+    let bars = [];
+    let monitors = hyprland.monitors;
+
+    for (let monitorIndex = 0; monitorIndex < monitors.length; monitorIndex++) {
+      const monitor = monitors[monitorIndex];
+      let { id, name } = monitor;
+
+      const monitorCount = display?.get_n_monitors();
+      for (let index = 0; index < (monitorCount ?? 1); index++) {
+        let monitor = display?.get_monitor(index);
+        if (getMonitorName(monitor) === name) bars.push(bar(monitor, id));
+      }
+    }
+
+    return bars;
+  },
 });
 
-const display = Gdk.Display.get_default();
-let added = 0;
-let removed = 0;
-display.connect("monitor-added", (_, monitor) => {
-  if (added > 0) {
-    return;
-  }
-  added += 1;
-
-  print("Monitor added");
-  setupBars().forEach((bar) => {
-    App.addWindow(bar);
-  });
+display?.connect("monitor-added", (_, monitor) => {
+  print(JSON.stringify(App.windows, null, 2))
+  App.addWindow(bar(monitor, parseInt(App.windows[App.windows.length - 1].name.split("-")[1]) + 1));
 });
 
-display.connect("monitor-removed", (_, monitor) => {
-  if (removed > 0) {
-    return;
-  }
-  removed += 1;
-  App.windows.forEach((window) => {
-    prettyPrint(monitor);
-    print("Window removing " + window.name);
-    App.removeWindow(window.name);
+display?.connect("monitor-removed", (_, monitor) => {
+  App.windows.forEach((win) => {
+    if (win.gdkmonitor === monitor) App.removeWindow(win);
   });
-  print("Monitor removed");
 });
