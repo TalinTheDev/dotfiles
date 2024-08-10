@@ -1,5 +1,6 @@
+@import url("../../.cache/wal/colors-waybar.css");
+
 window box {
-  background-color: transparent;
   border-radius: 25px;
   font-family: "JetBrainsMono Nerd Font";
 }
@@ -19,57 +20,57 @@ button {
 }
 
 .workspaceButton {
-  color: #dcd7ba;
+  color: @color7;
   padding: 0;
 }
 
 .wifiIcon {
-  color: #7aa89f;
+  color: @color2;
   font-size: 16px;
 }
 
 .audioIcon {
-  color: #c0a36e;
+  color: @color5;
   font-size: 16px;
   margin: 0px 10px 0px 12px;
 }
 
 .audioText {
-  color: #dcd7ba;
+  color: @color7;
   font-size: 14px;
 }
 
 .batteryIcon {
-  color: #98bb6c;
+  color: @color6;
   font-size: 16px;
   margin: 0px 10px 0px 10px;
 }
 
 .batteryText {
-  color: #dcd7ba;
+  color: @color7;
   font-size: 14px;
 }
 
 .dateIcon {
-  color: #957fb8;
+  color: @color8;
   font-size: 16px;
   margin: 0px 10px 0px 30px;
 }
 
 .dateText {
-  color: #dcd7ba;
+  color: @color7;
   font-size: 14px;
 }
 
 .timeIcon {
-  color: #7fb4ca;
+  color: @color2;
   font-size: 16px;
   font-family: "tabler-icons";
   margin: 0px 0px 0px 25px;
 }
 
 .timeText {
-  color: #dcd7ba;
+  color: @color7;
   font-size: 14px;
   margin: 0px 10px;
 }
