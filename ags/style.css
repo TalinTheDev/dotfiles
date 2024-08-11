@@ -40,6 +40,18 @@ button {
   font-size: 14px;
 }
 
+.brightnessIcon {
+  color: @color1;
+  font-family: "tabler-icons";
+  font-size: 16px;
+  margin: 0px 10px 0px 12px;
+}
+
+.brightnessText {
+  color: @color7;
+  font-size: 14px;
+}
+
 .batteryIcon {
   color: @color6;
   font-size: 16px;

@@ -2,6 +2,7 @@ import HyprlandWorkspaces from "./widgets/workspaces.js";
 import NetworkIndicator from "./widgets/network.js";
 import VolumeIndicator from "./widgets/audio.js";
 import BatteryProgress from "./widgets/battery.js";
+import Brightness from "./widgets/brightness.js";
 import Date from "./widgets/date.js";
 import Time from "./widgets/time.js";
 
@@ -12,6 +13,7 @@ const bottom = () => {
     children: [
       NetworkIndicator(),
       VolumeIndicator(),
+      Brightness(),
       BatteryProgress(),
       Date(),
       Time(),

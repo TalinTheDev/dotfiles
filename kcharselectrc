@@ -1,7 +1,0 @@
-[General]
-char=777
-rtl=false
-selectedFont=tabler-icons,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-
-[MainWindow]
-ToolBarsMovable=Disabled

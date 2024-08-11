@@ -15,7 +15,7 @@ const BatteryProgress = () => {
         ].find(([threshold]) => threshold <= batteryPercent)?.[1];
 
         self.icon = `battery-${icon}-symbolic`;
-        self.tooltip_text = `Batter at ${batteryPercent}%`;
+        self.tooltip_text = `Battery at ${batteryPercent}%`;
       }),
       Widget.Label({ className: "batteryText" }).hook(battery, (self) => {
         self.label = battery.bind("percent").emitter.percent.toString();
