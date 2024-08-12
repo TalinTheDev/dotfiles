@@ -20,5 +20,5 @@ wallpaper(){
 swww img $wallpaper --transition-step 60
 wallpaper=$(wallpaper)
 
-sh ~/.config/hypr/scripts/generateColors.sh "$wallpaper" skip &&
+generateColors "$wallpaper" skip &&
 ags -q && ags 
