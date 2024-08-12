@@ -25,7 +25,7 @@ return {
 			builtin.find_files({ cwd = "~/dotfiles/nvim/.config/nvim" })
 		end, { desc = "[S]earch [N]eovim files" })
 		vim.keymap.set("n", "<leader>sc", function()
-			builtin.find_files({ cwd = "~/dotfiles" })
+			builtin.find_files({ cwd = "~/dotfiles", find_command = { "rg", "--files", "--follow", "--hidden" } })
 		end, { desc = "[S]earch dotfiles [c]onfig files" })
 	end,
 }
