@@ -1,16 +1,20 @@
 #!/usr/bin/bash
 
+runStow {
+  cd ~/dotfiles
+  stow -R $1
+}
+
 # Setup script
-mkdir ~/.config >/dev/null 2>&1
-mkdir ~/.config/tmp >/dev/null 2>&1
-tmp=~/.config/tmp
-cd ~/.config
+mkdir ~/dotfiles/tmp >/dev/null 2>&1
+tmp=~/dotfiles/tmp
+cd ~/dotfiles
 clear
 
 if [ "$1" = "create" ]; then
-  mkdir ~/.config/packages >/dev/null 2>&1
-  pacman -Qqen > ~/.config/packages/archpackages.txt
-  sed -n '/paru/!p' <<< $(pacman -Qqm) > ~/.config/packages/parupackages.txt
+  mkdir ~/dotfiles/packages >/dev/null 2>&1
+  pacman -Qqen > ~/dotfiles/packages/archpackages.txt
+  sed -n '/paru/!p' <<< $(pacman -Qqm) > ~/dotfiles/packages/parupackages.txt
   echo "Created package lists"
   exit 0
 fi
@@ -19,11 +23,11 @@ fi
 
 read -p "Install pacman packages? (Y/n): " resp
 if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$resp" = "Y" ]; then
-  sudo pacman -Syuq --needed - < ~/.config/packages/archpackages.txt
+  sudo pacman -Syuq --needed - < ~/dotfiles/packages/archpackages.txt
 else
   read -p "Can't setup system without packages... Are you sure you want to skip installing packages? (y/N)" resp
   if [ -z "$resp" ] || [ "$resp" = "n" ] || [ "$resp" = "N" ]; then
-    sudo pacman -Syuq --needed - < ~/.config/packages/archpackages.txt
+    sudo pacman -Syuq --needed - < ~/dotfiles/packages/archpackages.txt
   fi
 fi
 clear
@@ -34,11 +38,11 @@ if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$resp" = "Y" ]; then
   git clone https://aur.archlinux.org/paru.git $tmp/paru
   cd $tmp/paru
   makepkg -si --needed 
-  cd ~/.config
+  cd ~/dotfiles
   
   read -p "Install paru packages? (Y/n): " resp
   if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$resp" = "Y" ]; then
-    paru --skipreview --removemake --cleanafter --nokeepsrc --needed -Syuq - < ~/.config/packages/parupackages.txt
+    paru --skipreview --removemake --cleanafter --nokeepsrc --needed -Syuq - < ~/dotfiles/packages/parupackages.txt
   else
     echo "Some things won't work without paru packages..."
   fi
@@ -50,6 +54,7 @@ clear
 # Setup fish
 read -p "Setup fish? (Y/n): " resp
 if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$resp" = "Y" ]; then
+  runStow fish
   fish -c installFish
 fi
 clear
@@ -78,8 +83,8 @@ clear
 # Setup boot loader
 read -p "Setup refind (boot loader)? (Y/n): " resp
 if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$rest" = "Y" ]; then
-  sudo cp ~/.config/refind.conf /boot/EFI/refind/refind.conf
-  sudo cp ~/.config/themes /boot/EFI/refind/themes -r
+  sudo cp ~/dotfiles/refind.conf /boot/EFI/refind/refind.conf
+  sudo cp ~/dotfiles/themes /boot/EFI/refind/themes -r
   sudo refind-install
 fi
 clear
@@ -87,23 +92,23 @@ clear
 # Setup display manager
 read -p "Setup SDDM (display manager)? (Y/n): " resp
 if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$rest" = "Y" ]; then
-  sudo cp ~/.config/sddm/themes/sugar-candy/* /usr/share/sddm/themes/sugar-candy -r
-  sudo cp ~/.config/sddm/sddm.conf /etc/sddm.conf
+  sudo cp ~/dotfiles/sddm/themes/sugar-candy/* /usr/share/sddm/themes/sugar-candy -r
+  sudo cp ~/dotfiles/sddm/sddm.conf /etc/sddm.conf
 fi
 clear
 
 # Setup /etc
 read -p "Setup /etc? (Y/n): " resp
 if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$rest" = "Y" ]; then
-  sudo cp ~/.config/etc/* /etc -r
+  sudo cp ~/dotfiles/etc/* /etc -r
 fi
 clear
 
 # Setup Timeshift
 read -p "Setup timeshift (system backup)? (Y/n): " resp
 if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$rest" = "Y" ]; then
-  sudo cp ~/.config/services/timeshift.service /usr/lib/systemd/system/timeshift.service
-  sudo cp ~/.config/services/timeshift.timer /usr/lib/systemd/system/timeshift.timer
+  sudo cp ~/dotfiles/services/timeshift.service /usr/lib/systemd/system/timeshift.service
+  sudo cp ~/dotfiles/services/timeshift.timer /usr/lib/systemd/system/timeshift.timer
 fi
 clear
 
@@ -125,6 +130,6 @@ fi
 clear
 
 # Exit script
-rm -rf ~/.config/tmp
+rm -rf ~/dotfiles/tmp
 echo "System setup complete. Reboot and enjoy!"
 exit 0

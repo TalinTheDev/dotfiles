@@ -2,7 +2,7 @@
 
 
 wallpaperList=""
-folderPath=~/.config/wallpapers/
+folderPath=~/Pictures/Wallpapers
 file_list=$(ls $folderPath)
 
 IFS=$'\n'
