@@ -1,9 +1,0 @@
-[Unit]
-Description=Timeshift Backup Scheduling.
-
-[Timer]
-OnBootSec=5min
-OnUnitActiveSec=1w
-
-[Install]
-WantedBy=multi-user.target

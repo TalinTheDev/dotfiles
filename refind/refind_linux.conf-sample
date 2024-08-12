@@ -1,2 +1,0 @@
-"Boot with standard options"  "root=PARTUUID=bd5a105f-9294-43fc-98cc-05aa22f52e2a rw add_efi_memmap initrd=initramfs-%v.img"
-"Boot fallback"  "root=PARTUUID=bd5a105f-9294-43fc-98cc-05aa22f52e2a rw add_efi_memmap initrd=initramfs-%v-fallback.img"

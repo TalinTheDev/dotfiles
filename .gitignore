@@ -1,32 +1,32 @@
-# VSCode
-Code/*
-!Code/User
-!Code/User/settings.json
-!Code/User/keybindings.json
-!Code/User/snippets
-Code/User/*
+# # VSCode
+# Code/*
+# !Code/User
+# !Code/User/settings.json
+# !Code/User/keybindings.json
+# !Code/User/snippets
+# Code/User/*
 
-# GTK
-gtk-3.0
+# # GTK
+# gtk-3.0
 
-# Fish
-fish/*
-!fish/functions
-!fish/config.fish
+# # Fish
+# fish/*
+# !fish/functions
+# !fish/config.fish
 
-# Wal
-wal/*
-!wal/templates
+# # Wal
+# wal/*
+# !wal/templates
 
-# Zed
-zed/*
-!zed/keymap.json
-!zed/settings.json
+# # Zed
+# zed/*
+# !zed/keymap.json
+# !zed/settings.json
 
-# Misc Stuff
-dconf
-Electron
-google-chrome
-Insomnia
-font-manager
-fontconfig
+# # Misc Stuff
+# dconf
+# Electron
+# google-chrome
+# Insomnia
+# font-manager
+# fontconfig
