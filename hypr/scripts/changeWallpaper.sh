@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 wallpaperList=""
 folderPath=~/.config/wallpapers/
 file_list=$(ls $folderPath)
@@ -12,7 +13,12 @@ done
 wallpaperList=${wallpaperList%?}
 
 wallpaper="$folderPath/$(echo $wallpaperList | rofi -dmenu -sep '|' -p 'Wallpapers' -config ~/.cache/wal/colors-rofi-dark.rasi)"
+wallpaper(){
+  echo $wallpaper | sed -r 's/\/\/+/\//g'
+}
 
 swww img $wallpaper --transition-step 60
-wal -i $wallpaper -n -t -s -q
-ags -q && ags
+wallpaper=$(wallpaper)
+
+sh ~/.config/hypr/scripts/generateColors.sh "$wallpaper" skip &&
+ags -q && ags 

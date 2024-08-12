@@ -1,4 +1,4 @@
-@import url("../../.cache/wal/colors-waybar.css");
+@import url("../../.cache/colors/gtk-colors.css");
 
 window box {
   border-radius: 25px;
@@ -20,35 +20,35 @@ button {
 }
 
 .workspaceButton {
-  color: @color7;
+  color: @color4;
   padding: 0;
 }
 
 .wifiIcon {
-  color: @color2;
+  color: @color8;
   font-size: 16px;
 }
 
 .audioIcon {
-  color: @color5;
+  color: @color12;
   font-size: 16px;
   margin: 0px 10px 0px 12px;
 }
 
 .audioText {
-  color: @color7;
+  color: @color1;
   font-size: 14px;
 }
 
 .brightnessIcon {
-  color: @color1;
+  color: @color20;
   font-family: "tabler-icons";
   font-size: 16px;
   margin: 0px 10px 0px 12px;
 }
 
 .brightnessText {
-  color: @color7;
+  color: @color1;
   font-size: 14px;
 }
 
@@ -59,30 +59,30 @@ button {
 }
 
 .batteryText {
-  color: @color7;
+  color: @color1;
   font-size: 14px;
 }
 
 .dateIcon {
-  color: @color8;
+  color: @color16;
   font-size: 16px;
   margin: 0px 10px 0px 30px;
 }
 
 .dateText {
-  color: @color7;
+  color: @color1;
   font-size: 14px;
 }
 
 .timeIcon {
-  color: @color2;
+  color: @color18;
   font-size: 16px;
   font-family: "tabler-icons";
   margin: 0px 0px 0px 25px;
 }
 
 .timeText {
-  color: @color7;
+  color: @color1;
   font-size: 14px;
   margin: 0px 10px;
 }
