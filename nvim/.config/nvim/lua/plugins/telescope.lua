@@ -22,10 +22,10 @@ return {
 			}))
 		end, { desc = "[S]earch in [F]ile" })
 		vim.keymap.set("n", "<leader>sn", function()
-			builtin.find_files({ cwd = vim.fn.stdpath("config") })
+			builtin.find_files({ cwd = "~/dotfiles/nvim/.config/nvim" })
 		end, { desc = "[S]earch [N]eovim files" })
 		vim.keymap.set("n", "<leader>sc", function()
-			builtin.find_files({ cwd = string.sub(vim.fn.stdpath("config"), 0, -5) })
+			builtin.find_files({ cwd = "~/dotfiles" })
 		end, { desc = "[S]earch dotfiles [c]onfig files" })
 	end,
 }

@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 wallpaperList=""
 folderPath=~/Pictures/Wallpapers
 file_list=$(ls $folderPath)
