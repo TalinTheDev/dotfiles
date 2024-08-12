@@ -1,0 +1,126 @@
+{
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.5,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": null,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "window.menuBarVisibility": "toggle",
+  "security.workspace.trust.untrustedFiles": "open",
+  "sync.gist": "a173180080ce5b0bffbca4042873376b",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.showTabs": "multiple",
+  "editor.occurrencesHighlight": "multiFile",
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": false,
+  "editor.tabCompletion": "on",
+  "editor.minimap.enabled": false,
+  "editor.suggest.preview": true,
+  "editor.suggest.showStatusBar": true,
+  "files.eol": "\n",
+  "files.simpleDialog.enable": true,
+  "workbench.reduceMotion": "off",
+  "workbench.remoteIndicator.showExtensionRecommendations": false,
+  "workbench.editor.closeOnFileDelete": true,
+  "explorer.excludeGitIgnore": true,
+  "terminal.external.linuxExec": "kitty",
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.tabs.focusMode": "singleClick",
+  "problems.defaultViewMode": "table",
+  "update.showReleaseNotes": false,
+  "telemetry.telemetryLevel": "off",
+  "better-comments.highlightPlainText": true,
+  "sync.quietSync": true,
+  "cSpell.showAutocompleteSuggestions": true,
+  "colorize.decoration_type": "underline",
+  "git.defaultCloneDirectory": "~/clones/",
+  "git.fetchOnPull": true,
+  "sync.autoDownload": true,
+  "gitlens.plusFeatures.enabled": false,
+  "html.format.indentInnerHtml": true,
+  "material-icon-theme.activeIconPack": "vue",
+  "npm.packageManager": "pnpm",
+  "oneDarkPro.bold": true,
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "path-intellisense.extensionOnImport": true,
+  "prettier.vueIndentScriptAndStyle": true,
+  "rust-analyzer.restartServerOnConfigChange": true,
+  "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
+  "rust-analyzer.diagnostics.styleLints.enable": true,
+  "thunder-client.httpLibrary": "axios",
+  "thunder-client.httpVersion": "HTTP/2",
+  "thunder-client.jsonFileIndentSize": 2,
+  "javascript.experimental.updateImportsOnPaste": true,
+  "javascript.format.semicolons": "insert",
+  "path-intellisense.showHiddenFiles": true,
+
+  "[typescript][javascript][vue][html][json][jsonc][css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "runOnSave.commands": [
+    {
+      "match": ".*\\.*",
+      "commandBeforeSaving": "editor.action.formatDocument",
+      "runIn": "vscode"
+    }
+  ],
+  "editor.linkedEditing": true,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "cSpell.userWords": ["esbenp"],
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', monospace",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "bash (MSYS2)": {
+      "path": "C:\\msys64\\usr\\bin\\bash.exe",
+      "args": ["--login", "-i"],
+      "env": {
+        "CHERE_INVOKING": "1"
+      }
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "files.exclude": {
+    "**/tmp/**": true,
+    "**/node_modules/**": true,
+    "**/.git/objects/**": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/dist/**": true
+  },
+  "search.exclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/tmp/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true
+  },
+  "extensions.autoCheckUpdates": true,
+  "search.followSymlinks": false,
+  "cSpell.enabled": false,
+  "explorer.confirmDragAndDrop": false
+}

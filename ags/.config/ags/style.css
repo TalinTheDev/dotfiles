@@ -1,0 +1,94 @@
+@import url("../../.cache/colors/gtk-colors.css");
+
+window box {
+  border-radius: 25px;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+button {
+  border: 0;
+  background-image: none;
+  background-color: transparent;
+}
+
+.workspaces {
+  margin-left: 5px;
+}
+
+.workspaceButton:first-child {
+  margin-left: 10px;
+}
+
+.workspaceButton {
+  color: @color4;
+  padding: 0;
+}
+
+.wifiIcon {
+  color: @color8;
+  font-size: 16px;
+  margin: 0px 10px 0px 25px;
+}
+
+.wifiText {
+  color: @color1;
+  font-size: 14px;
+}
+
+.audioIcon {
+  color: @color12;
+  font-size: 16px;
+  margin: 0px 10px 0px 25px;
+}
+
+.audioText {
+  color: @color1;
+  font-size: 14px;
+}
+
+.brightnessIcon {
+  color: @color20;
+  font-family: "tabler-icons";
+  font-size: 16px;
+  margin: 0px 10px 0px 25px;
+}
+
+.brightnessText {
+  color: @color1;
+  font-size: 14px;
+}
+
+.batteryIcon {
+  color: @color6;
+  font-size: 16px;
+  margin: 0px 10px 0px 25px;
+}
+
+.batteryText {
+  color: @color1;
+  font-size: 14px;
+}
+
+.dateIcon {
+  color: @color16;
+  font-size: 16px;
+  margin: 0px 10px 0px 30px;
+}
+
+.dateText {
+  color: @color1;
+  font-size: 14px;
+}
+
+.timeIcon {
+  color: @color18;
+  font-size: 16px;
+  font-family: "tabler-icons";
+  margin: 0px 0px 0px 25px;
+}
+
+.timeText {
+  color: @color1;
+  font-size: 14px;
+  margin: 0px 10px;
+}
