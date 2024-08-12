@@ -35,7 +35,7 @@ const bar = (gdkMonitor, id) => {
     gdkmonitor: gdkMonitor,
     anchor: ["top", "left", "right"],
     exclusivity: "exclusive",
-    margins: [7, 10, 0, 10],
+    margins: [10, 10, 3, 10],
     hpack: "fill",
     className: "bar",
     child: barContents(),

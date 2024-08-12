@@ -9,6 +9,10 @@ const WifiIndicator = () =>
         className: "wifiIcon",
         icon: network.wifi.bind("icon_name"),
       }),
+      Widget.Label({
+        className: "wifiText",
+        label: network.wifi.bind("ssid").as((ssid) => ssid || "Unknown")
+      })
     ],
     tooltipText: network.wifi.bind("ssid").as((ssid) => ssid || "Unknown"),
   });

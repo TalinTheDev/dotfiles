@@ -27,12 +27,18 @@ button {
 .wifiIcon {
   color: @color8;
   font-size: 16px;
+  margin: 0px 10px 0px 25px;
+}
+
+.wifiText {
+  color: @color1;
+  font-size: 14px;
 }
 
 .audioIcon {
   color: @color12;
   font-size: 16px;
-  margin: 0px 10px 0px 12px;
+  margin: 0px 10px 0px 25px;
 }
 
 .audioText {
@@ -44,7 +50,7 @@ button {
   color: @color20;
   font-family: "tabler-icons";
   font-size: 16px;
-  margin: 0px 10px 0px 12px;
+  margin: 0px 10px 0px 25px;
 }
 
 .brightnessText {
@@ -55,7 +61,7 @@ button {
 .batteryIcon {
   color: @color6;
   font-size: 16px;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px 0px 25px;
 }
 
 .batteryText {
