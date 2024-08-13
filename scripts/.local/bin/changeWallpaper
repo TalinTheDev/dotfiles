@@ -6,7 +6,9 @@ file_list=$(ls $folderPath)
 
 IFS=$'\n'
 for file in $file_list; do
+  if [[ $file != "currentWallpaper" ]]; then
     wallpaperList+="$file|"
+  fi
 done
 
 wallpaperList=${wallpaperList%?}
@@ -20,4 +22,6 @@ swww img $wallpaper --transition-step 60
 wallpaper=$(wallpaper)
 
 generateColors "$wallpaper" skip &&
-ags -q && ags 
+rm ~/Pictures/Wallpapers/currentWallpaper
+ln -s $wallpaper ~/Pictures/Wallpapers/currentWallpaper
+ags -q && ags & 
