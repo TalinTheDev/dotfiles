@@ -14,13 +14,16 @@ done
 wallpaperList=${wallpaperList%?}
 
 wallpaper="$folderPath/$(echo $wallpaperList | rofi -dmenu -sep '|' -p 'Wallpapers' -config ~/.cache/wal/colors-rofi-dark.rasi)"
+if [[ ! -f $wallpaper ]]; then
+  echo "No wallpaper picked"
+  exit 0
+fi
 wallpaper(){
   echo $wallpaper | sed -r 's/\/\/+/\//g'
 }
 
-swww img $wallpaper --transition-step 60
 wallpaper=$(wallpaper)
-
+swww img $wallpaper --transition-step 60
 generateColors "$wallpaper" skip &&
 rm ~/Pictures/Wallpapers/currentWallpaper
 ln -s $wallpaper ~/Pictures/Wallpapers/currentWallpaper
