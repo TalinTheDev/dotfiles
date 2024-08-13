@@ -37,11 +37,13 @@ main(){
     hyprctl keyword monitor "$INTERNAL_NAME,enable" > /dev/null 2>&1
     hyprctl dispatch workspace 1 > /dev/null
     laptop_on="false"
+    ags -q && ags > /dev/null 2>&1 &
   }
   disable_internal(){
     hyprctl keyword monitor "$INTERNAL_NAME,disable" > /dev/null 2>&1
     hyprctl dispatch workspace 1 > /dev/null
     laptop_on="true"
+    ags -q && ags > /dev/null 2>&1 &
   }
 
   if [[ $EXTERNAL_COUNT > 0 ]]; then
