@@ -15,3 +15,5 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Center cursor on screen after 
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Center cursor on screen after half page jump up" })
 
 vim.keymap.set("n", "<leader>rf", ":%s/", { desc = "[R]eplace in [F]ile" })
+
+vim.keymap.set("n", "<leader>ba", ":Alpha<CR>", { desc = "[B]ack to [A]lpha" })
