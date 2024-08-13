@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-runStow {
+runStow() {
   cd ~/dotfiles
   stow -R $1
 }
@@ -44,10 +44,10 @@ if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$resp" = "Y" ]; then
   if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$resp" = "Y" ]; then
     paru --skipreview --removemake --cleanafter --nokeepsrc --needed -Syuq - < ~/dotfiles/packages/parupackages.txt
   else
-    echo "Some things won't work without paru packages..."
+    echo "Some things won't work without paru packages..." && sleep 1
   fi
 else
-  echo "Some things won't work without paru packages..."
+  echo "Some things won't work without paru packages..." && sleep 1
 fi
 clear
 
@@ -128,6 +128,22 @@ if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$rest" = "Y" ]; then
   sudo systemctl enable tlp.service
 fi
 clear
+
+# Setup all other dotfiles
+read -p "Setup dotfiles? (Y/n): " resp
+if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$resp" = "Y" ]; then
+  stow ags
+  stow bottom
+  stow fish
+  stow hypr
+  stow kitty
+  stow nvim
+  stow scripts
+  stow vscode
+  stow wallpapers
+  stow yazi
+  stow zed
+fi
 
 # Exit script
 rm -rf ~/dotfiles/tmp
