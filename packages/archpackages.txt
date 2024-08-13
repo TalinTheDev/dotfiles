@@ -9,7 +9,6 @@ fd
 firefox
 fish
 fisher
-font-manager
 git
 gnome-keyring
 gparted
