@@ -2,7 +2,6 @@ const audio = await Service.import("audio");
 
 const VolumeIndicator = () => {
   return Widget.Box({
-    classNames: ["volumeButton"],
     child: Widget.Box({
       children: [
         Widget.Icon({ className: "audioIcon" }).hook(audio.speaker, (self) => {

@@ -5,6 +5,14 @@ window box {
   font-family: "JetBrainsMono Nerd Font";
 }
 
+.bar {
+  background-color: @color17;
+}
+
+.barContents {
+  padding: 10px;
+}
+
 button {
   border: 0;
   background-image: none;
@@ -20,8 +28,15 @@ button {
 }
 
 .workspaceButton {
-  color: @color4;
+  color: @color3;
   padding: 0;
+  border-radius: 0px;
+}
+
+.workspaceButton.focused {
+  color: @color4;
+  padding-top: 2px;
+  border-bottom: 2px solid @color4
 }
 
 .wifiIcon {
@@ -47,7 +62,7 @@ button {
 }
 
 .brightnessIcon {
-  color: @color20;
+  color: @color12;
   font-family: "tabler-icons";
   font-size: 16px;
   margin: 0px 10px 0px 25px;
@@ -70,7 +85,7 @@ button {
 }
 
 .dateIcon {
-  color: @color16;
+  color: @color15;
   font-size: 16px;
   margin: 0px 10px 0px 30px;
 }
@@ -81,7 +96,7 @@ button {
 }
 
 .timeIcon {
-  color: @color18;
+  color: @color16;
   font-size: 16px;
   font-family: "tabler-icons";
   margin: 0px 0px 0px 25px;

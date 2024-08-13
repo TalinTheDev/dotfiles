@@ -25,6 +25,7 @@ const barContents = () => {
   return Widget.CenterBox({
     startWidget: HyprlandWorkspaces(),
     endWidget: bottom(),
+    className: "barContents"
   });
 };
 
@@ -35,7 +36,6 @@ const bar = (gdkMonitor, id) => {
     gdkmonitor: gdkMonitor,
     anchor: ["top", "left", "right"],
     exclusivity: "exclusive",
-    margins: [10, 10, 3, 10],
     hpack: "fill",
     className: "bar",
     child: barContents(),
