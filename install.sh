@@ -6,11 +6,6 @@ runStow() {
 }
 
 # Setup script
-mkdir ~/dotfiles/tmp >/dev/null 2>&1
-tmp=~/dotfiles/tmp
-cd ~/dotfiles
-clear
-
 if [ "$1" = "create" ]; then
   mkdir ~/dotfiles/packages >/dev/null 2>&1
   pacman -Qqen > ~/dotfiles/packages/archpackages.txt
@@ -19,8 +14,12 @@ if [ "$1" = "create" ]; then
   exit 0
 fi
 
-# Install system package
+mkdir ~/dotfiles/tmp >/dev/null 2>&1
+tmp=~/dotfiles/tmp
+cd ~/dotfiles
+clear
 
+# Install system package
 read -p "Install pacman packages? (Y/n): " resp
 if [ -z "$resp" ] || [ "$resp" = "y" ] || [ "$resp" = "Y" ]; then
   sudo pacman -Syuq --needed - < ~/dotfiles/packages/archpackages.txt
