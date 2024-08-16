@@ -17,3 +17,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Center cursor on screen after 
 vim.keymap.set("n", "<leader>rf", ":%s/", { desc = "[R]eplace in [F]ile" })
 
 vim.keymap.set("n", "<leader>ba", ":Alpha<CR>", { desc = "[B]ack to [A]lpha" })
+
+for _, mode in pairs({ "n", "i", "v", "x" }) do
+	for _, key in pairs({ "<Up>", "<Down>", "<Left>", "<Right>" }) do
+		vim.keymap.set(mode, key, "<nop>")
+	end
+end
