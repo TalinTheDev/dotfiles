@@ -5,19 +5,23 @@ laptop_on=""
 enable_laptop() {
   laptop_on="true"
   hyprctl keyword monitor "eDP-1,enable" >/dev/null 2>&1
+  brightnessctl set 80%
 }
 
 disable_laptop() {
   laptop_on="false" 
   hyprctl keyword monitor "eDP-1,disable" >/dev/null 2>&1
+  brightnessctl set 0%
 }
 
 enable_monitor() {
   hyprctl keyword monitor "HDMI-A-1,enable" >/dev/null 2>&1
+  brightnessctl set 0%
 }
 
 disable_monitor() {
   hyprctl keyword monitor "HDMI-A-1,disable" >/dev/null 2>&1
+  brightnessctl set 80%
 }
 
 main(){
@@ -35,12 +39,14 @@ main(){
 
   enable_internal(){
     hyprctl keyword monitor "$INTERNAL_NAME,enable" > /dev/null 2>&1
+    brightnessctl set 80%
     hyprctl dispatch workspace 1 > /dev/null
     laptop_on="false"
     ags -q && ags > /dev/null 2>&1 &
   }
   disable_internal(){
     hyprctl keyword monitor "$INTERNAL_NAME,disable" > /dev/null 2>&1
+    brightnessctl set 0%
     hyprctl dispatch workspace 1 > /dev/null
     laptop_on="true"
     ags -q && ags > /dev/null 2>&1 &
