@@ -121,7 +121,7 @@
   },
   "extensions.autoCheckUpdates": true,
   "search.followSymlinks": false,
-  "cSpell.enabled": false,
+  "cSpell.enabled": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false
 }
