@@ -1,6 +1,7 @@
 base
 base-devel
 bc
+blueman
 bottom
 brightnessctl
 cups

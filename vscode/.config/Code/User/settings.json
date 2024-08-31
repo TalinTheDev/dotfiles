@@ -25,7 +25,6 @@
   "workbench.reduceMotion": "off",
   "workbench.remoteIndicator.showExtensionRecommendations": false,
   "workbench.editor.closeOnFileDelete": true,
-  "explorer.excludeGitIgnore": true,
   "terminal.external.linuxExec": "kitty",
   "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.smoothScrolling": true,

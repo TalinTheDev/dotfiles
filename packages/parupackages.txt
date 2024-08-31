@@ -3,5 +3,6 @@ aylurs-gtk-shell
 colorz
 google-chrome
 insomnia
+tlpui
 ttf-tabler-icons
 visual-studio-code-bin
