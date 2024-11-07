@@ -4,7 +4,6 @@ bc
 blueman
 bottom
 brightnessctl
-cups
 exfatprogs
 fd
 firefox
