@@ -1,9 +1,0 @@
-#b2564c #e46e61
-#ab7b64 #dd9e81
-#c69563 #f8ba7c
-#aa967d #dcc2a1
-#94b07b #bee29d
-#a9aea5 #d9e0d4
-#7083aa #90a9dc
-#8f97a9 #b9c3db
-#2e2723 #605149
