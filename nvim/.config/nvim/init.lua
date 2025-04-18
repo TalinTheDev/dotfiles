@@ -410,6 +410,11 @@ require('lazy').setup({
             require('telescope.themes').get_dropdown(),
           },
         },
+        defaults = {
+          file_ignore_patterns = {
+            "%.git/"
+          }
+        },
       }
 
       -- Enable Telescope extensions if they are installed
@@ -447,9 +452,9 @@ require('lazy').setup({
         }
       end, { desc = '[S]earch [/] in Open Files' })
 
-      -- Shortcut for searching your Neovim configuration files
-      vim.keymap.set('n', '<leader>sn', function()
-        builtin.find_files { cwd = vim.fn.stdpath 'config' }
+      -- Shortcut for searching your dotfiles
+      vim.keymap.set('n', '<leader>sd', function()
+        builtin.find_files { cwd = vim.env.HOME .. "/dotfiles", hidden = true, no_ignore = false }
       end, { desc = '[S]earch [N]eovim files' })
     end,
   },
