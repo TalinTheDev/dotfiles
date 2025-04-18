@@ -455,7 +455,7 @@ require('lazy').setup({
       -- Shortcut for searching your dotfiles
       vim.keymap.set('n', '<leader>sd', function()
         builtin.find_files { cwd = vim.env.HOME .. "/dotfiles", hidden = true, no_ignore = false }
-      end, { desc = '[S]earch [N]eovim files' })
+      end, { desc = '[S]earch [D]otfiles files' })
     end,
   },
 
