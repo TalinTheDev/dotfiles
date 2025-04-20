@@ -25,7 +25,17 @@ while true; do
 		break
 	else
 		read input2
-		input="$input$input2"
-		echo $input
+		command="$input$input2"
+		if [[ "$command" == "on" ]] then
+			read monitorNum
+			monitorToAct="$(echo $monitors | jq -r .[$(($monitorNum - 1))].name)"
+			echo "$(hyprctl keyword monitor $monitorToAct,preferred,auto,auto)"
+		elif [[ "$command" == "off" ]] then
+			read monitorNum
+			monitorToAct="$(echo $monitors | jq -r .[$(($monitorNum - 1))].name)"
+			echo "$(hyprctl keyword monitor $monitorToAct,disabled)"
+		else
+			echo "Cannot understand command"
+		fi
 	fi
 done
