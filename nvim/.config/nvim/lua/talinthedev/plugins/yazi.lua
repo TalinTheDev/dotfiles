@@ -1,3 +1,4 @@
+-- Uses Yazi as a file manager
 return {
 	"mikavilpas/yazi.nvim",
 	event = "VeryLazy",
@@ -6,16 +7,16 @@ return {
 	},
 	keys = {
 		{
-			"<leader> -",
+			"<leader>fc",
 			mode = { "n", "v" },
 			"<cmd>Yazi<cr>",
-			desc = "Open yazi at the current file",
+			desc = "Open yazi at the [c]urrent file",
 		},
 		{
 			-- Open in the current working directory
-			"<leader>cw",
+			"<leader>fd",
 			"<cmd>Yazi cwd<cr>",
-			desc = "Open the file manager in nvim's working directory",
+			desc = "Open yazi in the current working [d]irectory",
 		},
 		{
 			"<c-up>",
