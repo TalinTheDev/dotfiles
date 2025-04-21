@@ -24,6 +24,9 @@ return {
 			defaults = {
 				file_ignore_patterns = {
 					"%.git/", -- Ignore all files in `.git` directories
+					"%dist/", -- Ignore all files in `dist` directories
+					"%target/", -- Ignore all files in `target` directories
+					"%node_modules/", -- Ignore all files in `node_modules` directories
 				},
 			},
 		})
@@ -40,10 +43,10 @@ return {
 		end, { desc = "[S]earch [F]iles" })
 		vim.keymap.set("n", "<leader>st", builtin.builtin, { desc = "[S]earch [t]elescope builtins" })
 		vim.keymap.set("n", "<leader>sw", function()
-			builtin.grep_string({ cwd = vim.loop.cwd() })
+			builtin.grep_string({ cwd = vim.loop.cwd(), additional_args = { "--hidden", "--no-ignore" } })
 		end, { desc = "[S]earch current [W]ord" })
 		vim.keymap.set("n", "<leader>sg", function()
-			builtin.live_grep({ cwd = vim.loop.cwd() })
+			builtin.live_grep({ cwd = vim.loop.cwd(), additional_args = { "--hidden", "--no-ignore" } })
 		end, { desc = "[S]earch by [G]rep" })
 		vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "[S]earch [R]esume" })
 		vim.keymap.set("n", "<leader>s.", builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
