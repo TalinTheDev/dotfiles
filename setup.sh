@@ -1,4 +1,5 @@
 mkdir -p ~/.config
 
-cp nvim ~/.config/nvim
-cp fish ~/.config/fish
+rm -rf ~/.config/nvim ~/.config/fish
+cp nvim ~/.config/nvim -r
+cp fish ~/.config/fish -r
