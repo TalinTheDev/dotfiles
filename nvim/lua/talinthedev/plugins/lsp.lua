@@ -157,47 +157,48 @@ return {
 				proj_conf = cfg
 			end
 
-			local servers = proj_conf.lsp
-				or {
-					clangd = {}, -- C++/C
-					rust_analyzer = {},
-					lua_ls = {
-						settings = {
-							Lua = {
-								completion = {
-									callSnippet = "Replace",
-								},
-								diagnostics = {
-									globals = { "vim" },
-								},
-							},
-						},
-					},
-					astro = {}, -- Astro.js
-					bashls = {},
-					cssls = {},
-					gopls = {}, -- Golang
-					html = {},
-					eslint = {}, -- Javascript
-					jsonls = {},
-					markdown_oxide = {},
-					ruff = {}, -- Python linter in rust
-					sqlls = {},
-					taplo = {}, -- TOML
-					volar = {}, -- Vue.js
-					yamlls = {}, -- YAML
-					zls = {}, -- Zig
-				}
+			local servers = proj_conf.lsp or {}
+			-- {
+			-- 	clangd = {}, -- C++/C
+			-- 	rust_analyzer = {},
+			-- 	lua_ls = {
+			-- 		settings = {
+			-- 			Lua = {
+			-- 				completion = {
+			-- 					callSnippet = "Replace",
+			-- 				},
+			-- 				diagnostics = {
+			-- 					globals = { "vim" },
+			-- 				},
+			-- 			},
+			-- 		},
+			-- 	},
+			-- 	astro = {}, -- Astro.js
+			-- 	bashls = {},
+			-- 	cssls = {},
+			-- 	gopls = {}, -- Golang
+			-- 	html = {},
+			-- 	eslint = {}, -- Javascript
+			-- 	jsonls = {},
+			-- 	markdown_oxide = {},
+			-- 	ruff = {}, -- Python linter in rust
+			-- 	sqlls = {},
+			-- 	taplo = {}, -- TOML
+			-- 	volar = {}, -- Vue.js
+			-- 	yamlls = {}, -- YAML
+			-- 	zls = {}, -- Zig
+			-- }
 			local ensure_installed = vim.tbl_keys(servers)
-			vim.list_extend(ensure_installed, proj_conf.mason or {
-				-- Formatters
-				"stylua",
-				"beautysh", -- Bash
-				"clang-format", -- C++/C
-				"fixjson", -- JSON
-				"gofumpt", -- Golang
-				"prettierd", -- HTML, CSS, JavaScript, etc.
-			})
+			vim.list_extend(ensure_installed, proj_conf.mason or {})
+			-- {
+			-- 	-- Formatters
+			-- 	"stylua",
+			-- 	"beautysh", -- Bash
+			-- 	"clang-format", -- C++/C
+			-- 	"fixjson", -- JSON
+			-- 	"gofumpt", -- Golang
+			-- 	"prettierd", -- HTML, CSS, JavaScript, etc.
+			-- })
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
 			require("mason-lspconfig").setup({
