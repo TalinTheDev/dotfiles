@@ -151,39 +151,45 @@ return {
 
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
 
-			local servers = {
-				clangd = {}, -- C++/C
-				rust_analyzer = {},
-				lua_ls = {
-					settings = {
-						Lua = {
-							completion = {
-								callSnippet = "Replace",
-							},
-							diagnostics = {
-								globals = { "vim" },
+			local proj_conf = {}
+			local ok, cfg = pcall(dofile, vim.fn.getcwd() .. "/.nvim-setup.lua")
+			if ok then
+				proj_conf = cfg
+			end
+
+			local servers = proj_conf.lsp
+				or {
+					clangd = {}, -- C++/C
+					rust_analyzer = {},
+					lua_ls = {
+						settings = {
+							Lua = {
+								completion = {
+									callSnippet = "Replace",
+								},
+								diagnostics = {
+									globals = { "vim" },
+								},
 							},
 						},
 					},
-				},
-				astro = {}, -- Astro.js
-				bashls = {},
-				cssls = {},
-				gopls = {}, -- Golang
-				html = {},
-				eslint = {}, -- Javascript
-				jsonls = {},
-				markdown_oxide = {},
-				ruff = {}, -- Python linter in rust
-				sqlls = {},
-				taplo = {}, -- TOML
-				volar = {}, -- Vue.js
-				yamlls = {}, -- YAML
-				zls, -- Zig
-			}
-
-			local ensure_installed = vim.tbl_keys(servers or {})
-			vim.list_extend(ensure_installed, {
+					astro = {}, -- Astro.js
+					bashls = {},
+					cssls = {},
+					gopls = {}, -- Golang
+					html = {},
+					eslint = {}, -- Javascript
+					jsonls = {},
+					markdown_oxide = {},
+					ruff = {}, -- Python linter in rust
+					sqlls = {},
+					taplo = {}, -- TOML
+					volar = {}, -- Vue.js
+					yamlls = {}, -- YAML
+					zls = {}, -- Zig
+				}
+			local ensure_installed = vim.tbl_keys(servers)
+			vim.list_extend(ensure_installed, proj_conf.mason or {
 				-- Formatters
 				"stylua",
 				"beautysh", -- Bash
