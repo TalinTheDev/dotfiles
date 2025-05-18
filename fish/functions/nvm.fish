@@ -234,4 +234,4 @@ function _nvm_node_info
         console.log('$npm_version_default' ? '$npm_version_default': require('$npm_path/package.json').version)
         console.log(process.execPath)
     " | string replace -- ~ \~
-    ens
+end
