@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 mkdir -p ~/.config
 
 rm -rf ~/.config/nvim ~/.config/fish
