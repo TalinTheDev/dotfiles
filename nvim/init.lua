@@ -119,4 +119,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Install plugins
-require("lazy").setup({})
+require("lazy").setup({
+	require("talinthedev.plugins.yazi"),
+	require("talinthedev.plugins.gitsigns"),
+	require("talinthedev.plugins.vim-sleuth"),
+	require("talinthedev.plugins.which-key"),
+	require("talinthedev.plugins.telescope"),
+	require("talinthedev.plugins.lsp"),
+	require("talinthedev.plugins.autofmt"),
+	require("talinthedev.plugins.autocomplete"),
+	require("talinthedev.plugins.theme"),
+	require("talinthedev.plugins.comments"),
+	require("talinthedev.plugins.mini"),
+	require("talinthedev.plugins.telescope"),
+})
