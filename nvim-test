@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+rm -rf ~/.config/nvim-devpod ~/.local/state/nvim-devpod ~/.local/share/nvim-devpod
+cp -r nvim ~/.config/nvim-devpod
+
+NVIM_APPNAME=nvim-devpod nvim $1
