@@ -29,14 +29,10 @@ return {
 		config = function()
 			local proj_conf = {}
 			local ok, cfg = pcall(dofile, vim.fn.getcwd() .. "/nvim-setup.lua")
-			if (ok == true) then
-				print("loading nvim-setup.lua was successful")
+			if ok then
 				proj_conf = cfg
-			else 
-				print("loading nvim-setup.lua was not successful")
 			end
-			print("tried loading but who knows what happened")
-			
+
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("lsp-attach", { clear = true }),
 				callback = function(event)
@@ -160,8 +156,6 @@ return {
 			})
 
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
-
-			
 
 			local servers = proj_conf.lsp or {}
 			-- {

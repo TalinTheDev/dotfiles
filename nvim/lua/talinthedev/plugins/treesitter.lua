@@ -6,7 +6,7 @@ return {
 		main = "nvim-treesitter.configs",
 		config = function()
 			local proj_conf = {}
-			local ok, cfg = pcall(dofile, vim.fn.getcwd() .. "/.nvim-setup.lua")
+			local ok, cfg = pcall(dofile, vim.fn.getcwd() .. "/nvim-setup.lua")
 			if ok then
 				proj_conf = cfg
 			end
