@@ -1,0 +1,23 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- clean: ['~']
+- clean:
+    ~/.config:
+        recursive: true
+    ~/.local/bin:
+        recursive: true
+
+- create:
+    - ~/.local/bin
+
+- link:
+    ~/.config/nvim: nvim
+    ~/.config/fish: fish
+    ~/.config/hypr: hypr
+    ~/.local/bin/: scripts/**
+    ~/.config/wallpapers: wallpapers
+    ~/.config/wezterm: wezterm
+
