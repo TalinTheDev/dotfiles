@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
-# Setup dotbot
-cp dotbot/tools/git-submodule/install .
-./install
+# Setup dotfiles with dotbot
+dotbot -c install.conf.yaml
