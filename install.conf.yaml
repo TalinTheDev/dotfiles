@@ -17,7 +17,9 @@
     ~/.config/nvim: nvim
     ~/.config/fish: fish
     ~/.config/hypr: hypr
-    ~/.local/bin/: scripts/**
+    ~/.local/bin/: 
+        glob: true
+        path: scripts/**
     ~/.config/wallpapers: wallpapers
     ~/.config/wezterm: wezterm
 

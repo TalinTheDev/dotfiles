@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 # Setup dotbot
-cp dotbot/tools/hg-subrepo/install .
+cp dotbot/tools/git-submodule/install .
 ./install
