@@ -1,4 +1,39 @@
 #!/usr/bin/env bash
 
-# Setup dotfiles with dotbot
-dotbot -c install.conf.yaml
+# Arch dotfiles setup script
+#
+# Uses dotbot for dotfile install but this probably will be made into a custom dotfile manager soon
+# Also can install needed packages
+
+
+help() {
+	printf "Usage: $0 [-h] [-a] [-p] [-d]\n"
+	printf "Options:\n"
+	printf "\t-h\t\tShow this help message and exit\n"
+	printf "\t-a\t\tInstall system programs and dotfiles. Equivalent to running $0 -p -d\n"
+	printf "\t-p\t\tInstall system programs\n"
+	printf "\t-d\t\tInstall dotfiles\n"
+}
+
+setupPrograms() {
+	/usr/bin/env bash ./installScripts/programs
+}
+
+setupDotfiles() {
+	dotbot -c dotbot.conf.yaml
+}
+
+doFullInstall() {
+	setupPrograms
+	setupDotfiles
+}
+
+while getopts 'hapd' opt; do
+	case "$opt" in
+		h) help; exit 0;;
+		a) doFullInstall; exit 0;;
+		p) setupPrograms;;
+		d) setupDotfiles;;
+		*) help >&2; exit 1;;
+	esac
+done
