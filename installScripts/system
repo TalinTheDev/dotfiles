@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# This script runs all post install commands
+
+# Time
+sudo timedatectl set-ntp true
+sudo hwclock --systohc
+
+# Misc
+sudo zramctl # CHECK IF SUDO NEEDED

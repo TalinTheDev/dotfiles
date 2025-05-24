@@ -7,16 +7,26 @@
 
 
 help() {
-	printf "Usage: $0 [-h] [-a] [-p] [-d]\n"
+	printf "Usage: $0 [OPTIONS] [script names]\n"
+	printf "Argurments:\n"
+	printf "  [script names]\n\tAn optional list of install scripts to run found in ./installScripts/."
+	printf "\n\tTo run these scripts, pass in the '-e' option.\n\n"
+
 	printf "Options:\n"
-	printf "\t-h\t\tShow this help message and exit\n"
-	printf "\t-a\t\tInstall system programs and dotfiles. Equivalent to running $0 -p -d\n"
-	printf "\t-p\t\tInstall system programs\n"
-	printf "\t-d\t\tInstall dotfiles\n"
+	printf "  -h\n\tShow this help message and exit\n"
+	printf "  -f\n\tSetup the complete system. Equivalent to running $0 -s -p -d\n"
+	printf "  -s\n\tConfigure system.\n"
+	printf "  -p\n\tInstall system packages\n"
+	printf "  -d\n\tInstall dotfiles\n"
+	printf "  -e\n\tRun extra install scripts\n"
 }
 
-setupPrograms() {
-	/usr/bin/env bash ./installScripts/programs
+setupSystem() {
+	/usr/bin/env bash ./installScripts/system
+}
+
+setupPackages() {
+	/usr/bin/env bash ./installScripts/packages
 }
 
 setupDotfiles() {
@@ -24,16 +34,29 @@ setupDotfiles() {
 }
 
 doFullInstall() {
-	setupPrograms
+	setupSystem
+	setupPackages
 	setupDotfiles
 }
 
-while getopts 'hapd' opt; do
+while getopts 'hfspde' opt; do
 	case "$opt" in
 		h) help; exit 0;;
-		a) doFullInstall; exit 0;;
-		p) setupPrograms;;
+		f) doFullInstall;;
+		s) setupSystem;;
+		p) setupPackages;;
 		d) setupDotfiles;;
-		*) help >&2; exit 1;;
+		e) extraScripts=true;;
+		*) help; exit 1;;
 	esac
 done
+
+shift $(( OPTIND - 1 ))
+
+if $extraScripts; then
+	echo "Running extra scripts..."
+	for scriptName in "$@"; do
+		/usr/bin/env bash ./installScripts/$scriptName
+	done
+fi
+

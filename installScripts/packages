@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+echo "Installing packages..."
+
+# Install packages
+sudo pacman -S --no-confirm --needed hyprland
+sudo pacman -S --no-confirm --needed waybar 
+sudo pacman -S --no-confirm --needed wofi 
+sudo pacman -S --no-confirm --needed fish
+sudo pacman -S --no-confirm --needed neovim
+sudo pacman -S --no-confirm --needed yazi
+sudo pacman -S --no-confirm --needed hyprpaper
+sudo pacman -S --no-confirm --needed brightnessctl
+sudo pacman -S --no-confirm --needed hyprsunset
+sudo pacman -S --no-confirm --needed keychain
+sudo pacman -S --no-confirm --needed wl-clipboard
+sudo pacman -S --no-confirm --needed unzip
+sudo pacman -S --no-confirm --needed wget
+sudo pacman -S --no-confirm --needed fd
+sudo pacman -S --no-confirm --needed jq
+sudo pacman -S --no-confirm --needed fisher
+sudo pacman -S --no-confirm --needed zellij
+sudo pacman -S --no-confirm --needed ghostty
+
+# Install paru
+git clone https://aur.archlinux.org/paru.git ~/paru
+cd paru
+makepkg -si --noconfirm --needed
+
+# Install AUR packages
+paru -S --no-confirm --needed google-chrome-stable clipse dotbot
