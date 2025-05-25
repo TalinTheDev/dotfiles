@@ -18,6 +18,7 @@
     ~/.config/nvim: nvim
     ~/.config/fish: fish
     ~/.config/hypr: hypr
+    ~/.config/waybar: waybar
     ~/.local/bin/: 
         glob: true
         path: scripts/**
