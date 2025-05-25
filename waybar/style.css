@@ -1,11 +1,12 @@
+@define-color foreground #eeeeee;
+@define-color foreground-inactive #aaaaaa;
+@define-color background #000000;
+
 * {
-  border: none;
-  border-radius: 0;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: JetBrainsMono Nerd Font;
   font-size: 15px;
-  box-shadow: none;
-  text-shadow: none;
-  transition-duration: 0s;
+  padding: 0;
+  margin: 0;
 }
 
 window {
@@ -18,12 +19,8 @@ window#waybar.solo {
   background: rgba(35, 31, 32, 0.85);
 }
 
-#workspaces {
-  margin: 0 5px;
-}
-
 #workspaces button {
-  padding: 0 5px;
+  padding: 0 0.7em;
   color: rgba(217, 216, 216, 0.4);
 }
 
@@ -40,28 +37,23 @@ window#waybar.solo {
   color: rgba(238, 46, 36, 1);
 }
 
+#window {
+  border-left: 3px solid rgba(217, 216, 216, 1);
+  padding-left: 0.7em;
+}
+
+window#waybar.empty #window {
+  border-left: 0;
+}
+
+#memory,
+#temperature,
+#wireplumber,
 #battery,
-#cpu,
+#backlight,
+#language,
 #network,
-#pulseaudio,
-#backlight {
-  margin: 0px 10px 0px 10px;
-  min-width: 25px;
-}
-
-#clock {
-  margin: 0px 25px 0px 10px;
-  min-width: 140px;
-}
-
-#battery.warning {
-  color: rgba(255, 210, 4, 1);
-}
-
-#battery.critical {
-  color: rgba(238, 46, 36, 1);
-}
-
-#battery.charging {
-  color: rgba(217, 216, 216, 1);
+#bluetooth,
+#tray {
+  padding-right: 1em;
 }
