@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-echo "Test script running..."
-sleep 0.5
-echo "Test script ran!"
