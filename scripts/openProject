@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Script lists zellij sessions and allows user to pick from them using fzf
+# Then, it reattaches the session and opens it in a new ghostty window
+
+project="$(zellij list-sessions -s | fzf)"
+
+zellij a $project
