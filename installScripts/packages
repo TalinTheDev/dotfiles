@@ -23,6 +23,8 @@ sudo pacman -S --noconfirm --needed zellij
 sudo pacman -S --noconfirm --needed ghostty
 sudo pacman -S --noconfirm --needed fzf
 sudo pacman -S --noconfirm --needed hyprlock
+sudo pacman -S --noconfirm --needed grim
+sudo pacman -S --noconfirm --needed slurp
 
 # Install paru
 git clone https://aur.archlinux.org/paru.git ~/paru
