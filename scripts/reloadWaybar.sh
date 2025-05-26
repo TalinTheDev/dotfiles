@@ -7,4 +7,4 @@ killall -q waybar
 while pgrep -x waybar >/dev/null; do sleep 1; done
 
 # Launch main
-waybar -c ~/.config/waybar/config.json -s ~/.config/waybar/style.css
+waybar -c $HOME/.config/waybar/config.json -s $HOME/.config/waybar/style.css

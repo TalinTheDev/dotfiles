@@ -3,6 +3,6 @@ if status is-interactive
 end
 
 if status is-login
-    contains ~/.local/bin $PATH
-    or set PATH ~/.local/bin $PATH
+    contains $HOME/.local/bin $PATH
+    or set PATH $HOME/.local/bin $PATH
 end

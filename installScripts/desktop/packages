@@ -27,8 +27,8 @@ sudo pacman -S --noconfirm --needed grim
 sudo pacman -S --noconfirm --needed slurp
 
 # Install paru
-git clone https://aur.archlinux.org/paru.git ~/paru
-cd ~/paru
+git clone https://aur.archlinux.org/paru.git $HOME/paru
+cd $HOME/paru
 makepkg -si --noconfirm --needed
 
 # Install AUR packages

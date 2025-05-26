@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
 
-mkdir -p ~/.config
+mkdir -p $HOME/.config
 
-rm -rf ~/.config/nvim ~/.config/fish
-cp ../../nvim ~/.config/nvim -r
-cp ../../fish ~/.config/fish -r
+# Make sure old configuration is deleted
+rm -rf $HOME/.config/nvim $HOME/.config/fish
 
-chown talin:talin ~ -R
+# Copy over configuration
+cp ../../nvim $HOME/.config/nvim -r
+cp ../../fish $HOME/.config/fish -r
+
+# Remove keychain setup b/c not needed
+rm $HOME/.config/fish/conf.d/keychain.fish
+
+# Make sure talin is the group/owner of /home/$USER
+chown $USER:$USER $HOME -R
