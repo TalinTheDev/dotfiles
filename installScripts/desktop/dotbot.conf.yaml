@@ -15,14 +15,14 @@
     - ~/.local/bin
 
 - link:
-    ~/.config/nvim: nvim
-    ~/.config/fish: fish
-    ~/.config/hypr: hypr
-    ~/.config/waybar: waybar
+    ~/.config/nvim: ../../nvim
+    ~/.config/fish: ../../fish
+    ~/.config/hypr: ../../hypr
+    ~/.config/waybar: ../../waybar
     ~/.local/bin/: 
         glob: true
-        path: scripts/**
-    ~/.config/wallpapers: wallpapers
-    ~/.config/wezterm: wezterm
-    ~/.config/ghostty: ghostty
+        path: ../../scripts/**
+    ~/.config/wallpapers: ../../wallpapers
+    ~/.config/wezterm: ../../wezterm
+    ~/.config/ghostty: ../../ghostty
 
