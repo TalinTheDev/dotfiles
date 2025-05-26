@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+<<<<<<< HEAD
 # Arch dotfiles setup script
 #
 # Uses dotbot for dotfile install but this probably will be made into a custom dotfile manager soon
@@ -43,6 +44,8 @@ setupPackages() {
 setupDotfiles() {
 	if [[ $mode == "d" ]]; then
 		dotbot -c ./installScripts/desktop/dotbot.conf.yaml
+	elif [[ $mode == "w" ]]; then
+		/usr/bin/env bash ./installScripts/wsl/setup
 	elif [[ $mode == "c" ]]; then
 		/usr/bin/env bash ./installScripts/container/setup
 	fi
@@ -89,4 +92,3 @@ if $extraScripts; then
 		/usr/bin/env bash ./installScripts/$scriptName
 	done
 fi
-
