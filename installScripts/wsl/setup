@@ -8,7 +8,7 @@ rm -rf $HOME/.config/nvim $HOME/.config/fish
 rm -rf $HOME/.local/bin
 
 # Copy over configuration
-cp ../../nvim $HOME/.config/nvim -r
-cp ../../fish $HOME/.config/fish -r
+cp nvim $HOME/.config/nvim -r
+cp fish $HOME/.config/fish -r
 
-cp ../../scripts/wsl $HOME/.local/bin -r
+cp scripts/wsl $HOME/.local/bin -r

@@ -6,8 +6,8 @@ mkdir -p $HOME/.config
 rm -rf $HOME/.config/nvim $HOME/.config/fish
 
 # Copy over configuration
-cp ../../nvim $HOME/.config/nvim -r
-cp ../../fish $HOME/.config/fish -r
+cp nvim $HOME/.config/nvim -r
+cp fish $HOME/.config/fish -r
 
 # Remove keychain setup b/c not needed
 rm $HOME/.config/fish/conf.d/keychain.fish
