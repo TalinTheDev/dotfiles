@@ -186,10 +186,9 @@ return {
 					taplo = {}, -- TOML
 					volar = {}, -- Vue.js
 					yamlls = {}, -- YAML
-					zls, -- Zig
+					zls = {}, -- Zig
 				}
-
-			local ensure_installed = vim.tbl_keys(servers or {})
+			local ensure_installed = vim.tbl_keys(servers)
 			vim.list_extend(ensure_installed, proj_conf.mason or {
 				-- Formatters
 				"stylua",
