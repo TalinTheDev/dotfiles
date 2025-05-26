@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Based on https://devpod.sh/docs/tutorials/docker-provider-via-wsl#5-expose-docker-daemon-to-windows-via-port-2375
+
+sudo cp /lib/systemd/system/docker.service /etc/systemd/system/
+sudo sed -i 's/\ -H\ fd:\/\//\ -H\ fd:\/\/\ -H\ tcp:\/\/127.0.0.1:2375/g' /etc/systemd/system/docker.service
+sudo systemctl daemon-reload
+sudo systemctl restart docker.service

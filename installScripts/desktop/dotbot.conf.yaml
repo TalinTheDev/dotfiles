@@ -21,7 +21,7 @@
     ~/.config/waybar: ../../waybar
     ~/.local/bin/: 
         glob: true
-        path: ../../scripts/**
+        path: ../../scripts/desktop/**
     ~/.config/wallpapers: ../../wallpapers
     ~/.config/wezterm: ../../wezterm
     ~/.config/ghostty: ../../ghostty

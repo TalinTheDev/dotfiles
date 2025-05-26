@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-<<<<<<< HEAD
 # Arch dotfiles setup script
 #
 # Uses dotbot for dotfile install but this probably will be made into a custom dotfile manager soon
