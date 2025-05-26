@@ -43,6 +43,8 @@ setupPackages() {
 setupDotfiles() {
 	if [[ $mode == "d" ]]; then
 		dotbot -c ./installScripts/desktop/dotbot.conf.yaml
+	elif [[ $mode == "c" ]]; then
+		/usr/bin/env bash ./installScripts/container/setup
 	fi
 }
 
