@@ -5,6 +5,12 @@
 # Uses dotbot for dotfile install but this probably will be made into a custom dotfile manager soon
 # Also can install needed packages
 
+full=false
+system=false
+packages=false
+dotfiles=false
+extraScripts=false
+mode="d"
 
 help() {
 	printf "Usage: $0 [OPTIONS] [script names]\n"
@@ -19,18 +25,25 @@ help() {
 	printf "  -p\n\tInstall system packages\n"
 	printf "  -d\n\tInstall dotfiles\n"
 	printf "  -e\n\tRun extra install scripts\n"
+	printf "  -m MODE\n\tRun script in a specific mode. Possible modes are:\n\t'd': Desktop (default)\n\t'w': WSL\n\t'c': Dev Container\n"
 }
 
 setupSystem() {
-	/usr/bin/env bash ./installScripts/system
+	if [[ $mode == "d" ]]; then
+		/usr/bin/env bash ./installScripts/system
+	fi
 }
 
 setupPackages() {
-	/usr/bin/env bash ./installScripts/packages
+	if [[ $mode == "d" ]]; then
+		/usr/bin/env bash ./installScripts/packages
+	fi
 }
 
 setupDotfiles() {
-	dotbot -c dotbot.conf.yaml
+	if [[ $mode == "d" ]]; then
+		dotbot -c dotbot.conf.yaml
+	fi
 }
 
 doFullInstall() {
@@ -39,18 +52,32 @@ doFullInstall() {
 	setupDotfiles
 }
 
-extraScripts=false
-while getopts 'hfspde' opt; do
+while getopts 'hfspdem:' opt; do
 	case "$opt" in
 		h) help; exit 0;;
-		f) doFullInstall;;
-		s) setupSystem;;
-		p) setupPackages;;
-		d) setupDotfiles;;
+		f) full=true;;
+		s) system=true;;
+		p) packages=true;;
+		d) dotfiles=true;;
 		e) extraScripts=true;;
+		m) mode=${OPTARG};;
 		*) help; exit 1;;
 	esac
 done
+
+if [[ $full == true ]]; then
+	doFullInstall
+else
+	if [[ $system == true ]]; then
+		setupSystem
+	fi
+	if [[ $packages == true ]]; then
+		setupPackages
+	fi
+	if [[ $dotfiles == true ]]; then
+		setupDotfiles
+	fi
+fi
 
 shift $(( OPTIND - 1 ))
 
