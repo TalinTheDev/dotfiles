@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -- Provides syntax highlighting, indentation, and more
 return {
 	{
