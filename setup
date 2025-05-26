@@ -30,19 +30,19 @@ help() {
 
 setupSystem() {
 	if [[ $mode == "d" ]]; then
-		/usr/bin/env bash ./installScripts/system
+		/usr/bin/env bash ./installScripts/desktop/system
 	fi
 }
 
 setupPackages() {
 	if [[ $mode == "d" ]]; then
-		/usr/bin/env bash ./installScripts/packages
+		/usr/bin/env bash ./installScripts/desktop/packages
 	fi
 }
 
 setupDotfiles() {
 	if [[ $mode == "d" ]]; then
-		dotbot -c dotbot.conf.yaml
+		dotbot -c ./installScripts/desktop/dotbot.conf.yaml
 	fi
 }
 
