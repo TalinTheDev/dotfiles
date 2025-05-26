@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 -- LSP Plugins
 return {
 	{
