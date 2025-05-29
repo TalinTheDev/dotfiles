@@ -1,10 +1,27 @@
 #!/usr/bin/env bash
 
 # This script runs all post install commands
+# FOR THE USER ONLY
+# eg. ONLY DOTFILE RELATED STUFF
+# NOTHING FOR FULL SYSTEM CONFIGURATION
+# USE TalinTheDev/Notes (private repo) FOR THOSE COMMMANDS
 
-# Time
-sudo timedatectl set-ntp true
-sudo hwclock --systohc
 
-# Misc
-sudo zramctl # CHECK IF SUDO NEEDED
+# Git config
+read -p "Enter git email adddress: " gitEmail
+read -p "Enter git full name: " gitName
+
+git config --global user.email "$gitEmail"
+git config --global user.name "$gitName"
+git config --global diff.tool "nvimdiff"
+
+# Fish config
+chsh -s /usr/bin/fish
+echo "To set the default fish greeting to nothing, run this command in a fish prompt:"
+echo "    set -U fish_greeting \"\""
+
+# Node.js
+echo "To install Node.js, run the following commands in a fish prompt:"
+echo "    fisher install jorgebucaran/nvm.fish"
+echo "    nvm install latest"
+echo "    corepack enable pnpm"
