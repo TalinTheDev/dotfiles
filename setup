@@ -55,8 +55,8 @@ setupDotfiles() {
 }
 
 doFullInstall() {
-	setupSystem
 	setupPackages
+	setupSystem
 	setupDotfiles
 }
 
@@ -76,11 +76,11 @@ done
 if [[ $full == true ]]; then
 	doFullInstall
 else
-	if [[ $system == true ]]; then
-		setupSystem
-	fi
 	if [[ $packages == true ]]; then
 		setupPackages
+	fi
+	if [[ $system == true ]]; then
+		setupSystem
 	fi
 	if [[ $dotfiles == true ]]; then
 		setupDotfiles
