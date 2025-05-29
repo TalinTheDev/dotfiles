@@ -23,6 +23,7 @@ sudo pacman -S --noconfirm --needed less
 sudo pacman -S --noconfirm --needed go
 sudo pacman -S --noconfirm --needed python3
 sudo pacman -S --noconfirm --needed zellij
+sudo pacman -S --noconfirm --needed fzf
 
 # Install paru
 if  pacman -Qi paru > /dev/null ; then
