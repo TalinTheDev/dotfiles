@@ -3,7 +3,6 @@
 echo "Installing packages..."
 
 # Install packages
-sudo pacman -S --noconfirm --needed 
 sudo pacman -S --noconfirm --needed neovim
 sudo pacman -S --noconfirm --needed sudo
 sudo pacman -S --noconfirm --needed git
@@ -23,9 +22,10 @@ sudo pacman -S --noconfirm --needed docker-buildx
 sudo pacman -S --noconfirm --needed less
 sudo pacman -S --noconfirm --needed go
 sudo pacman -S --noconfirm --needed python3
+sudo pacman -S --noconfirm --needed zellij
 
 # Install paru
-if [[ pacman -Qi paru > /dev/null ]]; then
+if  pacman -Qi paru > /dev/null ; then
 	paru -S --noconfirm --needed paru
 else
 	git clone https://aur.archlinux.org/paru.git $HOME/paru

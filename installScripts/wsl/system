@@ -33,7 +33,7 @@ echo "    ssh-keygen -t ed25519 -C $gitEmail"
 # Docker & Devpod setup
 /usr/bin/env bash ./scripts/wsl/docker-setup
 
-devpod provider set-options -o "DOCKER_HOST=tcp://127.0.0.1:2375"
-devpod provider set-options -o "DOCKER_PATH=docker"
-devpod provider add docker
-devpod ide use none
+devpod-cli provider set-options -o "DOCKER_HOST=tcp://127.0.0.1:2375"
+devpod-cli provider set-options -o "DOCKER_PATH=docker"
+devpod-cli provider add docker
+devpod-cli ide use none

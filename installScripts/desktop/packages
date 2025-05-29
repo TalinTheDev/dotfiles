@@ -27,7 +27,7 @@ sudo pacman -S --noconfirm --needed grim
 sudo pacman -S --noconfirm --needed slurp
 
 # Install paru
-if [[ pacman -Qi paru > /dev/null ]]; then
+if  pacman -Qi paru > /dev/null ; then
 	paru -S --noconfirm --needed paru
 else
 	git clone https://aur.archlinux.org/paru.git $HOME/paru
