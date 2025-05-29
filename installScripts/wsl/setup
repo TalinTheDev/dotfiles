@@ -3,12 +3,14 @@
 # Make sure directories exist
 mkdir -p $HOME/.config
 
-# Make sure old configuration is deleted
+# Make sure old configuration is deleted BUT save ~/.config/fish/fish_variables to prevent fish ENV data loss
+cp $HOME/.config/fish/fish_variables $HOME/fish_variables
 rm -rf $HOME/.config/nvim $HOME/.config/fish
 rm -rf $HOME/.local/bin
 
 # Copy over configuration
 cp nvim $HOME/.config/nvim -r
 cp fish $HOME/.config/fish -r
+mv $HOME/fish_variables $HOME/.config/fish/fish_variables
 
 cp scripts/wsl $HOME/.local/bin -r
