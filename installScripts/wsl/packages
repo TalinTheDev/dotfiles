@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+echo "Installing packages..."
+
+# Install packages
+sudo pacman -S --noconfirm --needed 
+sudo pacman -S --noconfirm --needed neovim
+sudo pacman -S --noconfirm --needed sudo
+sudo pacman -S --noconfirm --needed git
+sudo pacman -S --noconfirm --needed fish
+sudo pacman -S --noconfirm --needed openssh
+sudo pacman -S --noconfirm --needed ripgrep
+sudo pacman -S --noconfirm --needed yazi
+sudo pacman -S --noconfirm --needed keychain
+sudo pacman -S --noconfirm --needed unzip
+sudo pacman -S --noconfirm --needed wget
+sudo pacman -S --noconfirm --needed fd
+sudo pacman -S --noconfirm --needed jq
+sudo pacman -S --noconfirm --needed fisher
+sudo pacman -S --noconfirm --needed base-devel
+sudo pacman -S --noconfirm --needed docker
+sudo pacman -S --noconfirm --needed docker-buildx
+sudo pacman -S --noconfirm --needed less
+sudo pacman -S --noconfirm --needed go
+sudo pacman -S --noconfirm --needed python3
+
+# Install paru
+git clone https://aur.archlinux.org/paru.git $HOME/paru
+cd $HOME/paru
+makepkg -si --noconfirm --needed
+
+# Install AUR packages
+paru -S --noconfirm --needed devpod-bin

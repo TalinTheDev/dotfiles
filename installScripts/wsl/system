@@ -29,3 +29,11 @@ echo "    corepack enable pnpm"
 # SSH
 echo "To setup SSH key configuration, run the following command and follow the steps. Then, add the key to http://github.com/settings/keys"
 echo "    ssh-keygen -t ed25519 -C $gitEmail"
+
+# Docker & Devpod setup
+/usr/bin/env bash scripts/wsl/docker-setup
+
+devpod provider set-options -o "DOCKER_HOST=tcp://127.0.0.1:2375"
+devpod provider set-options -o "DOCKER_PATH=docker"
+devpod provider add docker
+devpod ide use none
