@@ -37,3 +37,4 @@ devpod-cli provider set-options -o "DOCKER_HOST=tcp://127.0.0.1:2375"
 devpod-cli provider set-options -o "DOCKER_PATH=docker"
 devpod-cli provider add docker
 devpod-cli ide use none
+devpod-cli context set-options -o DOTFILES_URL=git@github.com:TalinTheDev/dotfiles -o DOTFILES_SCRIPT="setup -f -m c"
