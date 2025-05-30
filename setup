@@ -73,6 +73,18 @@ while getopts 'hfspdem:' opt; do
 	esac
 done
 
+[[ -z "${FULL}" ]] && full=$full || full="${FULL}"
+[[ -z "${SYSTEM}" ]] && system=$system || system="${SYSTEM}"
+[[ -z "${PACKAGES}" ]] && packages=$packages || packages="${PACKAGES}"
+[[ -z "${DOTFILES}" ]] && dotfiles=$dotfiles || dotfiles="${DOTFILES}"
+[[ -z "${MODE}" ]] && mode=$mode || mode="${MODE}"
+
+echo "Full: $full"
+echo "System: $system"
+echo "Packages: $packages"
+echo "Dotfiles: $dotfiles"
+echo "Mode: $mode"
+
 if [[ $full == true ]]; then
 	doFullInstall
 else
