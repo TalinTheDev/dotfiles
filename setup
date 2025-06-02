@@ -79,11 +79,12 @@ done
 [[ -z "${DOTFILES}" ]] && dotfiles=$dotfiles || dotfiles="${DOTFILES}"
 [[ -z "${MODE}" ]] && mode=$mode || mode="${MODE}"
 
-echo "Full: $full"
-echo "System: $system"
-echo "Packages: $packages"
-echo "Dotfiles: $dotfiles"
-echo "Mode: $mode"
+echo "Setting up system with following parameters:"
+echo "    Full: $full"
+echo "    System: $system"
+echo "    Packages: $packages"
+echo "    Dotfiles: $dotfiles"
+echo "    Mode: $mode"
 
 if [[ $full == true ]]; then
 	doFullInstall
