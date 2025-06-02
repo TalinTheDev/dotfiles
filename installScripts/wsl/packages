@@ -22,6 +22,7 @@ sudo pacman -S --noconfirm --needed docker-buildx
 sudo pacman -S --noconfirm --needed less
 sudo pacman -S --noconfirm --needed go
 sudo pacman -S --noconfirm --needed python3
+sudo pacman -S --noconfirm --needed python-pip
 sudo pacman -S --noconfirm --needed zellij
 sudo pacman -S --noconfirm --needed fzf
 
