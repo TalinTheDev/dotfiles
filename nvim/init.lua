@@ -9,6 +9,9 @@ vim.g.maplocalleader = " "
 -- I have a nerd font installed and in use in my terminal
 vim.g.have_nerd_font = true
 
+-- My terminal's have color support
+vim.opt.termguicolors = true
+
 -- Line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
