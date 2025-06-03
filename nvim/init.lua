@@ -13,6 +13,10 @@ vim.g.have_nerd_font = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- 4 Spaces
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+
 -- Enable mouse mode
 vim.opt.mouse = "a"
 
