@@ -16,9 +16,16 @@ vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- 4 Spaces
-vim.opt.shiftwidth = 4
+-- Check spelling please
+vim.opt.spell = true
+
+-- Spaces vs Tabs Configuration (https://stackoverflow.com/a/1878983/17826254)
+vim.opt.tabstop = 4 -- Neovim recommendation to keep at 8, did not follow
 vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.smarttab = true
+vim.opt.autoindent = true
 
 -- Enable mouse mode
 vim.opt.mouse = "a"
