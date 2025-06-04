@@ -12,5 +12,4 @@ cp fish $HOME/.config/fish -r
 # Remove keychain setup b/c not needed
 rm $HOME/.config/fish/conf.d/keychain.fish
 
-# Make sure talin is the group/owner of /home/$USER
-chown $USER:$USER $HOME -R
+echo "Done setting up dev container!"
