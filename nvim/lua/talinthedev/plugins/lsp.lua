@@ -186,7 +186,14 @@ return {
 					taplo = {}, -- TOML
 					volar = {}, -- Vue.js
 					yamlls = {}, -- YAML
-					zls = {}, -- Zig
+					zls = {
+						settings = {
+							zls = {
+								enable_build_on_save = true,
+								semantic_tokens = "partial",
+							},
+						},
+					}, -- Zig
 				}
 			local ensure_installed = vim.tbl_keys(servers)
 			vim.list_extend(ensure_installed, proj_conf.mason or {
