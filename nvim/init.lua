@@ -51,6 +51,10 @@ vim.opt.smartcase = true
 -- Show the signcolumn
 vim.opt.signcolumn = "yes"
 
+-- 80 column limit
+vim.opt.textwidth = 80
+vim.opt.colorcolumn = "+1"
+
 -- Decrease update time
 vim.opt.updatetime = 250
 
