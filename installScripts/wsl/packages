@@ -29,11 +29,11 @@ sudo pacman -S --noconfirm --needed fzf
 
 # Install paru
 if  pacman -Qi paru > /dev/null ; then
-	paru -S --noconfirm --needed paru
+    paru -S --noconfirm --needed paru
 else
-	git clone https://aur.archlinux.org/paru.git $HOME/paru
-	cd $HOME/paru
-	makepkg -si --noconfirm --needed
+    git clone https://aur.archlinux.org/paru.git $HOME/paru
+    cd $HOME/paru
+    makepkg -si --noconfirm --needed
 fi
 
 # Install AUR packages
