@@ -51,6 +51,10 @@ vim.opt.smartcase = true
 -- Show the signcolumn
 vim.opt.signcolumn = "yes"
 
+-- 80 column limit
+vim.opt.textwidth = 120
+vim.opt.colorcolumn = "+1"
+
 -- Decrease update time
 vim.opt.updatetime = 250
 
@@ -103,6 +107,10 @@ vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left spli
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right split" })
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower split" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper split" })
+
+-- Splits Creation
+vim.keymap.set("n", "<leader>nv", "<cmd>:vsplit<CR>", { desc = "Create a new vertical split" })
+vim.keymap.set("n", "<leader>nh", "<cmd>:split<CR>", { desc = "Create a new horizontal split" })
 
 --------------------------
 -- General Autocommands --
