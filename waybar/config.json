@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 24,
+    "height": 30,
     "spacing": 5,
 
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
@@ -26,18 +26,21 @@
     },
 
     "wireplumber": {
-        "format": "{volume}%",
+        "format": "{icon} {volume}%",
+        "format-icons": ["", "", ""],
         "max-volume": 100,
         "scroll-step": 5
     },
 
     "battery": {
         "interval": 60,
-        "format": "{capacity}%",
+        "format": "{icon}  {capacity}%",
+        "format-icons": ["", "", "", "", ""],
     },
 
     "backlight": {
-        "format": "{percent}%"
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞","󰃜", "󰃛", "󰃚"]
     },
 
     "memory": {

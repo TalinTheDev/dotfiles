@@ -184,7 +184,7 @@ return {
 					ruff = {}, -- Python linter in rust
 					sqlls = {},
 					taplo = {}, -- TOML
-					vue_ls = {}, -- Vue.js
+					volar = {},
 					yamlls = {}, -- YAML
 					zls = {
 						settings = {
