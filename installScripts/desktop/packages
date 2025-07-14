@@ -27,6 +27,7 @@ sudo pacman -S --noconfirm --needed grim
 sudo pacman -S --noconfirm --needed slurp
 sudo pacman -S --noconfirm --needed docker
 sudo pacman -S --noconfirm --needed docker-buildx
+sudo pacman -S --noconfirm --needed docker-compose
 
 # Install paru
 if  pacman -Qi paru > /dev/null ; then
