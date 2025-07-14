@@ -25,6 +25,8 @@ sudo pacman -S --noconfirm --needed fzf
 sudo pacman -S --noconfirm --needed hyprlock
 sudo pacman -S --noconfirm --needed grim
 sudo pacman -S --noconfirm --needed slurp
+sudo pacman -S --noconfirm --needed docker
+sudo pacman -S --noconfirm --needed docker-buildx
 
 # Install paru
 if  pacman -Qi paru > /dev/null ; then
@@ -36,4 +38,7 @@ else
 fi
 
 # Install AUR packages
-paru -S --noconfirm --needed google-chrome clipse dotbot
+paru -S --noconfirm --needed google-chrome
+paru -S --noconfirm --needed clipse
+paru -S --noconfirm --needed dotbot
+paru -S --noconfirm --needed devpod-bin
