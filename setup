@@ -31,6 +31,7 @@ help() {
 setupSystem() {
 	if [[ $mode == "d" ]]; then
 		/usr/bin/env bash ./installScripts/desktop/system
+		cp ./systemFiles/etc /etc -r
 	elif [[ $mode == "w" ]]; then
 		/usr/bin/env bash ./installScripts/wsl/system
 	fi
