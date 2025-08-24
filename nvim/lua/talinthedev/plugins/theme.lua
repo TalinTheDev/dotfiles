@@ -5,6 +5,7 @@ return {
 		priority = 1000, -- Make sure to load this before all the other start plugins.
 		config = function()
 			require("vague").setup({})
+			vim.cmd.colorscheme("vague")
 		end,
 	},
 	{
@@ -12,8 +13,6 @@ return {
 		priority = 1000, -- Make sure to load this before all the other start plugins.
 		config = function()
 			require("kanagawa").setup({})
-
-			vim.cmd.colorscheme("kanagawa-wave")
 		end,
 	},
 }
