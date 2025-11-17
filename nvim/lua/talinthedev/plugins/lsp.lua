@@ -184,7 +184,7 @@ return {
 					ruff = {}, -- Python linter in rust
 					sqlls = {},
 					taplo = {}, -- TOML
-					volar = {},
+					-- volar = {},
 					yamlls = {}, -- YAML
 					zls = {
 						settings = {
